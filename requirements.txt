@@ -1,0 +1,16 @@
+# Dependências principais do Agente UFRN
+
+# Manipulação de emails
+imap-tools==1.7.0
+
+# Cliente OpenAI
+openai>=1.0.0
+
+# Gerenciamento de variáveis de ambiente
+python-dotenv==1.0.0
+
+# Cliente Notion (para integração futura)
+notion-client==2.2.1
+
+# Utilitários adicionais
+requests==2.31.0
