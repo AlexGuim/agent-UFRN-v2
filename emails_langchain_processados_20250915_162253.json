@@ -1,0 +1,908 @@
+{
+  "timestamp": "2025-09-15T16:22:53.198347",
+  "total_emails": 29,
+  "framework": "LangChain",
+  "agent_type": "Conversational React Description (Orchestrated)",
+  "emails": [
+    {
+      "email": {
+        "assunto": "Confira todos os boletos no seu nome🧾",
+        "remetente": "contato@relacionamentosicredi.com.br",
+        "data_recebimento": "2025-09-07T19:02:09-06:00",
+        "conteudo_preview": "Sem conteúdo",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "FINANCEIRO",
+        "urgencia": "ALTA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.9,
+        "justificativa": "O email trata de boletos no nome do destinatário, o que indica uma questão financeira que pode ser urgente para resolver.",
+        "resumo_executivo": "Email sobre boletos no nome do destinatário.",
+        "acao_sugerida": "Verificar os boletos mencionados no email.",
+        "prazo_estimado": "Até o vencimento dos boletos."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião/encontro no email, apenas a informação sobre boletos no nome do destinatário. Portanto, não se trata de uma solicitação de reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81bb-bb04-fdfb87bfe925",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Alerta de segurança para alexandre.agd@gmail.com",
+        "remetente": "no-reply@accounts.google.com",
+        "data_recebimento": "2025-09-08T08:31:37+00:00",
+        "conteudo_preview": "Esta é uma cópia de um aviso de segurança enviado para\r\nalexandre.agd@gmail.com. alexandre.agd@ufrn.edu.br é o e-mail de\r\nrecuperação dessa conta. Se você não reconhece a conta, remova\r\n<https://accounts.google.com/AccountDisavow?adt=AOX8kirRpgF4J81pKnXvSIV4He9lpn9zNTF2lViBqGH9K0XgG49tJUHW1C-gbZSjEB4YydDB&rfn=325>\r\nseu e-mail.\r\n[image: Google]\r\nNovo login no Mac\r\n\r\n\r\nalexandre.agd@gmail.com\r\nDetectamos um novo login na sua Conta do Google em um Mac. Se foi você que\r\nfez isso, nenhuma ação é necessária. Se não foi, ajudaremos a proteger sua\r\nconta.\r\nVerificar atividade\r\n<https://accounts.google.com/AccountChooser?Email=alexandre.agd@gmail.com&continue=https://myaccount.google.com/alert/nt/1757320297072?rfn%3D325%26rfnc%3D1%26eid%3D3616829095915570232%26et%3D1>\r\nVocê também pode ver as atividades de segurança em\r\nhttps://myaccount.google.com/notifications\r\nEste e-mail foi enviado a você para informar sobre alterações importantes\r\nna sua Conta do Google e serviços relacionados.\r\n© 2025 Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Ireland\r\n",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "URGENTE",
+        "urgencia": "ALTA",
+        "necessita_resposta": "SIM",
+        "confianca": 1.0,
+        "justificativa": "O email trata de um alerta de segurança sobre um novo login na conta do Google do colaborador da UFRN, indicando a possibilidade de atividade suspeita. Como especialista em classificação de emails institucionais, é importante investigar e agir rapidamente para proteger a segurança da conta.",
+        "resumo_executivo": "Alerta de segurança sobre novo login na conta do Google do colaborador da UFRN.",
+        "acao_sugerida": "Verificar a atividade na conta do Google e tomar medidas de segurança, como alteração de senha e revisão de configurações de segurança.",
+        "prazo_estimado": "Imediato."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião ou encontro neste email. Trata-se de um alerta de segurança relacionado a uma atividade de login na conta do Google. Portanto, não se enquadra nos critérios para ser considerado uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8160-94c2-f5df03e9ef69",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Alerta de segurança para alexandre.agd@gmail.com",
+        "remetente": "no-reply@accounts.google.com",
+        "data_recebimento": "2025-09-08T08:31:41+00:00",
+        "conteudo_preview": "Esta é uma cópia de um aviso de segurança enviado para\r\nalexandre.agd@gmail.com. alexandre.agd@ufrn.edu.br é o e-mail de\r\nrecuperação dessa conta. Se você não reconhece a conta, remova\r\n<https://accounts.google.com/AccountDisavow?adt=AOX8kipee7Ze7k2RFVPq_XRRVLH-lV0ecwAOOKIDk374EKKVJB3hvQBrPi9Gr3GpqHMCx-tM&rfn=127>\r\nseu e-mail.\r\n[image: Google]\r\nO macOS recebeu acesso à sua Conta do Google vinculada\r\n\r\n\r\nalexandre.agd@gmail.com\r\n\r\nSe você não concedeu acesso, verifique essa atividade e proteja sua conta.\r\nVerificar atividade\r\n<https://accounts.google.com/AccountChooser?Email=alexandre.agd@gmail.com&continue=https://myaccount.google.com/alert/nt/1757320301000?rfn%3D127%26rfnc%3D1%26eid%3D8678502571270323546%26et%3D1>\r\nVocê também pode ver as atividades de segurança em\r\nhttps://myaccount.google.com/notifications\r\nEste e-mail foi enviado a você para informar sobre alterações importantes\r\nna sua Conta do Google e serviços relacionados.\r\n© 2025 Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Ireland\r\n",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "URGENTE",
+        "urgencia": "ALTA",
+        "necessita_resposta": "SIM",
+        "confianca": 1.0,
+        "justificativa": "O email trata de um alerta de segurança para a conta de email institucional da UFRN, indicando possível acesso não autorizado. Como colaborador interno da UFRN, é crucial verificar e proteger a conta imediatamente.",
+        "resumo_executivo": "Alerta de segurança para conta de email institucional da UFRN.",
+        "acao_sugerida": "Verificar a atividade suspeita e proteger a conta.",
+        "prazo_estimado": "Imediato."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "O email não apresenta nenhuma proposta explícita de reunião ou encontro, apenas informações sobre segurança da conta do Google. Não há menção de horário específico, o remetente é um sistema automático (no-reply@accounts.google.com) e o conteúdo do email é informativo, não solicitando nenhum tipo de interação para marcar uma reunião. Portanto, não se trata de uma mensagem relacionada a reuniões."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8152-b74c-daf644f88fe0",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "⏰ Prosas News: inscrições prorrogadas para o Prêmio LED e muito mais!",
+        "remetente": "contato@prosas.com.br",
+        "data_recebimento": "2025-09-08T11:32:48+00:00",
+        "conteudo_preview": " \r\n\r\n\r\n\r\n\r\n \r\n \r\nOlá! Tudo bem por aí?  Essa é mais uma Prosas News, uma newsletter onde você confere os principais editais da semana, além de conteúdos interessantes alinhados ao mercado e ao seu dia a dia! 😊\r\n\r\n  \r\n [ https://t.rdsv2.net/ls/click?upn=u001.ZnTitrtZysoyxy-2FxpIVXaw7LmAd1c2xfYNsJK78G42xISqOUny-2FAoTFGEVP5PQ53NEGNX-2B-2BAARWzbGiJy-2Bt8sevJgKUpH0-2B8lqtcP7qNiy9xpTiVrYA3yV3NS5CGnCdtzBSpDOVhnffwmr-2BN4kLBmYDpOvsn9UbWkumsn94qur4H8h7yRvfdVzcges2hKZvZTFrNR8xEo-2F-2FDWPIb93hJm-2Fa6-2BfQHVQ-2BIe3k-2BXMzL2MTDTbQna4L8SKrbFQXsI6ZyVjGjcD2hq0pVymp4CEwIzOuVH51rmh2kv4yPz52BgPM-3DoTjP_3HnSy7Thd-2B4TzjPSA5oX7rmyFt8GfJHmsSt96QQ-2BAHNnryGA3hrpkTOsh8H-2BMCRfeKZc5ANYrzU7zIFT4m4G400Qs7CNPglUIWbKoMD9a6X7eB1ArXM04PPo41TVmACVQoEIo9dDeRMOqi3d19s8vFB7vsJYGqINnt-2FHSBhOxLnGv26xJaWhXKouJRkB5XT00yxfvfu3E5JB8Cu3ZaUGAlimnjrrxQ-2BxbHPgZx-2B8f96OVm-2BNFLgXJDRMa-2Femfy0lGmvq61jFhJB4u1tV9XoF-2FpXagPaoTwph3jNbKAquEhIiBoQhQ2nx-2F16HsLqAN6G8x9yIUMz9bGjamrIP8bLSg-2BBTWvuuMmW7vSQQL9bQcXeDmeWfLIqfBx3GVXJ-2F7rwMhJwWXiAWAS1vGTn9-2BCAWHIJqTkX52ShYtoRNnTYi3AbvreAuUNi3IALww9QoZTmStIFDCwGv0-2F4hBIGj-2BAweyNav5xDzoNf9YROu6gLtpa2XfZ-2FO11UHFdBCtdEhoJ-2Fzf0Pmtq7jEWg4FAWTr8pI-2FHsSav9IzZ3X5GeN34Y-2FrY5UUY2Xd0-2FHrvQSVnafViMmWzyahup0Pq1El1dUrLWf1PwKvM-2FAmwrLLn4p9ysYUB-2BDNasTKk-2FWlzKhtGZ2ydTSo1OwiBGOzD4b1yQ5W5DoDQ-3D-3D ]\r\n\r\n Inscreva-se  [ https://t.rdsv2.net/ls/click?upn=u001.ZnTitrtZysoyxy-2FxpIVXaw7LmAd1c2xfYNsJK78G42xISqOUny-2FAoTFGEVP5PQ53uXKbYdLVTJcpzCtCY72ytw-3D-3D5YRT_3HnSy7Thd-2B4TzjPSA5oX7rmyFt8GfJHm",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 1.0,
+        "justificativa": "O email é uma newsletter informativa da Prosas, não apresenta demandas críticas ou prazos a cumprir.",
+        "resumo_executivo": "Newsletter informativa da Prosas.",
+        "acao_sugerida": "Ler o conteúdo e se inscrever caso seja do interesse.",
+        "prazo_estimado": "Sem prazo específico."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "O email em questão é uma newsletter da Prosas, não há proposta explícita de reunião ou encontro, apenas informações sobre inscrições prorrogadas para um prêmio e outros conteúdos relevantes. Não há nenhum elemento que indique a intenção de marcar uma reunião. Portanto, a decisão de que não se trata de uma reunião é bastante clara."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8131-9f68-eb88285c13a4",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Começou o Samsung Festival 🎉",
+        "remetente": "no-reply@m1.email.samsung.com",
+        "data_recebimento": "2025-09-08T15:19:54+01:00",
+        "conteudo_preview": "Descontos imperdíveis e até 235€ em experiências com Galaxy ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ \r\n\r\nDescontos imperdíveis e até 235€ em experiências com Galaxy \t    http://t.m1.email.samsung.com/r/?id=t563ea681,f73a8d5a,6fe994ae&e=cDE9JTQwOGgwaGQ2VjFScUQwZ1JNeHJmNGJtSzVyeUxPdnlrazREZjBvMkRUaW44MCUzRA&s=_eLvaiZOnl9RdNcs4k-CP9hT1rsuT32EBY-1p0Agkbs Veja a versão online aqui \t\r\n\t\r\n\r\n http://t.m1.email.samsung.com/r/?id=t563ea681,f73a8d5a,6fe994af&e=cDE9U0VQLVNGMjVRM1czNi1DUk0tTDEtQnJvd3NlcnM&s=z28ONfvqxQ1_U1FzIJP-D-c3YiMFKU-2YhyIsTIyAM4 \t\r\n\t\r\n\r\n\tSamsung Rewards \t\t\r\n\t\r\n\t\r\n\t\r\n0points* \t\r\n*Balanço atual de pontos \t\r\n\t\r\n\t\r\nReceba 3% extra do valor da sua próxima compra  em pontos Samsung Rewards 1 \r\n\t\r\n\t\r\n\r\nO futuro, agora \t\r\nImagina um futuro com tudo conectado? Os sonhos tornam-se realidade ao conectar os dispositivos Samsung! Descubra as melhores surpresas para si no Samsung Festival . \t\r\n\r\n http://t.m1.email.samsung.com/r/?id=t563ea681,f73a8d5a,6fe994b0&e=cDE9U0VQLVNGMjVRM1czNi1DUk0tTDEtQnJvd3NlcnM&s=QCBJ9MLeWe8tDsw_Oj_y0acdJ_yc7iTGGDQ50x96cmg COMPRAR \t\r\n\t\r\n\t\r\n http://t.m1.email.samsung.com/r/?id=t563ea681,f73a8d5a,6fe994b1&e=cDE9U0VQLVNGMjVRM1czNi1DUk0tTDEtQnJvd3NlcnM&s=btkDEDg6foE3wXv15L7n50m9Bxx71TF8tqcplg",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "TALVEZ",
+        "confianca": 0.8,
+        "justificativa": "Análise automática",
+        "resumo_executivo": "Email processado",
+        "acao_sugerida": "Avaliar contexto",
+        "prazo_estimado": "N/A"
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.5,
+        "extracted_time": null,
+        "extracted_date": null,
+        "meeting_type": null,
+        "justification": "Análise automática"
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81fa-aacb-d521292ed52c",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Ações de desenvolvimento disponíveis para o mês de setembro!",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-08T16:33:52-03:00",
+        "conteudo_preview": "\r\n\r\nOlá, servidor(a) &#x1f917;\r\n&#x1f4da; Confira as ações de desenvolvimento disponíveis para o mês de setembro, promovidos pela Divisão de Capacitação e Educação Profissional (DCEP).\r\n \r\n➡️ Inscrições abertas no SIGRH!\r\n&#x1f440; Confira os detalhes das atividades disponíveis &#x1f446;\r\n&#x1f929; São diferentes possibilidades:\r\n✅Tem curso EAD;✅Tem curso presencial;✅Os cursos são abertos para todos os servidores ativos.\r\n&#x1f5a5;️ Acesse o SIGRH e realize a sua inscrição.\r\n \r\n&#x1f914; Dúvidas? Entre em contato com a DCEP no e-mail: capacitacao&#64;progesp.ufrn.br\r\n \r\n   \r\n    \r\n \r\n \r\n \r\n\r\n\r\n\r\n    \r\n        A UFRN respeita a política de privacidade. Caso não queira mais receber e-mails desta lista,\r\n        clique aqui!\r\n    \r\n\r\n",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 0.9,
+        "justificativa": "O email é um informativo sobre ações de desenvolvimento disponíveis para os servidores da UFRN, não apresenta demandas críticas ou prazos urgentes.",
+        "resumo_executivo": "Informações sobre ações de desenvolvimento disponíveis para o mês de setembro.",
+        "acao_sugerida": "Verificar as ações de desenvolvimento disponíveis e realizar a inscrição, se interessado.",
+        "prazo_estimado": "Sem prazo específico."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião ou encontro neste email. O conteúdo se trata de informações sobre ações de desenvolvimento disponíveis para o mês de setembro, promovidas pela Divisão de Capacitação e Educação Profissional (DCEP). Não há solicitação de reunião, apenas instruções sobre inscrições e contato em caso de dúvidas. Portanto, não se enquadra como uma proposta de reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8147-bf80-c7d5e5aa77f2",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Notícias da UFRN - Nº 161",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-08T18:01:17-03:00",
+        "conteudo_preview": "\r\n\r\nSegunda-feira, 8 de Setembro de 2025 - Edição 161 - Ano XXVTrilhas Potiguares Brasil/África inicia atividades em Moçambique Agecom/UFRNFoto: Cícero Oliveira - Agecom/UFRN \r\nO programa Trilhas Potiguares Brasil/África iniciou as atividades no distrito de Maxixe, localizado na província de Inhambane em Moçambique. Os alunos e docentes participaram de momentos de integração e promoveram um debate com jovens da comunidade sobre o protagonismo juvenil no mundo contemporâneo. A ação é coordenada pela Pró-Reitoria de Extensão (Proex) da Universidade Federal do Rio Grande do Norte (UFRN). Leia mais. \r\n\r\nUFRN e Jundiá discutem criação de museu\r\nMarina Gadelha - Ascom-Reitoria \r\nO vice-reitor da Universidade Federal do Rio Grande do Norte (UFRN), Henio Ferreira de Miranda, recebeu, nesta segunda-feira, 8, o prefeito do município de Jundiá, Carlos Antônio de Souza, que solicitou apoio institucional para a criação do Museu de Ciência e Tecnologia. O projeto foi idealizado pelo servidor da Prefeitura, Antenor Mário, que há anos realiza a curadoria de objetos históricos e estudos sobre as suas origens. Leia mais.\r\n\r\nReitoria dialoga com entidades universitárias\r\nMarina Gadelha - Ascom-Reitoria \r\nO reitor da Universidade Federal do Rio Grande do Norte (UFRN), José Daniel Diniz Melo, recebeu, nesta segunda-feira, representantes da Cooperativa Cultural, do Sindicato dos Docentes da UFRN (Adurn), da Associação dos Professores da UFRN (Apurn) e da Caixa Assistencial Universitária do RN (Cau",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "ADMINISTRATIVO",
+        "urgencia": "MEDIA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.8,
+        "justificativa": "O email trata de solicitações de apoio institucional para a criação de um museu e diálogo com entidades universitárias, indicando questões administrativas que podem demandar atenção.",
+        "resumo_executivo": "Solicitação de apoio para criação de museu e diálogo com entidades universitárias.",
+        "acao_sugerida": "Responder ao email e agendar reuniões para discutir as demandas apresentadas.",
+        "prazo_estimado": "Dentro de 1 semana."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião/encontro no email. As informações fornecidas são sobre atividades e discussões realizadas pela UFRN e seus representantes, não indicando a marcação de uma reunião. Portanto, não se enquadra nos critérios para ser considerado um convite para reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81f5-a298-d1bed0638853",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Alerta de segurança para alexandre.agd@gmail.com",
+        "remetente": "no-reply@accounts.google.com",
+        "data_recebimento": "2025-09-08T22:03:53+00:00",
+        "conteudo_preview": "Esta é uma cópia de um aviso de segurança enviado para\r\nalexandre.agd@gmail.com. alexandre.agd@ufrn.edu.br é o e-mail de\r\nrecuperação dessa conta. Se você não reconhece a conta, remova\r\n<https://accounts.google.com/AccountDisavow?adt=AOX8kip2FDYueOxVsQOb_XypNLqcnKUimHoADazXuZrggd9IPXEDL8VxjK4lXqjGs9O2n7rl&rfn=127>\r\nseu e-mail.\r\n[image: Google]\r\nO DocGen AI recebeu acesso à sua Conta do Google vinculada\r\n\r\n\r\nalexandre.agd@gmail.com\r\n\r\nSe você não concedeu acesso, verifique essa atividade e proteja sua conta.\r\nVerificar atividade\r\n<https://accounts.google.com/AccountChooser?Email=alexandre.agd@gmail.com&continue=https://myaccount.google.com/alert/nt/1757369033000?rfn%3D127%26rfnc%3D1%26eid%3D5973263760457235922%26et%3D1>\r\nVocê também pode ver as atividades de segurança em\r\nhttps://myaccount.google.com/notifications\r\nEste e-mail foi enviado a você para informar sobre alterações importantes\r\nna sua Conta do Google e serviços relacionados.\r\n© 2025 Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Ireland\r\n",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "URGENTE",
+        "urgencia": "ALTA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.9,
+        "justificativa": "O email trata de um alerta de segurança para uma conta vinculada à UFRN, indicando possível acesso não autorizado. Como especialista em classificação de emails institucionais, é importante investigar e tomar medidas imediatas para proteger a segurança da conta.",
+        "resumo_executivo": "Alerta de segurança para conta vinculada à UFRN com possível acesso não autorizado.",
+        "acao_sugerida": "Verificar a atividade suspeita, proteger a conta e tomar medidas de segurança adicionais.",
+        "prazo_estimado": "Imediato."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião ou encontro neste email. Trata-se de um alerta de segurança relacionado à conta do Google do destinatário. Portanto, não se enquadra nos critérios para ser considerado uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81ba-8dfa-fd20d6bc24fb",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "DAS DIVULGA ACOLHIMENTO PSICOSSOCIAL",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-09T10:49:13-03:00",
+        "conteudo_preview": "A Pró-Reitoria de Gestão de Pessoas - PROGESP, por meio da Diretoria de Qualidade de Vida, Saúde e Segurança no Trabalho (DAS),  divulga o a  realização do Acolhimento Psicossocial; este que é um espaço de escuta, orientação e apoio destinado a servidoras e servidores que estejam passando por situações que impactam sua saúde mental, bem-estar e desempenho no ambiente institucional.   O intuito do Acolhimento Psicossocial é oferecer um atendimento humanizado, sigiloso e acolhedor, garantindo suporte inicial e, quando necessário, o encaminhamento adequado para serviços especializados de saúde, internos ou externos à DAS. Além disso, possui como objetivos:      * Oferecer escuta qualificada em demanda espontânea.   * Promover o cuidado e o bem-estar dos servidores.   * Identificar demandas relacionadas à saúde mental e às condições psicossociais de trabalho.   * Orientar sobre os recursos institucionais disponíveis para apoio.   * Prevenir agravamento de situações de risco e fortalecer fatores de proteção.     O acolhimento psicossocial acontece de segunda a sexta-feira, das 8h às 16h, conforme demanda espontânea. No caso de aluno com vínculo ativo da UFRN, o acolhimento psicossocial é voltado para uma escuta inicial, com encaminhamentos aos serviços especializados destinados ao público discente.     Maiores informações: 99193-6320  ----------------------- e-Comunicação UFRN: este sistema permite a comunicação entre a UFRN e sua comunidade universitária, divulgando as notícias e",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "ADMINISTRATIVO",
+        "urgencia": "MEDIA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.9,
+        "justificativa": "O email trata de um serviço oferecido pela UFRN para os servidores, com informações importantes sobre o Acolhimento Psicossocial. Como se trata de uma comunicação interna, a categoria administrativo é a mais apropriada. A urgência é média, pois não há prazos críticos mencionados, mas a informação é relevante para os servidores.",
+        "resumo_executivo": "Divulgação do Acolhimento Psicossocial pela PROGESP da UFRN.",
+        "acao_sugerida": "Ler atentamente as informações sobre o Acolhimento Psicossocial e, se necessário, buscar mais informações.",
+        "prazo_estimado": "Sem prazo específico."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião/encontro, apenas divulgação de um serviço de acolhimento psicossocial. O conteúdo do email é informativo e não há solicitação de agendamento de reunião. Portanto, não se trata de uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8125-8c4a-fcc94bf84249",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Instituto do Cérebro recebe Mestre Siddha Maha Yogi nesta quarta (10)",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-09T12:10:12-03:00",
+        "conteudo_preview": "O Instituto do Cérebro da UFRN irá receber, no dia 10 de setembro de 2025, o mestre Siddha Maha Yogi e a Swami Satya Maa para a palestra \"Meditação Shaktipat: uma dimensão além da mente\". O evento é gratuito, com contribuição voluntária durante a atividade para aqueles que desejarem. A palestra será ministrada em inglês com tradução simultânea para português. Não é necessário inscrição mas a entrada estará sujeita à lotação do auditório. Data: 10/09/2025. Hora: 16h. Local: Auditório do Instituto do Cérebro, Rua do Horto, s/n, Campus Central (por trás do Instituto Metrópole Digital) ----------------------- e-Comunicação UFRN: este sistema permite a comunicação entre a UFRN e sua comunidade universitária, divulgando as notícias e comunicados da instituição. Para saber como a UFRN trata os dados, acesse a Política de Privacidade. Caso não queira receber mais estas notificações clique aqui.",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 1.0,
+        "justificativa": "O email é um comunicado informativo sobre um evento no Instituto do Cérebro da UFRN, não requerendo nenhuma ação ou resposta.",
+        "resumo_executivo": "Comunicado sobre a palestra no Instituto do Cérebro da UFRN.",
+        "acao_sugerida": "Apenas leitura e divulgação do evento, se necessário.",
+        "prazo_estimado": "Sem prazo específico."
+      },
+      "meeting_analysis": {
+        "is_meeting": true,
+        "confidence": 0.8,
+        "extracted_time": "16h",
+        "extracted_date": "10/09/2025",
+        "meeting_type": "presencial",
+        "justification": "O email menciona claramente a palestra \"Meditação Shaktipat\" que será ministrada pelo mestre Siddha Maha Yogi e a Swami Satya Maa no Instituto do Cérebro da UFRN. O evento ocorrerá no dia 10 de setembro de 2025 às 16h, no Auditório do Instituto do Cérebro. Portanto, há uma clara intenção de encontro, horário específico proposto, e a presença de pessoas físicas com autoridade para realizar a palestra, caracterizando assim uma reunião presencial."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8195-b34f-fbad71247892",
+      "is_meeting": true,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Funcionamento da BCZM nos dias 10 e 11 de setembro de 2025",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-09T15:09:55-03:00",
+        "conteudo_preview": "A Direção da Biblioteca Central Zila Mamede (BCZM) informa à comunidade acadêmica da UFRN e ao público em geral que, em virtude da expressiva adesão dos servidores efetivos à Paralisação convocada pelo SINTEST/RN, o funcionamento da biblioteca nos dias 10 e 11 de setembro de 2025 (quarta e quinta-feira) ocorrerá de forma parcial.   Durante esse período, as atividades da BCZM serão asseguradas com o apoio das equipes de servidores terceirizados e bolsistas, o que poderá ocasionar restrições em alguns serviços normalmente oferecidos. Em razão disso, a unidade funcionará em horário reduzido, das 7h30 às 17h.   Para evitar prejuízos aos usuários, todas as devoluções de materiais informacionais com vencimento nos dias 10 e 11 de setembro foram automaticamente prorrogadas para sexta-feira, 12 de setembro de 2025, sem cobrança de multas.   A Direção agradece a compreensão de todos e reforça seu compromisso em manter a continuidade dos serviços, mesmo diante das limitações impostas pela situação. Permanecemos à disposição para eventuais esclarecimentos por meio de nossos canais de comunicação institucionais.   Atenciosamente, Direção da BCZM e SISBI/UFRN ----------------------- e-Comunicação UFRN: este sistema permite a comunicação entre a UFRN e sua comunidade universitária, divulgando as notícias e comunicados da instituição. Para saber como a UFRN trata os dados, acesse a Política de Privacidade. Caso não queira receber mais estas notificações clique aqui.",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "ADMINISTRATIVO",
+        "urgencia": "MEDIA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.9,
+        "justificativa": "O email trata de informações importantes sobre o funcionamento da Biblioteca Central nos dias 10 e 11 de setembro, o que pode impactar os usuários e requer atenção por parte dos colaboradores internos.",
+        "resumo_executivo": "Informações sobre o funcionamento parcial da BCZM nos dias 10 e 11 de setembro de 2025.",
+        "acao_sugerida": "Verificar se há necessidade de ajustes nos serviços oferecidos pela biblioteca durante esse período.",
+        "prazo_estimado": "Até o dia 10 de setembro de 2025."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião ou encontro no email. A mensagem apenas informa sobre o funcionamento parcial da Biblioteca nos dias 10 e 11 de setembro de 2025 devido a uma paralisação dos servidores efetivos. Não há solicitação de reunião, convite ou qualquer indicação de intenção de encontro."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-811a-b344-f7aa8442e4ae",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Funcionamento da BCZM nos dias 10 e 11 de setembro de 2025",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-09T15:10:34-03:00",
+        "conteudo_preview": "A Direção da Biblioteca Central Zila Mamede (BCZM) informa à comunidade acadêmica da UFRN e ao público em geral que, em virtude da expressiva adesão dos servidores efetivos à Paralisação convocada pelo SINTEST/RN, o funcionamento da biblioteca nos dias 10 e 11 de setembro de 2025 (quarta e quinta-feira) ocorrerá de forma parcial.   Durante esse período, as atividades da BCZM serão asseguradas com o apoio das equipes de servidores terceirizados e bolsistas, o que poderá ocasionar restrições em alguns serviços normalmente oferecidos. Em razão disso, a unidade funcionará em horário reduzido, das 7h30 às 17h.   Para evitar prejuízos aos usuários, todas as devoluções de materiais informacionais com vencimento nos dias 10 e 11 de setembro foram automaticamente prorrogadas para sexta-feira, 12 de setembro de 2025, sem cobrança de multas.   A Direção agradece a compreensão de todos e reforça seu compromisso em manter a continuidade dos serviços, mesmo diante das limitações impostas pela situação. Permanecemos à disposição para eventuais esclarecimentos por meio de nossos canais de comunicação institucionais.   Atenciosamente, Direção da BCZM e SISBI/UFRN ----------------------- e-Comunicação UFRN: este sistema permite a comunicação entre a UFRN e sua comunidade universitária, divulgando as notícias e comunicados da instituição. Para saber como a UFRN trata os dados, acesse a Política de Privacidade. Caso não queira receber mais estas notificações clique aqui.",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "ADMINISTRATIVO",
+        "urgencia": "MEDIA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.9,
+        "justificativa": "O email trata de informações importantes sobre o funcionamento da Biblioteca Central nos dias 10 e 11 de setembro, o que pode impactar os usuários e requer atenção administrativa.",
+        "resumo_executivo": "Informações sobre o funcionamento parcial da BCZM nos dias 10 e 11 de setembro de 2025.",
+        "acao_sugerida": "Verificar se há necessidade de ajustes nos serviços oferecidos pela biblioteca durante esse período.",
+        "prazo_estimado": "Até o dia 10 de setembro de 2025."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião ou encontro no email. O conteúdo se trata de um comunicado informativo sobre o funcionamento da Biblioteca Central Zila Mamede nos dias 10 e 11 de setembro de 2025, devido à paralisação dos servidores efetivos. Não há solicitação de reunião, apenas informações sobre os serviços oferecidos durante esse período."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81b3-8c7a-e6f5e641ec3a",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Especial UFRN -",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-09T15:41:50-03:00",
+        "conteudo_preview": "\r\n\r\nNatal, 9 de setembro de 2025 - Edição 62 \r\n\r\nMaturidade em sala de aula\r\nCresce número de pessoas idosas na graduação da UFRN Juliana Estevam – Sala de Ciência-Agecom/UFRNFotos: Cícero Oliveira - Agecom/UFRN Francisca Ferreira ingressou em Química após se surpreender positivamente com o curso de Turismo  \r\nGestão 2023/2027 - O Brasil está passando por um acelerado processo de envelhecimento populacional, e o Rio Grande do Norte acompanha essa tendência. Segundo o Censo 2022, a população brasileira com 60 anos ou mais chegou a 32,1 milhões de pessoas, o que representa 15,6% do total. No Rio Grande do Norte, o índice de envelhecimento alcançou 53,05, o maior do Nordeste, indicando que há 53 pessoas com 65 anos ou mais para cada 100 crianças de até 14 anos.\r\nEsse cenário é resultado do aumento da expectativa de vida e da queda na taxa de fecundidade. Com mais longevidade e melhor qualidade de vida, muitos idosos têm aproveitado essa etapa para retomar projetos interrompidos, como o ingresso em cursos de graduação, redescobrindo o aprendizado como um instrumento de autonomia e realização pessoal. Esse movimento tem ganhado força em todo o país, com o crescimento da presença de pessoas idosas nas universidades.\r\nA participação de pessoas idosas no Exame Nacional do Ensino Médio (Enem) tem crescido de forma expressiva. Segundo o Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep), vinculado ao Ministério da Educação (MEC), o número de inscritos com 60 ",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 1.0,
+        "justificativa": "O email se trata de um informativo sobre a presença de pessoas idosas na graduação da UFRN, não apresentando demandas críticas ou prazos a serem cumpridos.",
+        "resumo_executivo": "Informativo sobre o aumento da presença de pessoas idosas na graduação da UFRN.",
+        "acao_sugerida": "Leitura e divulgação do conteúdo, se necessário.",
+        "prazo_estimado": "Sem prazo específico."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião/encontro, apenas informações sobre o aumento de pessoas idosas na graduação da UFRN. O conteúdo do email não se enquadra nos critérios rígidos para ser considerado uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81d2-90ca-f2ece4ac9ede",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Notícias da UFRN - Nº 162",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-09T18:11:49-03:00",
+        "conteudo_preview": "\r\n\r\nTerça-feira, 9 de setembro de 2025 - Edição 162 - Ano XXVTrilhas Potiguares Brasil/África realiza atividades em escolas de Maxixe Agecom/UFRNFoto: Cícero Oliveira – Agecom/UFRN \r\nO Trilhas Potiguares Brasil/África realizou nesta terça-feira, 9, diversas programações em escolas do distrito de Maxixe, localizado na província de Inhambane em Moçambique. As atividades foram voltadas para o público jovem, especialmente para as meninas, e abordaram diversas temáticas importantes para a região. A ação é coordenada pela Pró-Reitoria de Extensão (Proex) da Universidade Federal do Rio Grande do Norte (UFRN). Leia mais. \r\n\r\nUFRN cria bacharelado em Arqueologia no Ceres\r\nMarina Gadelha - Ascom-Reitoria \r\nO Conselho de Ensino, Pesquisa e Extensão (Consepe) da Universidade Federal do Rio Grande do Norte (UFRN) aprovou por unanimidade, nesta terça-feira, 9, o projeto pedagógico para criação do bacharelado em Arqueologia, vinculado ao Centro de Ensino Superior do Seridó (Ceres), em Caicó. O curso irá oferecer 25 vagas anuais, a partir de 2026, com o objetivo de capacitar profissionais que compreendam a diversidade cultural e sua relação com a formação das identidades e da cidadania. Leia mais.\r\n\r\nEJECT se destaca em encontro nacional\r\nSarah Ribeiro - ECT/UFRN \r\nEntre os dias 28 e 31 de agosto, ocorreu o Encontro Nacional de Empresas Juniores (ENEJ), que visa conectar e potencializar os resultados do Movimento Empresa Júnior brasileiro. O evento foi promovido pela Brasil Júnior e acontece",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 0.8,
+        "justificativa": "O email contém informações gerais sobre atividades e notícias da UFRN, não requerendo uma resposta específica.",
+        "resumo_executivo": "Email informativo sobre atividades e notícias da UFRN.",
+        "acao_sugerida": "Nenhuma ação necessária.",
+        "prazo_estimado": "Sem prazo."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião ou encontro neste email. O conteúdo se trata de notícias e informações sobre atividades da UFRN, não havendo solicitação de reunião. Portanto, não atende aos critérios para ser considerado uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-813c-bf97-dff616d2f044",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Notificação de Homologação do Ponto Eletrônico",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-10T08:50:55-03:00",
+        "conteudo_preview": "Prezado(a) servidora(a) ALEXANDRE GUIMARAES DAVID, Informamos que a homologação da sua frequência do mês de Julho foi realizada em 10/09/2025. Para informações sobre crédito ou débito de horas, acesse: SIGRH >> Portal do Servidor >> Consultas >> Frequência >> Espelho do Ponto. Ressaltamos que as horas excedentes tem validade de 12 (doze) meses e que sua utilização deve ser acordada com a chefia imediata. Os débitos de horas devem ser compensados até o final do mês subsequente, sob pena de serem descontados da remuneração do servidor, conforme procedimento definido pela PROGESP. Em caso de discordância, entre em contato com a sua chefia imediata, ou com gestor responsável pela homologação do seu ponto: GRACO AURELIO CAMARA DE MELO VIANA. Atenciosamente, DAP/PROGESP - DIRETORIA DE ADMINISTRACAO DE PESSOAL",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "ADMINISTRATIVO",
+        "urgencia": "MEDIA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.9,
+        "justificativa": "O email trata de questões administrativas relacionadas à homologação do ponto eletrônico, exigindo uma resposta para esclarecimentos ou ações necessárias.",
+        "resumo_executivo": "Notificação de homologação do ponto eletrônico para o servidor ALEXANDRE GUIMARAES DAVID.",
+        "acao_sugerida": "Acessar o SIGRH para consultar o espelho do ponto e, se necessário, entrar em contato com a chefia imediata ou o gestor responsável.",
+        "prazo_estimado": "Até o final do mês para compensar débitos de horas, conforme orientações da PROGESP."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "O email não apresenta nenhuma proposta explícita de reunião ou encontro, apenas informações sobre a homologação do ponto eletrônico. Não há horário específico proposto, o remetente é um sistema automático e o conteúdo do email é informativo, não sendo uma solicitação de reunião. Portanto, não se trata de uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8139-9397-da22932b9486",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Seu projeto pode ser visto por grandes investidores!",
+        "remetente": "contato@prosas.com.br",
+        "data_recebimento": "2025-09-10T20:37:23+00:00",
+        "conteudo_preview": "[ https://t.rdsv2.net/ls/click?upn=u001.ZnTitrtZysoyxy-2FxpIVXa-2BxRVVSVoveLTGmHlhuc-2FTI2krTnqcWp1ZrgM20wxp9-2Fk4mznckirnFkXqKGdp2YjcGLVxBGYX7kacoQN-2BPKnmrb0xpUguquV8vBczru-2FOpeXn43PzgBqE4v0on8wRdP-2FLXYq4ufRcL7B-2BKZhYeXCNLZyAH-2BOeC1477knOxrYNMe-2BhicJ9IM3JXYtMzLhtWl75Yfj-2B-2BMpdNMiRvqHOkq1gv6phZg5gMwhk5J2-2FZ5WqZOHAiOogc9oH66SzNPGZtblSXST9DuuqEp2-2BoMPxsu1ls-3D3-Uw_3HnSy7Thd-2B4TzjPSA5oX7rmyFt8GfJHmsSt96QQ-2BAHNnryGA3hrpkTOsh8H-2BMCRfeKZc5ANYrzU7zIFT4m4G400Qs7CNPglUIWbKoMD9a6X7eB1ArXM04PPo41TVmACVygndi0BSu6hPl7QKDHj9iHhesQqqZQ4msQ-2FgUkS495xFvgEibEhY3uhfaJ8E-2BhKZQN5EI9EV04hEvq3yRuV3bLgNUxbjiuTpT5cc4tPp-2BqeaiQAFRKaTYKe84UO7kIZqyoxXrB8CzfQvkP9jm-2BNW9v7T8KxQJVOif-2F0bOqytmmN5V-2B7Sb-2Bm-2BQUILk7yJRzVBEO0fLlRZZQWUArVMTzjXrxakBa6gu8IqbveG3NKMcuiOCYcNquvBalEVjh1z0SivVDj2gDWKjIiLAqt6xXOfjCedDki-2FViTNO-2FyUvfNJysxomU-2B6GJOzJLXR7umhijHYZkKgEGBzivUu8f2GwT06-2FLTUN2nLTErwkZOs0zDK06U2RHneE2vxdkfSKKjLrjkAI-2ByX4VfgeoOzc4FM-2FIKQpyjIVb1ZWNka3nEdqXFLotbI3x-2FqqM6m1eHvBHgKxoDAe38uEb8Zq2VyGonDW72fjTFgokN7VJ1EvWiry361yTOjV-2FOLyRvY7lrn87Ct44ZJ-2BPKZLV8vi6mz482mESHIew-3D-3D ]\r\n\r\n \r\nOlá, tudo bem?Olá, tudo bem?\r\n Sabemos que conseguir patrocínio exige tempo, esforço e persistência. O BIP – Banco de Incentivados da Prosas foi criado para facilitar esse caminho. Ao se cadastrar no BIP, seu projeto ganha mais visibilidade e aumenta as chances de captação de recursos, e tudo isso de forma gratuita.\r\nPodem participar projetos aprovados pela Lei Rouanet, Lei Federal de Incentivo ao Esporte",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 0.9,
+        "justificativa": "O email é um informativo sobre uma plataforma de captação de recursos, não apresenta demandas críticas ou prazos urgentes.",
+        "resumo_executivo": "Email informativo sobre plataforma de captação de recursos.",
+        "acao_sugerida": "Ler o conteúdo do email e avaliar se é interessante para o destinatário.",
+        "prazo_estimado": "Sem prazo específico."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião/encontro, apenas informações sobre o BIP - Banco de Incentivados da Prosas. O conteúdo do email não indica a intenção de marcar um encontro, não há horário específico proposto, o remetente é uma empresa (contato@prosas.com.br) e o email não se enquadra como uma solicitação de reunião. Portanto, não se trata de um convite para uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8133-9b38-da9d951eb87f",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Prosas News: Prêmio BRB de Impacto Social e muito mais! 🏆",
+        "remetente": "contato@prosas.com.br",
+        "data_recebimento": "2025-09-11T11:34:41+00:00",
+        "conteudo_preview": " \r\n\r\n\r\n\r\n\r\n \r\n \r\nOlá! Tudo bem por aí?  Essa é mais uma Prosas News, uma newsletter onde você confere os principais editais da semana, além de conteúdos interessantes alinhados ao mercado e ao seu dia a dia! 😊\r\n\r\n  \r\n\r\n\r\n  \r\n Editais em Foco Aqui você encontra os principais editais abertos da semana, com oportunidades de financiamento, prêmios e apoio para projetos culturais, sociais e criativos. Fique ligado e não perca os prazos!\r\n\r\n  [ https://t.rdsv2.net/ls/click?upn=u001.ZnTitrtZysoyxy-2FxpIVXa682acvj9JiJ7D3Cm65BowwLZCNa9aqFyE-2Bc1JNp7Mmd1fao9iqY-2FThZjkGDhVI1YgHWChUNw-2Fy5gwprdGD7GudO5-2BkmRiHyoCFxWqYlFS7Zmla4gJJelhKucStHTQf5Bj-2FsffkzcEbOctAwVJBUqGo7G8pR-2BMRyOUfXnaf9X4wUMR58YNm3FoYMgAxDoEuiSmb2YBlQYJQ39zPFX7ZJKMfP1EWIda6-2F5ZPM5XIOXrW69P-2F56P3TgIOTVv9yj1YsvQ-3D-3Dt0op_3HnSy7Thd-2B4TzjPSA5oX7rmyFt8GfJHmsSt96QQ-2BAHNnryGA3hrpkTOsh8H-2BMCRfeKZc5ANYrzU7zIFT4m4G400Qs7CNPglUIWbKoMD9a6X7eB1ArXM04PPo41TVmACV54jifugKXZ0mlELAp2JrpC1qgMrAcRUdeLjL-2FS3qsB7yxpQkr0ScmFA0yyTSR-2B0LXjaTpg1HZvNKlSj2kuFIiRO98I4jrbB9AnvoxCSDQ4Dws1lKg2A0KtpAodXj9BENJ5PmA10AUHzFk0BPm6Mt7FkuQfHqphfbmBpiGU0LAWKDdXdFsEADpUV-2F2LT-2FI1anyhLCT1-2Bo3f1u-2B-2FRy1rBz79lQizlyJAZIeAIOSYFElk5pM7QPJ67RgSTTWMxCh8Uw-2BzGHMXPijY4FBGIWcJfTmVnNqCA3o8bqjI4qsX-2BwvbbAbiQOYdxSDI43ppPHiPhqhoIXsQYFH7uB-2BU-2BKW-2BNx8T4kNdEZFafhH-2FgowxORQTtmfAbgcZdBjMUGkqYCkAjarK7uEh3ny7WuUbJ8lSJeFkn-2Fvh-2B1GK7gFVzUuLalnO5hL2cyJFoIv6nGuyYumU4gH6oz2-2FCs4tvx5P-2FwPyCL7UEKaOtFUYVloOCPDuM8wsiT4PzBkx98MD0sYBJXhCN4qv4X3i5lIWeLZA28MHiWzFG8JOZAyycp",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 1.0,
+        "justificativa": "O email é uma newsletter informativa da Prosas, não apresenta solicitações urgentes ou que exijam resposta imediata.",
+        "resumo_executivo": "Newsletter informativa da Prosas.",
+        "acao_sugerida": "Leitura do conteúdo e acompanhamento dos editais mencionados.",
+        "prazo_estimado": "Sem prazo específico."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "O email da Prosas News não apresenta nenhuma proposta explícita de reunião ou encontro, apenas informações sobre os principais editais da semana. Não há horário específico proposto, o remetente é uma empresa e o conteúdo do email é uma newsletter informativa, não uma solicitação de reunião. Portanto, não se trata de uma mensagem relacionada a reuniões."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-816d-9dd4-c5c7560d0354",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Pesquisa sobre sons e sentidos do português",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-11T08:59:36-03:00",
+        "conteudo_preview": "Olá! Estamos investigando se o som e o sentido das palavras em português têm alguma relação de semelhança entre si. Por exemplo, será que os sons de \"roncar\" e o sentido que essa palavra evoca são parecidos? O experimento leva cerca de 10 minutos. Se você já fez um experimento parecido com esse recentemente, pode participar de novo sem problemas (inclusive, agradecemos). Precisamos de 3.000 participantes, e temos pouco menos de 2.000 até agora! Para participar, basta clicar neste link: https://jatos.mindprobe.eu/publix/yAFRK1jg7Ss Se a página demorar alguns segundos para carregar, é só aguardar. Se houver mensagem de erro, você pode tentar nesse outro link aqui (é o mesmo experimento): https://jatos.mindprobe.eu/publix/mOeMNznHOA9 Mahayana C. Godoy Laboratório de Estudos Experimentais em Linguagem (LEELin - UFRN) ----------------------- e-Comunicação UFRN: este sistema permite a comunicação entre a UFRN e sua comunidade universitária, divulgando as notícias e comunicados da instituição. Para saber como a UFRN trata os dados, acesse a Política de Privacidade. Caso não queira receber mais estas notificações clique aqui.",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "ACADEMICO",
+        "urgencia": "MEDIA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.9,
+        "justificativa": "O email trata de uma pesquisa acadêmica realizada pelo Laboratório de Estudos Experimentais em Linguagem da UFRN, solicitando a participação dos colaboradores. É importante que haja uma resposta para confirmar ou não a participação.",
+        "resumo_executivo": "Convite para participar de pesquisa acadêmica sobre sons e sentidos do português.",
+        "acao_sugerida": "Clicar no link fornecido para participar da pesquisa.",
+        "prazo_estimado": "Recomenda-se participar o mais breve possível, mas não há um prazo específico mencionado."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "O email não apresenta uma proposta explícita de reunião ou encontro, apenas convida os destinatários a participarem de uma pesquisa sobre sons e sentidos do português. Não há horário específico proposto, o remetente é um sistema automático e o conteúdo do email é informativo, não sendo uma solicitação de reunião. Portanto, não se trata de uma mensagem relacionada a reuniões."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8130-b2c9-feb39eef3ea5",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Nova turma disponível: Seminário de integração ao serviço público!",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-11T09:43:26-03:00",
+        "conteudo_preview": "\r\n\r\nOlá, servidor(a)\r\nInformamos que teremos uma nova turma do Seminário de integração ao serviço público para os servidores técnico-administrativos no período de 24 a 26 de setembro de 2025 na modalidade presencial. &#x1f389; &#x1f389; &#x1f389;\r\n \r\n&#x1f929; O seminário de integração tem o objetivo de possibilitar ao servidor a sua socialização e integração no serviço público, contemplando atividades informativas, reflexivas e de planejamento essenciais para seu ingresso na UFRN.\r\n \r\nNesse sentido, convidamos você a participar desse momento importante! &#x1f917;\r\n \r\n ⚠️ Lembramos que o Seminário de integração ao serviço público é uma das atividades prevista no Programa de integração ao serviço público e deve ser realizado por todos os servidores técnicos ingressantes na UFRN, conforme Resolução nº 025-2017-CONSAD.\r\n \r\nConverse com a sua chefia e planeje a sua participação no Seminário de integração! \r\n \r\n\r\n\r\nOBS: Se você já concluiu o seminário de integração, por favor, desconsidere esta mensagem.\r\n\r\nQualquer dúvida, entre em contato conosco:\r\nE-mail: capacitacao&#64;progesp.ufrn.br\r\nTelefone: (84) 99193-6478 (whatsapp).\r\n \r\nAtenciosamente,\r\nDivisão de Capacitação e Educação Profissional\r\n\r\n\r\n\r\n    \r\n        A UFRN respeita a política de privacidade. Caso não queira mais receber e-mails desta lista,\r\n        clique aqui!\r\n    \r\n\r\n",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "ADMINISTRATIVO",
+        "urgencia": "MEDIA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.9,
+        "justificativa": "O email trata de uma nova turma do Seminário de integração ao serviço público para os servidores técnico-administrativos da UFRN, informando sobre a necessidade de participação e destacando a importância da atividade. Como colaborador interno, é importante considerar a participação e planejamento para o evento.",
+        "resumo_executivo": "Convite para participação na nova turma do Seminário de integração ao serviço público para servidores técnico-administrativos da UFRN.",
+        "acao_sugerida": "Planejar a participação no Seminário de integração ao serviço público.",
+        "prazo_estimado": "Até a data do evento (24 a 26 de setembro de 2025)."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.0,
+        "extracted_time": "null",
+        "extracted_date": "24 a 26 de setembro de 2025",
+        "meeting_type": "indefinido",
+        "justification": "O email não apresenta uma proposta explícita de reunião ou encontro, apenas informa sobre a disponibilidade de uma nova turma do Seminário de integração ao serviço público. Não há horário específico proposto, e o conteúdo do email é mais informativo do que solicitando a participação em uma reunião. Portanto, não se enquadra nos critérios para ser considerado uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81b8-af7d-e58f57e69041",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Consiga o estatuto Silver com o Club Platinum 🛫",
+        "remetente": "enews@info.tapmilesandgo.com",
+        "data_recebimento": "2025-09-11T13:25:51+00:00",
+        "conteudo_preview": "Sem conteúdo",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 0.9,
+        "justificativa": "O email parece ser apenas um informativo sobre um programa de fidelidade, não apresentando nenhuma urgência ou necessidade de resposta.",
+        "resumo_executivo": "Email informativo sobre programa de fidelidade.",
+        "acao_sugerida": "Arquivar o email para referência futura.",
+        "prazo_estimado": "Sem prazo específico."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião/encontro no email, apenas uma oferta relacionada ao estatuto Silver com o Club Platinum. Portanto, não se trata de uma solicitação de reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81ad-b75d-fd0a741de0a4",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Seleção de Pesquisadores para Capacitação em Inovação",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-12T09:01:37-03:00",
+        "conteudo_preview": " Projeto de parceria SEBRAE-RN/UFRN ----------------------- e-Comunicação UFRN: este sistema permite a comunicação entre a UFRN e sua comunidade universitária, divulgando as notícias e comunicados da instituição. Para saber como a UFRN trata os dados, acesse a Política de Privacidade. Caso não queira receber mais estas notificações clique aqui.",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "ADMINISTRATIVO",
+        "urgencia": "MEDIA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.8,
+        "justificativa": "O email trata de um projeto de parceria entre o SEBRAE-RN e a UFRN, indicando a necessidade de análise e possível participação administrativa.",
+        "resumo_executivo": "Projeto de parceria SEBRAE-RN/UFRN para seleção de pesquisadores para capacitação em inovação.",
+        "acao_sugerida": "Analisar o conteúdo do projeto e verificar possíveis ações administrativas necessárias.",
+        "prazo_estimado": "3 dias."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião/encontro no email. O conteúdo se trata de uma comunicação sobre um projeto de parceria entre o SEBRAE-RN e a UFRN, não havendo solicitação de encontro ou horário específico proposto. Além disso, o remetente é um sistema automático e o conteúdo não se enquadra como convite ou solicitação de reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81a0-9382-fe9f18a91a27",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Precisamos da sua atenção!",
+        "remetente": "mkt@einship.com",
+        "data_recebimento": "2025-09-12T12:04:27+00:00",
+        "conteudo_preview": "Olá, ALEXANDRE DAVID\r\n\r\n \r\n\r\nAo abrir este e-mail, você confima seu interesse em continuar recebendo nossa newsletter e atualizações. \r\n\r\n \r\n\r\nA Einship tem o maior cuidado com os seus dados e preferências de privacidade e queremos a sua atenção.\r\n\r\n \r\n\r\nA Lei Geral de Proteção de Dados Pessoais (LGPD) já está vigente e a EInship faz questão de atender às novas regras e boas práticas para preservar a sua privacidade.\r\n\r\n \r\n\r\nÉ a Einship tratando dados da forma adequada e com transparência!\r\n\r\n\r\n**Einship**\r\n\r\nR. Silva Jatahy, 60165-070, Fortaleza\r\n\r\n",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 0.9,
+        "justificativa": "O email é um informativo da empresa Einship sobre a Lei Geral de Proteção de Dados Pessoais, não apresentando nenhuma demanda urgente ou que necessite resposta imediata.",
+        "resumo_executivo": "Email informativo da Einship sobre a LGPD.",
+        "acao_sugerida": "Ler o conteúdo do email para se manter informado sobre a LGPD.",
+        "prazo_estimado": "Sem prazo específico."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião ou encontro neste email. O conteúdo se refere principalmente à atualização sobre a política de privacidade da empresa e a confirmação do interesse em receber a newsletter. Portanto, não se enquadra nos critérios para ser considerado uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8149-8a1b-cac961e13fcc",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Especial UFRN - Projeto internacional une ciência e comunidades para enfrentar riscos urbanos no Brasil",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-12T10:29:02-03:00",
+        "conteudo_preview": "\r\n\r\nNatal, 12 de setembro de 2025 - Edição 63 \r\n\r\nClima e saúde\r\nProjeto internacional une ciência e comunidades para enfrentar riscos urbanos no Brasil Paiva Rebouças - Sala de Ciências-Agecom/UFRN Ciência e comunidade se encontram para enfrentar os impactos das mudanças climáticas \r\nQuando a temperatura sobe e o asfalto ferve, aumentam as crises respiratórias. Depois da chuva forte, a água parada vira criadouro de mosquitos. Nas enchentes, espalham-se infecções que passam longe do debate público. É nesse cenário que a Universidade Federal do Rio Grande do Norte, por meio do Programa de Pós-Graduação em Demografia (PPGDem/UFRN) assume papel estratégico em um consórcio internacional aprovado pela fundação britânica Wellcome Trust. \r\nO projeto Participatory Analytics for Climate-Health Adaptation in Disadvantaged Urban Communities in Brazil, traduzido livremente como Análise Participativa para a Adaptação de Comunidades Urbanas em Desvantagem ao Clima e à Saúde no Brasil, terá duração de três anos e contará com financiamento superior a quatorze milhões de reais. A iniciativa busca transformar evidências sobre clima e saúde em políticas públicas capazes de alcançar as comunidades urbanas mais vulneráveis.\r\nAs ações acontecem em Natal, Curitiba e Niterói por meio dos Participatory Urban Living Labs (PULLs), uma abordagem participativa da Universidade de Glasgow (Glasgow, Escócia). Em Natal, a UFRN será responsável pela coordenação de R$ 2,4 milhões destinados ao projeto. A equip",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "ADMINISTRATIVO",
+        "urgencia": "ALTA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.9,
+        "justificativa": "O email trata de um projeto internacional importante para a UFRN, com financiamento significativo e ações a serem coordenadas pela instituição. É crucial que haja uma resposta para dar encaminhamento às demandas administrativas necessárias.",
+        "resumo_executivo": "Projeto internacional de grande relevância para a UFRN com a necessidade de coordenação de ações administrativas.",
+        "acao_sugerida": "Designar responsáveis pela coordenação do projeto e iniciar os trâmites administrativos necessários.",
+        "prazo_estimado": "Dentro de 24 horas."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião/encontro, apenas informações sobre um projeto internacional. O conteúdo do email não se enquadra nos critérios estabelecidos para identificar uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81b2-b72f-d80fbfd66d0b",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Alterado para 17/09 às 14: Encontro de finalização do Boletim de Riscos e Lições Aprendidas",
+        "remetente": "adson.araceli@ufrn.br",
+        "data_recebimento": "2025-09-12T12:18:39-03:00",
+        "conteudo_preview": "Pessoal,\r\n\r\nConforme adiantado no grupo do WhatsApp, foi marcada uma reunião\r\nextraordinária do CGE para o dia 15/09 das 14h às 16h.\r\n\r\nComo nossa reunião dos Facilitadores de GR estava previamente agendada para\r\no mesmo dia, estou passando para confirmar a remarcação para quarta-feira,\r\ndia 17, às 14h.\r\n\r\nSegue link:\r\n\r\n\r\nCiclo de Aprendizados – Facilitadores da Gestão de Riscos UFRN\r\nquarta-feira, 17 de set. · 14:00 – 15:00\r\nComo participar do Google Meet\r\nLink da videochamada: https://meet.google.com/kyd-bgau-gim\r\n\r\n*Participe do nosso grupo de whatsapp*:\r\nhttps://chat.whatsapp.com/IvuFzrNFCUT4qZyE2HhPqs\r\n\r\nAbraços,\r\n\r\nAdson Araceli Alves Dantas\r\nAdministrador\r\nUFRN - Secretaria de Gestão de Projetos\r\nTel. 84 98873-7532\r\n\r\n\r\nEm sex., 29 de ago. de 2025 às 14:00, ADSON DANTAS <adson.araceli@ufrn.br>\r\nescreveu:\r\n\r\n> Prezados Colegas Facilitadores da Gestão de Riscos na UFRN,\r\n>\r\n> Concluímos o boletim de riscos estratégicos com participação de todas as\r\n> unidades.\r\n>\r\n> Por isso, gostaria de convidá-los para um momento de lições aprendidas\r\n> nesta primeira rodada.\r\n>\r\n> Data: *15/09/2025 - Segunda-feira*\r\n> Horário: *15h*\r\n> Formato: *Remoto - google meet. (link a ser fornecido em breve)*\r\n> Tempo estimado: 1h.\r\n>\r\n> *Participe do nosso grupo de whatsapp*:\r\n> https://chat.whatsapp.com/IvuFzrNFCUT4qZyE2HhPqs\r\n>\r\n> Atenciosamente,\r\n>\r\n> Adson Araceli A. Dantas\r\n> Administrador\r\n> Reitoria | Cel. Institucional: 84 99229-6530\r\n>\r\n",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "REUNIAO",
+        "urgencia": "ALTA",
+        "necessita_resposta": "SIM",
+        "confianca": 1.0,
+        "justificativa": "O email trata de um convite para uma reunião extraordinária do CGE e a remarcação de uma reunião dos Facilitadores de GR, ambas com colaboradores internos da UFRN, indicando uma urgência alta para confirmação da participação.",
+        "resumo_executivo": "Convite para reuniões extraordinárias e remarcação de encontro dos Facilitadores de GR na UFRN.",
+        "acao_sugerida": "Confirmar participação na reunião remarcada.",
+        "prazo_estimado": "Até o dia 17/09."
+      },
+      "meeting_analysis": {
+        "is_meeting": true,
+        "confidence": 0.9,
+        "extracted_time": "14:00",
+        "extracted_date": "17/09/2025",
+        "meeting_type": "virtual",
+        "justification": "O email menciona explicitamente a remarcação de uma reunião dos Facilitadores de GR para o dia 17/09 às 14h, com um link para participação no Google Meet. O remetente é uma pessoa física com autoridade para marcar reuniões, e a mensagem contém uma solicitação para participação no encontro. Portanto, atende a todos os critérios para ser considerado uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8128-b60d-f8c6414dd7e9",
+      "is_meeting": true,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Notícias da UFRN - Nº 163",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-12T18:17:21-03:00",
+        "conteudo_preview": "\r\n\r\nSexta-feira, 12 de Setembro de 2025 - Edição 163 - Ano XXVTrilhas Potiguares Brasil/África realiza atividades na área de saúde Agecom/UFRNFoto: Cícero Oliveira – Agecom/UFRN \r\nO programa Trilhas Potiguares Brasil/África segue com atividades no distrito de Inhambane, em Moçambique. Nesta sexta-feira, 12, as ações foram voltadas para a saúde, com visitas técnicas e oficinas. A iniciativa é coordenada pela Pró-Reitoria de Extensão (Proex) da Universidade Federal do Rio Grande do Norte (UFRN). Leia mais. \r\n\r\nAplicativo acelera identificação da origem de ouro\r\nWilson Galvão – ASCOM – Agência de Inovação da Reitoria/UFRN \r\nUm grupo de pesquisadores da área de Ciência dos Materiais desenvolveu um programa de computador projetado para ler diretamente os relatórios gerados pelo microscópio de fluorescência de raios X, modelo EDX-720. Esse equipamento é utilizado para a análise de amostras sólidas, líquidas e em pó em diversas áreas, como controle de qualidade de materiais eletroeletrônicos, automotivos, metalúrgicos, ambientais e farmacêuticos, além de análises de solo e alimentos. Leia mais.\r\n\r\nHuol protocola projeto para expansão \r\nDanielle Morais - Ebserh \r\nO Hospital Universitário Onofre Lopes, da Universidade Federal do Rio Grande do Norte (Huol-UFRN), vinculado à Empresa Brasileira de Serviços Hospitalares (Ebserh), deu mais um passo importante para a expansão dos atendimentos. No início deste mês, foi protocolada a entrega do projeto do novo prédio na Secretaria Municipal d",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "ADMINISTRATIVO",
+        "urgencia": "MEDIA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.9,
+        "justificativa": "O email trata de projetos e atividades institucionais da UFRN, envolvendo a Pró-Reitoria de Extensão, pesquisa em Ciência dos Materiais e expansão do Hospital Universitário. Pode exigir alguma ação administrativa por parte do destinatário.",
+        "resumo_executivo": "Atividades e projetos institucionais da UFRN.",
+        "acao_sugerida": "Analisar e possivelmente tomar medidas administrativas necessárias.",
+        "prazo_estimado": "Dentro de 1 semana."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião ou encontro no email. O conteúdo se trata de notícias e informações sobre atividades e projetos da UFRN, não havendo nenhum convite ou solicitação de reunião. Portanto, não se enquadra nos critérios para ser considerado uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8110-af51-f0208b0857c0",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Seguro de vida com coberturas por menos de R$10/mês",
+        "remetente": "contato@relacionamentosicredi.com.br",
+        "data_recebimento": "2025-09-12T21:02:26-06:00",
+        "conteudo_preview": "Sem conteúdo",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "PESSOAL",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 0.8,
+        "justificativa": "O email não possui conteúdo relevante para o contexto institucional da UFRN e o remetente não é um colaborador interno.",
+        "resumo_executivo": "Email de seguro de vida com coberturas por menos de R$10/mês.",
+        "acao_sugerida": "Arquivar o email.",
+        "prazo_estimado": "Sem prazo definido."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião/encontro, apenas uma oferta de seguro de vida. O email não atende aos critérios rígidos para ser considerado uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-812d-917a-cfa3ab743a83",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Alexandre, -5% extra nos Galaxy S25 FE e Tab S11 Series 🎁",
+        "remetente": "no-reply@m1.email.samsung.com",
+        "data_recebimento": "2025-09-13T17:21:34+01:00",
+        "conteudo_preview": "A acumular com 50 € de desconto ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ \r\n\r\nA acumular com 50 € de desconto \t    http://t.m1.email.samsung.com/r/?id=t61717335,f73e9176,6feb18f2&e=cDE9JTQwNFB6VW5PcjlHWkVGJTJCWXo2S1Bjb2xyVVdvMWVEZUpYUDA2OVozYmxUQ0Z3JTNE&s=E9c1gcvYseqK3_5EJBvGoB2Pf9QH_n4bUzHKpV0sYt8 Veja a versão online aqui \t\r\n\t\r\n\r\n http://t.m1.email.samsung.com/r/?id=t61717335,f73e9176,6feb18f3&e=cDE9U0VQLVRhYlMxMS1DUk0tTDMtTG9jYWwtZW5nYWdlcnMtUzEx&s=jZDlmiar9nl-gyr3RXgT_qU6wq3o1lWMrMLFyUSFsSM \t\r\n\t\r\n\r\n http://t.m1.email.samsung.com/r/?id=t61717335,f73e9176,6feb18f4&e=cDE9U0VQLVRhYlMxMS1DUk0tTDMtTG9jYWwtZW5nYWdlcnMtUzEx&s=Dm9r0AEvGfFeXyLtqhU-hvk_og7Fw6AINTyPj7YlylA \t\r\n\r\nCom o código 1 : LIVES25FE \t\r\n\t\r\n\t\r\n\r\nO que espera? \t\r\n\r\n\t\r\n\t\r\n http://t.m1.email.samsung.com/r/?id=t61717335,f73e9176,6feb18f5&e=cDE9U0VQLVRhYlMxMS1DUk0tTDMtTG9jYWwtZW5nYWdlcnMtUzExJnAyPVM1MS1UMjVOLTVEOFotN1Q0WA&s=NcVtQdUhI7CiCarRgtiiY0J2lb7uHlkqszrm0lYjBY0 \t\r\n\t\r\n\r\nAproveite os seus 50 € de desconto exclusivo nos Galaxy S25 FE \r\ne Galaxy Tab S11 Series.  1 \r\n\r\nUtilize o código: \r\n\t\r\n\t\r\n\t\r\n\r\nS51-T25N-5D8Z-7T4X\r\n\t\r\n\t\r\n\t\r\n\t\r\n\r\n http://t.m1.email.samsung.com/r/?id=t61717335,f73e9176,6feb18f6&e=cDE9U0VQLVRhYlMxMS1DUk0tTDMtTG9jYWwtZW5nYWdlcnMtUzExJnA",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "TALVEZ",
+        "confianca": 0.8,
+        "justificativa": "Análise automática",
+        "resumo_executivo": "Email processado",
+        "acao_sugerida": "Avaliar contexto",
+        "prazo_estimado": "N/A"
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.5,
+        "extracted_time": null,
+        "extracted_date": null,
+        "meeting_type": null,
+        "justification": "Análise automática"
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81c4-b78f-eb35bad1a280",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Alerta de segurança",
+        "remetente": "no-reply@accounts.google.com",
+        "data_recebimento": "2025-09-15T09:25:52+00:00",
+        "conteudo_preview": "[image: Google]\r\nO telefone de recuperação foi alterado\r\n\r\n\r\nalexandre.david@ufrn.br\r\nO telefone de recuperação da sua conta foi alterado. Se você não fez essa\r\nalteração, verifique o que aconteceu.\r\nVerificar atividade\r\n<https://accounts.google.com/AccountChooser?Email=alexandre.david@ufrn.br&continue=https://myaccount.google.com/alert/nt/1757928352242?rfn%3D4%26rfnc%3D1%26eid%3D4384499171144917408%26et%3D0>\r\nVocê também pode ver as atividades de segurança em\r\nhttps://myaccount.google.com/notifications\r\nEste e-mail foi enviado a você para informar sobre alterações importantes\r\nna sua Conta do Google e serviços relacionados.\r\n© 2025 Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Ireland\r\n",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "URGENTE",
+        "urgencia": "ALTA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.9,
+        "justificativa": "O email alerta sobre uma alteração importante na conta do Google do colaborador interno da UFRN, indicando a possibilidade de uma atividade suspeita. Como se trata de segurança da conta, é crucial que o colaborador verifique imediatamente.",
+        "resumo_executivo": "Alerta de segurança sobre alteração no telefone de recuperação da conta do Google.",
+        "acao_sugerida": "Verificar a atividade e segurança da conta do Google.",
+        "prazo_estimado": "Imediato."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião ou encontro neste email. Trata-se apenas de um alerta de segurança relacionado a uma alteração no telefone de recuperação da conta do Google. Portanto, não se enquadra nos critérios para ser considerado uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-813f-a669-d09f1cdc1ec0",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Prosas News: Edital Impacto Produtivo e muito mais!",
+        "remetente": "contato@prosas.com.br",
+        "data_recebimento": "2025-09-15T11:33:26+00:00",
+        "conteudo_preview": " \r\n\r\n\r\n\r\n\r\n \r\n \r\nOlá! Tudo bem por aí?  Essa é mais uma Prosas News, uma newsletter onde você confere os principais editais da semana, além de conteúdos interessantes alinhados ao mercado e ao seu dia a dia! 😊\r\n\r\n  \r\n [ https://t.rdsv2.net/ls/click?upn=u001.ZnTitrtZysoyxy-2FxpIVXawkXqpBWxdVQVntdGP5jMZPbN-2BA4naR0IUcLI4SubQ35xmgQp-2BkYZTqwgSbJeNPqfaDjnobEdlRMBXryEZshokQJ8ptCCq4kmoNaRIGMfDjnzS7An2sr8LK2NiLuyBer84eKXkfPr5Ress3NRFqw3jfRHExENE8fe6BKCIn81PihMuZw4U3bMoz5rIuEiEYXElOr9Z5hgcNLjLDij17Zrbmlx7IQ0xil4z3EsXm62PGX-2BV6mmmirHtTbjiPLjw7sng-3D-3DO3ub_3HnSy7Thd-2B4TzjPSA5oX7rmyFt8GfJHmsSt96QQ-2BAHNnryGA3hrpkTOsh8H-2BMCRfeKZc5ANYrzU7zIFT4m4G400Qs7CNPglUIWbKoMD9a6X7eB1ArXM04PPo41TVmACVkzkULz4A0Y-2Flu-2F-2BhfydIpjG28JwhsPknJfrkmZIjgR0fLL8Za-2B-2FbYRAES9VNizQivXUZInhH9CKARPZVEdPN8x5iULheKGhtz9qE6iBNA-2BhL5W9nVpERNvlH1z8Wk-2Fyr7VGxf6xLecC810Ir6sefmDkCIYuC4ZtM-2B7WrKvluoVWqrWfVvx-2FLQ1F-2B-2BVJvfj8k8eBPjmlRmKB0jue6lUyiPD3FiFMoRZhIvG1T6ZtPKSbAj3d5FRdUy2kZ-2B5y4WHLcPhdxpwG4yuU-2B7aoy0S7xvSKdG7riGhSWDs0oGwB-2BJF7dmagX-2B3-2FXa8GEPLt75yfIBFgm-2Fh3Zw3b4dad9sClRODuVZXJw8bxn8xzB9tLlLHj276jCWHCZwdPpGuGzguU-2B98b-2FY-2BAElVy9s2F6JGUhd2YfoUqfinWOJEhg-2FTQIxJcRPcGc5mfsvOYKZUA1F92WrhqzdgRMle2dq-2BKn1jxMmEZLcXreuEaq0TheSY4pJ-2FUCs5hgewp3N88ajoL2Mfhg2DaggLAt5NghixCji6yUYA-3D-3D ]\r\n\r\n Saiba mais  [ https://t.rdsv2.net/ls/click?upn=u001.ZnTitrtZysoyxy-2FxpIVXawkXqpBWxdVQVntdGP5jMZPV5hvfiGc626OpukssqIsf54Mf_3HnSy7Thd-2B4TzjPSA5oX7rmyFt8GfJHmsSt96QQ-2BAHNnryGA3hrpkTOsh8H-2BMCRfeKZc5ANYrzU7zIFT4m4G400Qs",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 1.0,
+        "justificativa": "O email é uma newsletter informativa da Prosas, não apresenta demandas críticas ou prazos a cumprir.",
+        "resumo_executivo": "Newsletter informativa da Prosas.",
+        "acao_sugerida": "Leitura do conteúdo e atualização sobre os principais editais da semana.",
+        "prazo_estimado": "Sem prazo específico."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "O email da Prosas News não apresenta nenhuma intenção de reunião, não há proposta de horário específico, o remetente é uma empresa (contato@prosas.com.br) e o conteúdo se trata de uma newsletter informativa, não havendo solicitação de encontro. Portanto, não se trata de uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-818e-9200-e89f38494600",
+      "is_meeting": false,
+      "processed": true
+    }
+  ],
+  "memory_summary": "Vazio"
+}

@@ -1,0 +1,287 @@
+{
+  "timestamp": "2025-09-15T20:20:07.252057",
+  "total_emails": 9,
+  "framework": "LangChain",
+  "agent_type": "Orchestrated Tools",
+  "emails": [
+    {
+      "email": {
+        "assunto": "Alterado para 17/09 às 14: Encontro de finalização do Boletim de Riscos e Lições Aprendidas",
+        "remetente": "adson.araceli@ufrn.br",
+        "data_recebimento": "2025-09-12T12:18:39-03:00",
+        "conteudo_preview": "Pessoal,\r\n\r\nConforme adiantado no grupo do WhatsApp, foi marcada uma reunião\r\nextraordinária do CGE para o dia 15/09 das 14h às 16h.\r\n\r\nComo nossa reunião dos Facilitadores de GR estava previamente agendada para\r\no mesmo dia, estou passando para confirmar a remarcação para quarta-feira,\r\ndia 17, às 14h.\r\n\r\nSegue link:\r\n\r\n\r\nCiclo de Aprendizados – Facilitadores da Gestão de Riscos UFRN\r\nquarta-feira, 17 de set. · 14:00 – 15:00\r\nComo participar do Google Meet\r\nLink da videochamada: https://meet.google.com/kyd-bgau-gim\r\n\r\n*Participe do nosso grupo de whatsapp*:\r\nhttps://chat.whatsapp.com/IvuFzrNFCUT4qZyE2HhPqs\r\n\r\nAbraços,\r\n\r\nAdson Araceli Alves Dantas\r\nAdministrador\r\nUFRN - Secretaria de Gestão de Projetos\r\nTel. 84 98873-7532\r\n\r\n\r\nEm sex., 29 de ago. de 2025 às 14:00, ADSON DANTAS <adson.araceli@ufrn.br>\r\nescreveu:\r\n\r\n> Prezados Colegas Facilitadores da Gestão de Riscos na UFRN,\r\n>\r\n> Concluímos o boletim de riscos estratégicos com participação de todas as\r\n> unidades.\r\n>\r\n> Por isso, gostaria de convidá-los para um momento de lições aprendidas\r\n> nesta primeira rodada.\r\n>\r\n> Data: *15/09/2025 - Segunda-feira*\r\n> Horário: *15h*\r\n> Formato: *Remoto - google meet. (link a ser fornecido em breve)*\r\n> Tempo estimado: 1h.\r\n>\r\n> *Participe do nosso grupo de whatsapp*:\r\n> https://chat.whatsapp.com/IvuFzrNFCUT4qZyE2HhPqs\r\n>\r\n> Atenciosamente,\r\n>\r\n> Adson Araceli A. Dantas\r\n> Administrador\r\n> Reitoria | Cel. Institucional: 84 99229-6530\r\n>\r\n",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "REUNIAO",
+        "urgencia": "ALTA",
+        "necessita_resposta": "SIM",
+        "confianca": 1.0,
+        "justificativa": "O email trata de uma remarcação de reunião importante para os Facilitadores de GR da UFRN.",
+        "resumo_executivo": "Convite para o Encontro de finalização do Boletim de Riscos e Lições Aprendidas remarcado para 17/09 às 14h.",
+        "acao_sugerida": "Confirmar presença no Encontro de finalização do Boletim de Riscos e Lições Aprendidas.",
+        "prazo_estimado": "17/09/2025"
+      },
+      "meeting_analysis": {
+        "is_meeting": true,
+        "confidence": 0.9,
+        "extracted_time": "14:00",
+        "extracted_date": "17/09/2025",
+        "meeting_type": "virtual",
+        "justification": "O email menciona claramente a remarcação de uma reunião dos Facilitadores de GR para o dia 17/09 às 14h, com um link para participação via Google Meet. O remetente é uma pessoa física com autoridade para marcar reuniões, e a mensagem contém uma solicitação explícita para participação no encontro. Todos os critérios para identificação de uma reunião estão presentes."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81ac-9632-e1b30dbef85f",
+      "is_meeting": true,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Convite: Ciclo de Aprendizados - Facilitadores da Gestão de Riscos... - qua. 17 set. 2025 6pm - 7pm (WEST) (alexandre.david@ufrn.br)",
+        "remetente": "jussicleide.lopes.017@ufrn.edu.br",
+        "data_recebimento": "2025-09-12T18:42:30+00:00",
+        "conteudo_preview": "Ciclo de Aprendizados – Facilitadores da Gestão de Riscos UFRN\r\nquarta-feira 17 set. 2025 ⋅ 6pm – 7pm\r\nHorário da Europa Ocidental - Lisboa\r\n\r\nEntrar com o Google Meet\r\nhttps://meet.google.com/kyd-bgau-gim?hs=224\r\n\r\n\r\n\r\n\r\nAnexos\r\n1º Ciclo de Aprendizados- Gestão de riscos UFRN.png  \r\nhttps://drive.google.com/open?id=1Er_j9err1dOJM3SdreY2oCmRYKFuSpfZ\r\n\r\nConcluímos a 1ª rodada do Boletim de Riscos Estratégicos da UFRN com a  \r\nparticipação de todas as unidades e gostaríamos de contar novamente com  \r\nvocês.Facilitadores(as) da Gestão de Riscos UFRN, juntem-se para trocar  \r\nexperiências e aprimorar a gestão de riscos.\r\n\r\nOrganizador\r\nJUSSICLEIDE LOPES\r\njussicleide.lopes.017@ufrn.edu.br\r\n\r\nConvidados\r\nJUSSICLEIDE LOPES- organizador\r\nADSON DANTAS\r\nCONTATO SGP\r\nEMANUELA JUSTINO\r\nalanna.simonetti@ufrn.br\r\nalexandre.david@ufrn.br\r\nAna Carolina Freire\r\nbruno.silva.1@ufrn.br\r\ncamila.gomes@ufrn.br\r\ndaiane.gomes@ufrn.br\r\ndanillo.ferraz@ufrn.br\r\ngenival.junior@ufrn.br\r\nhugo.marinho@ufrn.br\r\nhugo.xavier@ufrn.br\r\njulio.meira@ufrn.br\r\nkiza.alves@ufrn.br\r\nlaura.medeiros@ufrn.br\r\nlorenna.bezerra@ufrn.br\r\nmauriceia.medeiros@ufrn.br\r\npaulo.pinheiro@ufrn.br\r\npaulo.severiano@ufrn.br\r\npedro.valentim@ufrn.br\r\npesquisa@propesq.ufrn.br\r\nSuperintende Adjunto de TI (André)\r\nvictor.hugo@ufrn.br\r\nviviane.fernandes@ufrn.br\r\nwilton.medeiros@ufrn.br\r\ncasio.barreto@ifrn.br\r\nedson.moreira@pop-rn.rnp.br\r\nmarcus.barros@pop-rn.rnp.br\r\nVer todas as informações do convidado  \r\nhttps://calendar.google.com/calendar/",
+        "tem_anexos": true,
+        "quantidade_anexos": 1
+      },
+      "classification": {
+        "categoria": "REUNIAO",
+        "urgencia": "MEDIA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.9,
+        "justificativa": "O email trata de um convite para participar de um evento importante da UFRN, o que requer confirmação de presença.",
+        "resumo_executivo": "Convite para participar do Ciclo de Aprendizados - Facilitadores da Gestão de Riscos UFRN.",
+        "acao_sugerida": "Confirmar presença no evento através do link fornecido.",
+        "prazo_estimado": "Quarta-feira, 17 de setembro de 2025, das 18h às 19h."
+      },
+      "meeting_analysis": {
+        "is_meeting": true,
+        "confidence": 0.9,
+        "extracted_time": "6pm - 7pm",
+        "extracted_date": "quarta-feira 17 set. 2025",
+        "meeting_type": "virtual",
+        "justification": "O email contém uma proposta explícita de reunião com horário específico (6pm - 7pm) e data (quarta-feira 17 set. 2025). Além disso, o conteúdo do email sugere a participação dos convidados para trocar experiências e aprimorar a gestão de riscos, indicando claramente a intenção de encontro. O organizador do evento é uma pessoa física com autoridade para marcar reuniões. Portanto, todos os critérios para identificar uma reunião estão presentes."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8110-b445-cda19ac93944",
+      "is_meeting": true,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Alerta de segurança",
+        "remetente": "no-reply@accounts.google.com",
+        "data_recebimento": "2025-09-15T09:25:52+00:00",
+        "conteudo_preview": "[image: Google]\r\nO telefone de recuperação foi alterado\r\n\r\n\r\nalexandre.david@ufrn.br\r\nO telefone de recuperação da sua conta foi alterado. Se você não fez essa\r\nalteração, verifique o que aconteceu.\r\nVerificar atividade\r\n<https://accounts.google.com/AccountChooser?Email=alexandre.david@ufrn.br&continue=https://myaccount.google.com/alert/nt/1757928352242?rfn%3D4%26rfnc%3D1%26eid%3D4384499171144917408%26et%3D0>\r\nVocê também pode ver as atividades de segurança em\r\nhttps://myaccount.google.com/notifications\r\nEste e-mail foi enviado a você para informar sobre alterações importantes\r\nna sua Conta do Google e serviços relacionados.\r\n© 2025 Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Ireland\r\n",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "URGENTE",
+        "urgencia": "ALTA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.9,
+        "justificativa": "O email alerta sobre uma alteração importante na conta do Google, indicando a necessidade de verificação imediata para garantir a segurança dos dados.",
+        "resumo_executivo": "Alerta de segurança sobre alteração no telefone de recuperação da conta do Google.",
+        "acao_sugerida": "Verificar a atividade da conta e as atividades de segurança em https://myaccount.google.com/notifications.",
+        "prazo_estimado": "Sem prazo mencionado."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "O email não apresenta nenhuma proposta explícita de reunião ou encontro, apenas informa sobre uma alteração no telefone de recuperação da conta do Google. Não há menção de horário específico, contexto do remetente como pessoa física com autoridade para marcar reuniões, nem solicitação de agendamento. Portanto, não se trata de uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81d5-8764-f16ed8c5b130",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Prosas News: Edital Impacto Produtivo e muito mais!",
+        "remetente": "contato@prosas.com.br",
+        "data_recebimento": "2025-09-15T11:33:26+00:00",
+        "conteudo_preview": " \r\n\r\n\r\n\r\n\r\n \r\n \r\nOlá! Tudo bem por aí?  Essa é mais uma Prosas News, uma newsletter onde você confere os principais editais da semana, além de conteúdos interessantes alinhados ao mercado e ao seu dia a dia! 😊\r\n\r\n  \r\n [ https://t.rdsv2.net/ls/click?upn=u001.ZnTitrtZysoyxy-2FxpIVXawkXqpBWxdVQVntdGP5jMZPbN-2BA4naR0IUcLI4SubQ35xmgQp-2BkYZTqwgSbJeNPqfaDjnobEdlRMBXryEZshokQJ8ptCCq4kmoNaRIGMfDjnzS7An2sr8LK2NiLuyBer84eKXkfPr5Ress3NRFqw3jfRHExENE8fe6BKCIn81PihMuZw4U3bMoz5rIuEiEYXElOr9Z5hgcNLjLDij17Zrbmlx7IQ0xil4z3EsXm62PGX-2BV6mmmirHtTbjiPLjw7sng-3D-3DO3ub_3HnSy7Thd-2B4TzjPSA5oX7rmyFt8GfJHmsSt96QQ-2BAHNnryGA3hrpkTOsh8H-2BMCRfeKZc5ANYrzU7zIFT4m4G400Qs7CNPglUIWbKoMD9a6X7eB1ArXM04PPo41TVmACVkzkULz4A0Y-2Flu-2F-2BhfydIpjG28JwhsPknJfrkmZIjgR0fLL8Za-2B-2FbYRAES9VNizQivXUZInhH9CKARPZVEdPN8x5iULheKGhtz9qE6iBNA-2BhL5W9nVpERNvlH1z8Wk-2Fyr7VGxf6xLecC810Ir6sefmDkCIYuC4ZtM-2B7WrKvluoVWqrWfVvx-2FLQ1F-2B-2BVJvfj8k8eBPjmlRmKB0jue6lUyiPD3FiFMoRZhIvG1T6ZtPKSbAj3d5FRdUy2kZ-2B5y4WHLcPhdxpwG4yuU-2B7aoy0S7xvSKdG7riGhSWDs0oGwB-2BJF7dmagX-2B3-2FXa8GEPLt75yfIBFgm-2Fh3Zw3b4dad9sClRODuVZXJw8bxn8xzB9tLlLHj276jCWHCZwdPpGuGzguU-2B98b-2FY-2BAElVy9s2F6JGUhd2YfoUqfinWOJEhg-2FTQIxJcRPcGc5mfsvOYKZUA1F92WrhqzdgRMle2dq-2BKn1jxMmEZLcXreuEaq0TheSY4pJ-2FUCs5hgewp3N88ajoL2Mfhg2DaggLAt5NghixCji6yUYA-3D-3D ]\r\n\r\n Saiba mais  [ https://t.rdsv2.net/ls/click?upn=u001.ZnTitrtZysoyxy-2FxpIVXawkXqpBWxdVQVntdGP5jMZPV5hvfiGc626OpukssqIsf54Mf_3HnSy7Thd-2B4TzjPSA5oX7rmyFt8GfJHmsSt96QQ-2BAHNnryGA3hrpkTOsh8H-2BMCRfeKZc5ANYrzU7zIFT4m4G400Qs",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 1.0,
+        "justificativa": "O email se encaixa na categoria de informativo, não apresenta demandas urgentes ou que exijam uma ação imediata.",
+        "resumo_executivo": "Newsletter da Prosas com principais editais da semana e conteúdos interessantes.",
+        "acao_sugerida": "Arquivar para referência.",
+        "prazo_estimado": "Sem prazo específico mencionado."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "O email da Prosas News não possui nenhuma proposta explícita de reunião ou encontro, apenas informações sobre os principais editais da semana e conteúdos interessantes. Portanto, não se enquadra nos critérios estabelecidos para ser considerado uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-810e-b953-fd49c7d45a2b",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Bem-vindo à página da disciplina Coordenação - Doutoramento em Administração Pública",
+        "remetente": "noreply@iscsp.ulisboa.pt",
+        "data_recebimento": "2025-09-15T16:45:29+01:00",
+        "conteudo_preview": "\r\nOlá Alexandre, está inscrito/a na disciplina Coordenação - Doutoramento\r\nem Administração Pública\r\n",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "DOUTORADO",
+        "urgencia": "MEDIA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.9,
+        "justificativa": "O email menciona a disciplina do Doutorado em Administração Pública, indicando a necessidade de atenção.",
+        "resumo_executivo": "Solicitação de inscrição na disciplina Coordenação - Doutoramento em Administração Pública.",
+        "acao_sugerida": "Verificar os detalhes da disciplina e confirmar a inscrição, se necessário.",
+        "prazo_estimado": "Não mencionado."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "O email não apresenta nenhuma proposta explícita de reunião, apenas informa sobre a inscrição na disciplina. Não há menção a horários específicos, nem indicação de que o remetente tenha autoridade para marcar reuniões. Portanto, não se trata de uma solicitação de encontro."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81cd-885f-e22950b647d4",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Convite: II Virada Cultural do Potengi  Cultura pela Justiça Climática",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-15T13:29:31-03:00",
+        "conteudo_preview": "Prezada comunidade da UFRN,   É com alegria que convidamos todas e todos para a II Virada Cultural do Potengi, que acontecerá de 16 a 20 de setembro de 2025, com o tema “Cultura pela Justiça Climática”. A Virada Cultural é um espaço de celebração, diálogo e mobilização socioambiental, que reúne estudantes, docentes, técnicos e a sociedade civil em torno dos desafios das mudanças climáticas. Nesta edição, o evento integra o roteiro do Balanço Ético Global da COP30, ampliando o debate climático e fortalecendo a educação climática como ferramenta de transformação social.  Por que participar?   Refletir sobre os impactos ambientais que afetam o Rio Grande do Norte e o mundo; Vivenciar atividades culturais, educativas e de mobilização social; Construir coletivamente caminhos para a justiça socioambiental.    Programação completa: Acesse: https://www.instagram.com/p/DOgqQDijidg/?igsh=Y3Q1M2Q5dmQ1bDJ2    Inscrições: via SIGAA  Voluntariado Caso tenha interesse em ser voluntário(a) da Virada Cultural do Potengi, entre em contato pelo Instagram da Comunidade Ambiental: https://www.instagram.com/comunidade.ambiental?igsh=bDlma3ltNWJ6ZnZy&utm_source=qr    Mais informações:   Instagram: https://www.instagram.com/comunidade.ambiental?igsh=bDlma3ltNWJ6ZnZy&utm_source=qr WhatsApp: https://chat.whatsapp.com/L56xVglfJUzEeqOexMGY6p?mode=ems_copy_c   • Contamos com a participação de toda a comunidade universitária para fortalecer esta construção coletiva pela justiça climática!   Atenciosamente",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 1.0,
+        "justificativa": "O email se enquadra na categoria informativa, não apresenta urgência e não requer resposta direta.",
+        "resumo_executivo": "Convite para a II Virada Cultural do Potengi com o tema \"Cultura pela Justiça Climática\".",
+        "acao_sugerida": "Arquivar para referência.",
+        "prazo_estimado": "N/A"
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.8,
+        "extracted_time": "null",
+        "extracted_date": "16 a 20 de setembro de 2025",
+        "meeting_type": "indefinido",
+        "justification": "O email é um convite para a II Virada Cultural do Potengi com o tema \"Cultura pela Justiça Climática\", não há uma proposta explícita de reunião ou encontro. Não há horário específico proposto para um encontro, apenas as datas do evento. O remetente é um sistema automático (mensageiro@sistemas.ufrn.br) e o conteúdo do email é um convite/informação sobre o evento, não uma solicitação de reunião. Portanto, não se trata de um email para marcar uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-819c-ad3f-c69ea3c627e2",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "MEMO - Documento Circular",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-15T14:20:48-03:00",
+        "conteudo_preview": "Documento CircularCaro Usuário, Um novo documento circular foi enviado para você. Por favor, acesse a sua caixa de entrada no Memo para realizar sua leitura. Número/ano: 198/2025 Protocolo: 23077.148489/2025-78 Assunto: Informe da parada para realização de desinsetização nos Almoxarifados e demais setores da DLog. Superintendência de Tecnologia da Informação | UFRN | +55 084 3342-2210",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 1.0,
+        "justificativa": "O email é um comunicado informativo sobre a parada para desinsetização nos Almoxarifados e demais setores da DLog, não requerendo nenhuma ação imediata.",
+        "resumo_executivo": "Comunicado sobre a parada para desinsetização nos Almoxarifados e demais setores da DLog.",
+        "acao_sugerida": "Arquivar para referência.",
+        "prazo_estimado": "N/A"
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "O email não apresenta nenhuma proposta explícita de reunião ou encontro, apenas informa sobre um documento circular enviado. Não há horário específico proposto, o remetente é um sistema automático e o conteúdo do email é apenas informativo, não sendo uma solicitação de reunião. Portanto, não se trata de uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8151-9aeb-d1d7ae7e6903",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Pesquisa - BCZM",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-15T14:58:29-03:00",
+        "conteudo_preview": "Prezado usuário(a),   Esperamos que você esteja bem!    Gostaríamos de convidá-lo(a) a responder a um curto questionário sobre os produtos e serviços da nossa biblioteca. Sua opinião é muito importante para nós e nos ajuda a aperfeiçoar o que oferecemos para você e para toda a comunidade acadêmica.   O questionário possui 10 perguntas e levará apenas 10 minutos para ser concluído. Suas respostas serão tratadas com confidencialidade. Lembrando que o questionário ficará disponível até 30/11/2025.    Clique no link abaixo para começar:   https://forms.gle/qBY5Lm62Yg69wRhH7   Se tiver alguma dúvida em seu preenchimento, você pode entrar em contato pelo e-mail cau@bczm.ufrn.br   Agradecemos desde já pela sua colaboração e pelo tempo dedicado.   Atenciosamente,   Magnólia Andrade Diretora da BCZM e SISBI-UFRN ----------------------- e-Comunicação UFRN: este sistema permite a comunicação entre a UFRN e sua comunidade universitária, divulgando as notícias e comunicados da instituição. Para saber como a UFRN trata os dados, acesse a Política de Privacidade. Caso não queira receber mais estas notificações clique aqui.",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 1.0,
+        "justificativa": "O email é um convite para responder a um questionário, não há urgência ou necessidade de resposta direta.",
+        "resumo_executivo": "Convite para responder a um questionário sobre os produtos e serviços da biblioteca.",
+        "acao_sugerida": "Arquivar para referência.",
+        "prazo_estimado": "30/11/2025."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.8,
+        "extracted_time": "null",
+        "extracted_date": "30/11/2025",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião ou encontro, apenas um convite para responder a um questionário online. O conteúdo do email é mais informativo do que solicitando uma reunião. Além disso, não há menção a horário específico para um encontro. Portanto, não se trata de uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81af-8f00-f290f540b380",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Pesquisa - BCZM",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-15T14:57:49-03:00",
+        "conteudo_preview": "Prezado usuário(a),   Esperamos que você esteja bem!    Gostaríamos de convidá-lo(a) a responder a um curto questionário sobre os produtos e serviços da nossa biblioteca. Sua opinião é muito importante para nós e nos ajuda a aperfeiçoar o que oferecemos para você e para toda a comunidade acadêmica.   O questionário possui 10 perguntas e levará apenas 10 minutos para ser concluído. Suas respostas serão tratadas com confidencialidade. Lembrando que o questionário ficará disponível até 30/11/2025.    Clique no link abaixo para começar:   https://forms.gle/qBY5Lm62Yg69wRhH7   Se tiver alguma dúvida em seu preenchimento, você pode entrar em contato pelo e-mail cau@bczm.ufrn.br   Agradecemos desde já pela sua colaboração e pelo tempo dedicado.   Atenciosamente,   Magnólia Andrade Diretora da BCZM e SISBI-UFRN ----------------------- e-Comunicação UFRN: este sistema permite a comunicação entre a UFRN e sua comunidade universitária, divulgando as notícias e comunicados da instituição. Para saber como a UFRN trata os dados, acesse a Política de Privacidade. Caso não queira receber mais estas notificações clique aqui.",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 1.0,
+        "justificativa": "O email é um convite para responder a um questionário, não há urgência ou necessidade de resposta direta.",
+        "resumo_executivo": "Convite para responder a um questionário sobre os produtos e serviços da biblioteca.",
+        "acao_sugerida": "Arquivar para referência.",
+        "prazo_estimado": "30/11/2025"
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.0,
+        "extracted_time": "null",
+        "extracted_date": "30/11/2025",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião ou encontro, apenas um convite para responder a um questionário online. Não há horário específico proposto, o conteúdo é mais informativo do que uma solicitação de reunião e o remetente é um sistema automático, não uma pessoa física com autoridade para marcar reuniões. Portanto, não se trata de uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81ff-b520-fed858b7e7a3",
+      "is_meeting": false,
+      "processed": true
+    }
+  ]
+}

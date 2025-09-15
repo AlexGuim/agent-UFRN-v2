@@ -1,0 +1,411 @@
+{
+  "timestamp": "2025-09-15T19:49:28.349348",
+  "total_emails": 13,
+  "framework": "LangChain",
+  "agent_type": "Orchestrated Tools",
+  "emails": [
+    {
+      "email": {
+        "assunto": "Pesquisa sobre sons e sentidos do português",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-11T08:59:36-03:00",
+        "conteudo_preview": "Olá! Estamos investigando se o som e o sentido das palavras em português têm alguma relação de semelhança entre si. Por exemplo, será que os sons de \"roncar\" e o sentido que essa palavra evoca são parecidos? O experimento leva cerca de 10 minutos. Se você já fez um experimento parecido com esse recentemente, pode participar de novo sem problemas (inclusive, agradecemos). Precisamos de 3.000 participantes, e temos pouco menos de 2.000 até agora! Para participar, basta clicar neste link: https://jatos.mindprobe.eu/publix/yAFRK1jg7Ss Se a página demorar alguns segundos para carregar, é só aguardar. Se houver mensagem de erro, você pode tentar nesse outro link aqui (é o mesmo experimento): https://jatos.mindprobe.eu/publix/mOeMNznHOA9 Mahayana C. Godoy Laboratório de Estudos Experimentais em Linguagem (LEELin - UFRN) ----------------------- e-Comunicação UFRN: este sistema permite a comunicação entre a UFRN e sua comunidade universitária, divulgando as notícias e comunicados da instituição. Para saber como a UFRN trata os dados, acesse a Política de Privacidade. Caso não queira receber mais estas notificações clique aqui.",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "ACADEMICO",
+        "urgencia": "MEDIA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.9,
+        "justificativa": "O email trata de uma pesquisa acadêmica sobre sons e sentidos do português, não apresentando urgência imediata, mas requerendo uma ação por parte do destinatário interessado em participar do experimento.",
+        "resumo_executivo": "Convite para participar de pesquisa acadêmica sobre sons e sentidos do português.",
+        "acao_sugerida": "Clicar no link fornecido para participar do experimento.",
+        "prazo_estimado": "Não mencionado."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião ou encontro neste email. O conteúdo se trata de uma pesquisa sobre sons e sentidos do português, não havendo solicitação de encontro ou horário específico proposto. Além disso, o remetente é um sistema automático de comunicação da UFRN, não uma pessoa física com autoridade para marcar reuniões. Portanto, não se enquadra nos critérios para ser considerado uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8194-a7d9-c123e25f3d00",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Nova turma disponível: Seminário de integração ao serviço público!",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-11T09:43:26-03:00",
+        "conteudo_preview": "\r\n\r\nOlá, servidor(a)\r\nInformamos que teremos uma nova turma do Seminário de integração ao serviço público para os servidores técnico-administrativos no período de 24 a 26 de setembro de 2025 na modalidade presencial. &#x1f389; &#x1f389; &#x1f389;\r\n \r\n&#x1f929; O seminário de integração tem o objetivo de possibilitar ao servidor a sua socialização e integração no serviço público, contemplando atividades informativas, reflexivas e de planejamento essenciais para seu ingresso na UFRN.\r\n \r\nNesse sentido, convidamos você a participar desse momento importante! &#x1f917;\r\n \r\n ⚠️ Lembramos que o Seminário de integração ao serviço público é uma das atividades prevista no Programa de integração ao serviço público e deve ser realizado por todos os servidores técnicos ingressantes na UFRN, conforme Resolução nº 025-2017-CONSAD.\r\n \r\nConverse com a sua chefia e planeje a sua participação no Seminário de integração! \r\n \r\n\r\n\r\nOBS: Se você já concluiu o seminário de integração, por favor, desconsidere esta mensagem.\r\n\r\nQualquer dúvida, entre em contato conosco:\r\nE-mail: capacitacao&#64;progesp.ufrn.br\r\nTelefone: (84) 99193-6478 (whatsapp).\r\n \r\nAtenciosamente,\r\nDivisão de Capacitação e Educação Profissional\r\n\r\n\r\n\r\n    \r\n        A UFRN respeita a política de privacidade. Caso não queira mais receber e-mails desta lista,\r\n        clique aqui!\r\n    \r\n\r\n",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "ADMINISTRATIVO",
+        "urgencia": "MEDIA",
+        "necessita_resposta": "SIM",
+        "confianca": 1.0,
+        "justificativa": "O email menciona a necessidade de participação no Seminário de integração ao serviço público, uma atividade obrigatória para os servidores técnicos ingressantes na UFRN.",
+        "resumo_executivo": "Convite para participar do Seminário de integração ao serviço público para servidores técnico-administrativos na UFRN.",
+        "acao_sugerida": "Conversar com a chefia e planejar a participação no Seminário de integração.",
+        "prazo_estimado": "24 a 26 de setembro de 2025."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.0,
+        "extracted_time": "null",
+        "extracted_date": "24 a 26 de setembro de 2025",
+        "meeting_type": "indefinido",
+        "justification": "O email não apresenta uma proposta explícita de reunião ou encontro, apenas informa sobre a disponibilidade de uma nova turma do Seminário de integração ao serviço público. Não há horário específico proposto, o conteúdo é mais informativo do que uma solicitação de participação em uma reunião. Além disso, o remetente é a Divisão de Capacitação e Educação Profissional, não uma pessoa física com autoridade para marcar reuniões. Portanto, não se trata de um convite para uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-819f-801b-d4e4ae5d2f4e",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Seleção de Pesquisadores para Capacitação em Inovação",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-12T09:01:37-03:00",
+        "conteudo_preview": " Projeto de parceria SEBRAE-RN/UFRN ----------------------- e-Comunicação UFRN: este sistema permite a comunicação entre a UFRN e sua comunidade universitária, divulgando as notícias e comunicados da instituição. Para saber como a UFRN trata os dados, acesse a Política de Privacidade. Caso não queira receber mais estas notificações clique aqui.",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 1.0,
+        "justificativa": "O email é um informativo geral sobre um projeto de parceria entre o SEBRAE-RN e a UFRN, não requer nenhuma ação imediata.",
+        "resumo_executivo": "Projeto de parceria SEBRAE-RN/UFRN",
+        "acao_sugerida": "Arquivar para referência",
+        "prazo_estimado": "N/A"
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião/encontro, apenas informações sobre um projeto de parceria entre SEBRAE-RN/UFRN. O conteúdo do email não indica a intenção de marcar uma reunião, não há horário específico proposto, o remetente é um sistema automático e o email não se enquadra como uma solicitação de reunião. Portanto, não se trata de uma mensagem sobre uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81e3-aa5b-d92a8e38241e",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Precisamos da sua atenção!",
+        "remetente": "mkt@einship.com",
+        "data_recebimento": "2025-09-12T12:04:27+00:00",
+        "conteudo_preview": "Olá, ALEXANDRE DAVID\r\n\r\n \r\n\r\nAo abrir este e-mail, você confima seu interesse em continuar recebendo nossa newsletter e atualizações. \r\n\r\n \r\n\r\nA Einship tem o maior cuidado com os seus dados e preferências de privacidade e queremos a sua atenção.\r\n\r\n \r\n\r\nA Lei Geral de Proteção de Dados Pessoais (LGPD) já está vigente e a EInship faz questão de atender às novas regras e boas práticas para preservar a sua privacidade.\r\n\r\n \r\n\r\nÉ a Einship tratando dados da forma adequada e com transparência!\r\n\r\n\r\n**Einship**\r\n\r\nR. Silva Jatahy, 60165-070, Fortaleza\r\n\r\n",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 1.0,
+        "justificativa": "O email é um informativo sobre a Lei Geral de Proteção de Dados Pessoais (LGPD) e não requer nenhuma ação imediata.",
+        "resumo_executivo": "Informativo sobre a LGPD e cuidado com os dados pessoais.",
+        "acao_sugerida": "Arquivar para referência.",
+        "prazo_estimado": "N/A"
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião ou encontro no e-mail. O conteúdo se trata de uma mensagem informativa sobre a Lei Geral de Proteção de Dados Pessoais e a preocupação da empresa com a privacidade dos dados dos destinatários. Não há indicação de horário específico para um encontro e o remetente é uma empresa, não uma pessoa física com autoridade para marcar reuniões. Portanto, não se trata de uma solicitação de reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8180-9844-faeccb754a2c",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Especial UFRN - Projeto internacional une ciência e comunidades para enfrentar riscos urbanos no Brasil",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-12T10:29:02-03:00",
+        "conteudo_preview": "\r\n\r\nNatal, 12 de setembro de 2025 - Edição 63 \r\n\r\nClima e saúde\r\nProjeto internacional une ciência e comunidades para enfrentar riscos urbanos no Brasil Paiva Rebouças - Sala de Ciências-Agecom/UFRN Ciência e comunidade se encontram para enfrentar os impactos das mudanças climáticas \r\nQuando a temperatura sobe e o asfalto ferve, aumentam as crises respiratórias. Depois da chuva forte, a água parada vira criadouro de mosquitos. Nas enchentes, espalham-se infecções que passam longe do debate público. É nesse cenário que a Universidade Federal do Rio Grande do Norte, por meio do Programa de Pós-Graduação em Demografia (PPGDem/UFRN) assume papel estratégico em um consórcio internacional aprovado pela fundação britânica Wellcome Trust. \r\nO projeto Participatory Analytics for Climate-Health Adaptation in Disadvantaged Urban Communities in Brazil, traduzido livremente como Análise Participativa para a Adaptação de Comunidades Urbanas em Desvantagem ao Clima e à Saúde no Brasil, terá duração de três anos e contará com financiamento superior a quatorze milhões de reais. A iniciativa busca transformar evidências sobre clima e saúde em políticas públicas capazes de alcançar as comunidades urbanas mais vulneráveis.\r\nAs ações acontecem em Natal, Curitiba e Niterói por meio dos Participatory Urban Living Labs (PULLs), uma abordagem participativa da Universidade de Glasgow (Glasgow, Escócia). Em Natal, a UFRN será responsável pela coordenação de R$ 2,4 milhões destinados ao projeto. A equip",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 1.0,
+        "justificativa": "O email é um informativo sobre um projeto internacional da UFRN, não requer nenhuma ação imediata.",
+        "resumo_executivo": "Projeto internacional une ciência e comunidades para enfrentar riscos urbanos no Brasil.",
+        "acao_sugerida": "Arquivar para referência.",
+        "prazo_estimado": "N/A"
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião/encontro, apenas informações sobre um projeto internacional. O conteúdo do email se trata de uma newsletter informativa, não havendo solicitação de reunião. Portanto, não se enquadra nos critérios estabelecidos para ser considerado uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-811b-b577-d1bceab7662b",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Coordenação - Doutoramento em Administração Pública: Oficina de Reflexão sobre Serviços de Emergência Médica Pré-hospitalar - 26 de setembro",
+        "remetente": "noreply@iscsp.ulisboa.pt",
+        "data_recebimento": "2025-09-12T15:34:06+01:00",
+        "conteudo_preview": "\r\nCoordenação - Doutoramento em Administração Pública -> Fóruns ->\r\nAnúncios -> Oficina de Reflexão sobre Serviços de Emergência Médica\r\nPré-hospitalar - 26 de setembro\r\nhttps://elearning2425.iscsp.ulisboa.pt/mod/forum/discuss.php?d=4444#p4790\r\nOficina de Reflexão sobre Serviços de Emergência Médica Pré-hospitalar\r\n- 26 de setembro\r\npor Sandra Firmino - sexta-feira, 12 de setembro de 2025 às 15:14\r\n---------------------------------------------------------------------\r\nCaros estudantes,\r\n\r\nNo próximo dia 26 de setembro de 2025, pelas 13h00, realiza-se a Oficina\r\nde Reflexão sobre Serviços de Emergência Médica Pré-hospitalar, no\r\nInstituto Superior de Ciências  Sociais e Políticas (ISCSP-ULisboa) -\r\nAuditório Professor Óscar Soares Barata.\r\n\r\nA Oficina é uma iniciativa da Comissão Técnica Independente (CTI) do\r\nINEM e do ISCSP, que reunirá peritos nacionais e internacionais para\r\ndebater as finalidades dos serviços de emergência médica\r\npré-hospitalar, designadamente o modelo de governação e funcionamento\r\ndas instituições que prestam e desenvolvem essa atividade.\r\n\r\nA sessão de abertura será realizada com as intervenções do Professor\r\nCatedrático Ricardo Ramos Pinto, Presidente do ISCSP-ULisboa, e pela\r\nJuíza Conselheira Jubilada Leonor Furtado, Presidente da CTI do INEM,\r\nestando a moderação do evento a cargo da Dra. Maria de Belém Roseira,\r\nmembro das Antigas Ordens Militares. A sessão de encerramento contará com\r\na presença da Excelentíssima Ministra da Saúde, Doutora Ana P",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "REUNIAO",
+        "urgencia": "ALTA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.9,
+        "justificativa": "O email contém um convite para uma reunião importante com data e horário específicos.",
+        "resumo_executivo": "Convite para a Oficina de Reflexão sobre Serviços de Emergência Médica Pré-hospitalar no dia 26 de setembro de 2025.",
+        "acao_sugerida": "Confirmar presença na reunião no Instituto Superior de Ciências Sociais e Políticas (ISCSP-ULisboa).",
+        "prazo_estimado": "Até 26 de setembro de 2025."
+      },
+      "meeting_analysis": {
+        "is_meeting": true,
+        "confidence": 0.9,
+        "extracted_time": "13h00",
+        "extracted_date": "26 de setembro de 2025",
+        "meeting_type": "presencial",
+        "justification": "O email menciona explicitamente a realização da Oficina de Reflexão sobre Serviços de Emergência Médica Pré-hospitalar no dia 26 de setembro de 2025, às 13h00, no Instituto Superior de Ciências Sociais e Políticas (ISCSP-ULisboa). Além disso, há uma proposta de encontro para debater as finalidades dos serviços de emergência médica pré-hospitalar, com a presença de peritos nacionais e internacionais, o que indica claramente a intenção de realizar uma reunião. O contexto do remetente também sugere autoridade para marcar reuniões. Portanto, todos os critérios para identificar uma reunião estão presentes neste email."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8107-9d17-c166f657d72b",
+      "is_meeting": true,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Coordenação - Doutoramento em Administração Pública: Inscrição na página Moodle da UC \"Coordenação do III Ciclo\" no ano letivo de 2025/2026",
+        "remetente": "noreply@iscsp.ulisboa.pt",
+        "data_recebimento": "2025-09-12T15:51:02+01:00",
+        "conteudo_preview": "\r\nCoordenação - Doutoramento em Administração Pública -> Fóruns ->\r\nAnúncios -> Inscrição na página Moodle da UC \"Coordenação do III\r\nCiclo\" no ano letivo de 2025/2026\r\nhttps://elearning2425.iscsp.ulisboa.pt/mod/forum/discuss.php?d=4445#p4791\r\nInscrição na página Moodle da UC \"Coordenação do III Ciclo\" no ano\r\nletivo de 2025/2026\r\npor Sandra Firmino - sexta-feira, 12 de setembro de 2025 às 15:21\r\n---------------------------------------------------------------------\r\nCaros estudantes,\r\n\r\nUma vez que a página da Coordenação da UCAP para o ano letivo de\r\n2024/2025 foi descontinuada com a entrada no ano letivo de 2025/26,\r\nsolicita-se a todos os alunos que verifiquem o acesso à mesma para saberem\r\nse terão acesso às comunicações da Unidade de Coordenação.\r\n\r\nInforma-se também que alguns alunos que fizeram a matrícula nos últimos\r\ndias não foram transitados, de modo automático, para a nova página, pelo\r\nque terão de solicitar este acesso junto dos serviços do ISCSP - Núcleo\r\nde Apoio aos Mestrados e Doutoramentos.\r\n\r\nMelhores cumprimentos,\r\n\r\nSandra Firmino\r\n\r\n---------------------------------------------------------------------\r\nEsta é uma cópia de uma mensagem publicada em Coordenação -\r\nDoutoramento em Administração Pública\r\n\r\nAlterar tipo de resumo de fóruns:\r\nhttps://elearning2425.iscsp.ulisboa.pt/mod/forum/index.php?id=794\r\n",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "ADMINISTRATIVO",
+        "urgencia": "MEDIA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.9,
+        "justificativa": "O email menciona a necessidade de verificar o acesso à nova página da Coordenação da UCAP para o ano letivo de 2025/2026 e solicitação de acesso junto aos serviços do ISCSP.",
+        "resumo_executivo": "Verificar o acesso à nova página da Coordenação da UCAP para o ano letivo de 2025/2026 e solicitar acesso junto aos serviços do ISCSP.",
+        "acao_sugerida": "Verificar o acesso à nova página da Coordenação da UCAP e solicitar acesso junto aos serviços do ISCSP.",
+        "prazo_estimado": "Não mencionado no email."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião ou encontro neste email. A mensagem é informativa sobre a inscrição na página Moodle da UC \"Coordenação do III Ciclo\" para o ano letivo de 2025/2026. Não há menção a um horário específico para um encontro, nem indicação de uma pessoa física com autoridade para marcar reuniões. Portanto, não se trata de uma convocação para uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-819a-ab67-d665bf66d72e",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "CDAP: Oficina de Reflexão sobre Serviços de Emergência Médica Pré-hospitalar",
+        "remetente": "noreply@iscsp.ulisboa.pt",
+        "data_recebimento": "2025-09-12T15:54:03+01:00",
+        "conteudo_preview": "\r\nCDAP -> Fóruns -> Anúncios -> Oficina de Reflexão sobre Serviços de\r\nEmergência Médica Pré-hospitalar\r\nhttps://moodle.iscsp.ulisboa.pt/mod/forum/discuss.php?d=61#p61\r\nOficina de Reflexão sobre Serviços de Emergência Médica Pré-hospitalar\r\npor Sandra Firmino - sexta-feira, 12 de setembro de 2025 às 15:23\r\n---------------------------------------------------------------------\r\nCaros estudantes,\r\n\r\nNo próximo dia 26 de setembro de 2025, pelas 13h00, realiza-se a Oficina\r\nde Reflexão sobre Serviços de Emergência Médica Pré-hospitalar, no\r\nInstituto Superior de Ciências  Sociais e Políticas (ISCSP-ULisboa) -\r\nAuditório Professor Óscar Soares Barata.\r\n\r\nA Oficina é uma iniciativa da Comissão Técnica Independente (CTI) do\r\nINEM e do ISCSP, que reunirá peritos nacionais e internacionais para\r\ndebater as finalidades dos serviços de emergência médica\r\npré-hospitalar, designadamente o modelo de governação e funcionamento\r\ndas instituições que prestam e desenvolvem essa atividade.\r\n\r\nA sessão de abertura será realizada com as intervenções do Professor\r\nCatedrático Ricardo Ramos Pinto, Presidente do ISCSP-ULisboa, e pela\r\nJuíza Conselheira Jubilada Leonor Furtado, Presidente da CTI do INEM,\r\nestando a moderação do evento a cargo da Dra. Maria de Belém Roseira,\r\nmembro das Antigas Ordens Militares. A sessão de encerramento contará com\r\na presença da Excelentíssima Ministra da Saúde, Doutora Ana Paula\r\nMartins.\r\n\r\nA participação é aberta ao público, mas sujeita a pré-inscrição\r\natravés dos",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 1.0,
+        "justificativa": "O email é um informativo sobre uma Oficina de Reflexão, não requer nenhuma ação imediata.",
+        "resumo_executivo": "Oficina de Reflexão sobre Serviços de Emergência Médica Pré-hospitalar no ISCSP-ULisboa.",
+        "acao_sugerida": "Arquivar para referência.",
+        "prazo_estimado": "N/A"
+      },
+      "meeting_analysis": {
+        "is_meeting": true,
+        "confidence": 0.9,
+        "extracted_time": "13h00",
+        "extracted_date": "26 de setembro de 2025",
+        "meeting_type": "presencial",
+        "justification": "O email menciona claramente a realização da \"Oficina de Reflexão sobre Serviços de Emergência Médica Pré-hospitalar\" no dia 26 de setembro de 2025, às 13h00, no Instituto Superior de Ciências Sociais e Políticas (ISCSP-ULisboa). Além disso, há uma descrição detalhada do evento, dos palestrantes e da programação, indicando que se trata de uma reunião presencial organizada pela Comissão Técnica Independente (CTI) do INEM e do ISCSP."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8161-b89e-dfa744743d3e",
+      "is_meeting": true,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Alterado para 17/09 às 14: Encontro de finalização do Boletim de Riscos e Lições Aprendidas",
+        "remetente": "adson.araceli@ufrn.br",
+        "data_recebimento": "2025-09-12T12:18:39-03:00",
+        "conteudo_preview": "Pessoal,\r\n\r\nConforme adiantado no grupo do WhatsApp, foi marcada uma reunião\r\nextraordinária do CGE para o dia 15/09 das 14h às 16h.\r\n\r\nComo nossa reunião dos Facilitadores de GR estava previamente agendada para\r\no mesmo dia, estou passando para confirmar a remarcação para quarta-feira,\r\ndia 17, às 14h.\r\n\r\nSegue link:\r\n\r\n\r\nCiclo de Aprendizados – Facilitadores da Gestão de Riscos UFRN\r\nquarta-feira, 17 de set. · 14:00 – 15:00\r\nComo participar do Google Meet\r\nLink da videochamada: https://meet.google.com/kyd-bgau-gim\r\n\r\n*Participe do nosso grupo de whatsapp*:\r\nhttps://chat.whatsapp.com/IvuFzrNFCUT4qZyE2HhPqs\r\n\r\nAbraços,\r\n\r\nAdson Araceli Alves Dantas\r\nAdministrador\r\nUFRN - Secretaria de Gestão de Projetos\r\nTel. 84 98873-7532\r\n\r\n\r\nEm sex., 29 de ago. de 2025 às 14:00, ADSON DANTAS <adson.araceli@ufrn.br>\r\nescreveu:\r\n\r\n> Prezados Colegas Facilitadores da Gestão de Riscos na UFRN,\r\n>\r\n> Concluímos o boletim de riscos estratégicos com participação de todas as\r\n> unidades.\r\n>\r\n> Por isso, gostaria de convidá-los para um momento de lições aprendidas\r\n> nesta primeira rodada.\r\n>\r\n> Data: *15/09/2025 - Segunda-feira*\r\n> Horário: *15h*\r\n> Formato: *Remoto - google meet. (link a ser fornecido em breve)*\r\n> Tempo estimado: 1h.\r\n>\r\n> *Participe do nosso grupo de whatsapp*:\r\n> https://chat.whatsapp.com/IvuFzrNFCUT4qZyE2HhPqs\r\n>\r\n> Atenciosamente,\r\n>\r\n> Adson Araceli A. Dantas\r\n> Administrador\r\n> Reitoria | Cel. Institucional: 84 99229-6530\r\n>\r\n",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "REUNIAO",
+        "urgencia": "ALTA",
+        "necessita_resposta": "SIM",
+        "confianca": 1.0,
+        "justificativa": "O email trata de uma remarcação de reunião importante para os Facilitadores de GR da UFRN.",
+        "resumo_executivo": "Remarcação do encontro de finalização do Boletim de Riscos e Lições Aprendidas para o dia 17/09 às 14h.",
+        "acao_sugerida": "Confirmar presença na reunião remarcada.",
+        "prazo_estimado": "17/09/2025"
+      },
+      "meeting_analysis": {
+        "is_meeting": true,
+        "confidence": 0.9,
+        "extracted_time": "14:00",
+        "extracted_date": "17/09/2025",
+        "meeting_type": "virtual",
+        "justification": "O email menciona claramente a remarcação de uma reunião dos Facilitadores de GR para o dia 17/09 às 14h, com um link para participação via Google Meet. O remetente é uma pessoa física com autoridade para marcar reuniões, e a mensagem contém uma solicitação explícita para participação. Portanto, atende a todos os critérios para ser considerado uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8169-b5b8-fe3143a2e432",
+      "is_meeting": true,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Convite: Ciclo de Aprendizados - Facilitadores da Gestão de Riscos... - qua. 17 set. 2025 6pm - 7pm (WEST) (alexandre.david@ufrn.br)",
+        "remetente": "jussicleide.lopes.017@ufrn.edu.br",
+        "data_recebimento": "2025-09-12T18:42:30+00:00",
+        "conteudo_preview": "Ciclo de Aprendizados – Facilitadores da Gestão de Riscos UFRN\r\nquarta-feira 17 set. 2025 ⋅ 6pm – 7pm\r\nHorário da Europa Ocidental - Lisboa\r\n\r\nEntrar com o Google Meet\r\nhttps://meet.google.com/kyd-bgau-gim?hs=224\r\n\r\n\r\n\r\n\r\nAnexos\r\n1º Ciclo de Aprendizados- Gestão de riscos UFRN.png  \r\nhttps://drive.google.com/open?id=1Er_j9err1dOJM3SdreY2oCmRYKFuSpfZ\r\n\r\nConcluímos a 1ª rodada do Boletim de Riscos Estratégicos da UFRN com a  \r\nparticipação de todas as unidades e gostaríamos de contar novamente com  \r\nvocês.Facilitadores(as) da Gestão de Riscos UFRN, juntem-se para trocar  \r\nexperiências e aprimorar a gestão de riscos.\r\n\r\nOrganizador\r\nJUSSICLEIDE LOPES\r\njussicleide.lopes.017@ufrn.edu.br\r\n\r\nConvidados\r\nJUSSICLEIDE LOPES- organizador\r\nADSON DANTAS\r\nCONTATO SGP\r\nEMANUELA JUSTINO\r\nalanna.simonetti@ufrn.br\r\nalexandre.david@ufrn.br\r\nAna Carolina Freire\r\nbruno.silva.1@ufrn.br\r\ncamila.gomes@ufrn.br\r\ndaiane.gomes@ufrn.br\r\ndanillo.ferraz@ufrn.br\r\ngenival.junior@ufrn.br\r\nhugo.marinho@ufrn.br\r\nhugo.xavier@ufrn.br\r\njulio.meira@ufrn.br\r\nkiza.alves@ufrn.br\r\nlaura.medeiros@ufrn.br\r\nlorenna.bezerra@ufrn.br\r\nmauriceia.medeiros@ufrn.br\r\npaulo.pinheiro@ufrn.br\r\npaulo.severiano@ufrn.br\r\npedro.valentim@ufrn.br\r\npesquisa@propesq.ufrn.br\r\nSuperintende Adjunto de TI (André)\r\nvictor.hugo@ufrn.br\r\nviviane.fernandes@ufrn.br\r\nwilton.medeiros@ufrn.br\r\ncasio.barreto@ifrn.br\r\nedson.moreira@pop-rn.rnp.br\r\nmarcus.barros@pop-rn.rnp.br\r\nVer todas as informações do convidado  \r\nhttps://calendar.google.com/calendar/",
+        "tem_anexos": true,
+        "quantidade_anexos": 1
+      },
+      "classification": {
+        "categoria": "REUNIAO",
+        "urgencia": "ALTA",
+        "necessita_resposta": "SIM",
+        "confianca": 1.0,
+        "justificativa": "O email contém um convite para um evento importante com data e horário específicos.",
+        "resumo_executivo": "Convite para o Ciclo de Aprendizados - Facilitadores da Gestão de Riscos UFRN no dia 17 de setembro de 2025, das 18h às 19h (Horário da Europa Ocidental - Lisboa).",
+        "acao_sugerida": "Confirmar presença no evento e adicionar ao calendário.",
+        "prazo_estimado": "Até a data do evento (17 de setembro de 2025)."
+      },
+      "meeting_analysis": {
+        "is_meeting": true,
+        "confidence": 0.9,
+        "extracted_time": "6pm - 7pm",
+        "extracted_date": "quarta-feira 17 set. 2025",
+        "meeting_type": "virtual",
+        "justification": "O email contém uma proposta explícita de reunião com horário específico, data definida e convite para participação em um encontro virtual. Além disso, o contexto do remetente indica que ele tem autoridade para marcar reuniões. Portanto, todos os critérios para identificar uma reunião estão presentes."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8180-bc1a-f503f25b7225",
+      "is_meeting": true,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Tem trabalhos com data limite dentro de 7 dias",
+        "remetente": "noreply@iscsp.ulisboa.pt",
+        "data_recebimento": "2025-09-14T01:26:03+01:00",
+        "conteudo_preview": "\r\nOlá Alexandre,\r\n\r\nOs seguintes trabalhos terminam o prazo DOMINGO, 21 DE SETEMBRO DE 2025.\r\n\r\n* TRABALHOS DE PRÉ-PROJETO ELABORADOS PARA O WORKSHOP na disciplina\r\nCoordenação - Doutoramento em Administração Pública\r\nDATA LIMITE: 11:59 PM\r\nIr para a atividade [1]\r\n\r\nLinks:\r\n------\r\n[1] https://moodle.iscsp.ulisboa.pt/mod/assign/view.php?id=1459&action=view\r\n",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "DOUTORADO",
+        "urgencia": "ALTA",
+        "necessita_resposta": "SIM",
+        "confianca": 1.0,
+        "justificativa": "O email informa sobre trabalhos com data limite dentro de 7 dias, exigindo ação imediata.",
+        "resumo_executivo": "Trabalhos de pré-projeto para o Workshop na disciplina Coordenação - Doutoramento em Administração Pública com prazo de entrega em 21/09/2025.",
+        "acao_sugerida": "Elaborar e enviar os trabalhos de pré-projeto até o prazo estabelecido.",
+        "prazo_estimado": "21/09/2025"
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "O email não apresenta nenhuma proposta explícita de reunião ou encontro. Trata-se apenas de um lembrete sobre trabalhos com data limite. Não há menção a horários específicos, nem indicação de que o remetente tenha autoridade para marcar reuniões. Portanto, não se trata de uma solicitação de reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81fd-8255-e4b67bc53324",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Prosas News: Edital Impacto Produtivo e muito mais!",
+        "remetente": "contato@prosas.com.br",
+        "data_recebimento": "2025-09-15T11:33:26+00:00",
+        "conteudo_preview": " \r\n\r\n\r\n\r\n\r\n \r\n \r\nOlá! Tudo bem por aí?  Essa é mais uma Prosas News, uma newsletter onde você confere os principais editais da semana, além de conteúdos interessantes alinhados ao mercado e ao seu dia a dia! 😊\r\n\r\n  \r\n [ https://t.rdsv2.net/ls/click?upn=u001.ZnTitrtZysoyxy-2FxpIVXawkXqpBWxdVQVntdGP5jMZPbN-2BA4naR0IUcLI4SubQ35xmgQp-2BkYZTqwgSbJeNPqfaDjnobEdlRMBXryEZshokQJ8ptCCq4kmoNaRIGMfDjnzS7An2sr8LK2NiLuyBer84eKXkfPr5Ress3NRFqw3jfRHExENE8fe6BKCIn81PihMuZw4U3bMoz5rIuEiEYXElOr9Z5hgcNLjLDij17Zrbmlx7IQ0xil4z3EsXm62PGX-2BV6mmmirHtTbjiPLjw7sng-3D-3DO3ub_3HnSy7Thd-2B4TzjPSA5oX7rmyFt8GfJHmsSt96QQ-2BAHNnryGA3hrpkTOsh8H-2BMCRfeKZc5ANYrzU7zIFT4m4G400Qs7CNPglUIWbKoMD9a6X7eB1ArXM04PPo41TVmACVkzkULz4A0Y-2Flu-2F-2BhfydIpjG28JwhsPknJfrkmZIjgR0fLL8Za-2B-2FbYRAES9VNizQivXUZInhH9CKARPZVEdPN8x5iULheKGhtz9qE6iBNA-2BhL5W9nVpERNvlH1z8Wk-2Fyr7VGxf6xLecC810Ir6sefmDkCIYuC4ZtM-2B7WrKvluoVWqrWfVvx-2FLQ1F-2B-2BVJvfj8k8eBPjmlRmKB0jue6lUyiPD3FiFMoRZhIvG1T6ZtPKSbAj3d5FRdUy2kZ-2B5y4WHLcPhdxpwG4yuU-2B7aoy0S7xvSKdG7riGhSWDs0oGwB-2BJF7dmagX-2B3-2FXa8GEPLt75yfIBFgm-2Fh3Zw3b4dad9sClRODuVZXJw8bxn8xzB9tLlLHj276jCWHCZwdPpGuGzguU-2B98b-2FY-2BAElVy9s2F6JGUhd2YfoUqfinWOJEhg-2FTQIxJcRPcGc5mfsvOYKZUA1F92WrhqzdgRMle2dq-2BKn1jxMmEZLcXreuEaq0TheSY4pJ-2FUCs5hgewp3N88ajoL2Mfhg2DaggLAt5NghixCji6yUYA-3D-3D ]\r\n\r\n Saiba mais  [ https://t.rdsv2.net/ls/click?upn=u001.ZnTitrtZysoyxy-2FxpIVXawkXqpBWxdVQVntdGP5jMZPV5hvfiGc626OpukssqIsf54Mf_3HnSy7Thd-2B4TzjPSA5oX7rmyFt8GfJHmsSt96QQ-2BAHNnryGA3hrpkTOsh8H-2BMCRfeKZc5ANYrzU7zIFT4m4G400Qs",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 1.0,
+        "justificativa": "O email é uma newsletter informativa sem a necessidade de ação imediata.",
+        "resumo_executivo": "Newsletter da Prosas com principais editais da semana e conteúdos interessantes.",
+        "acao_sugerida": "Arquivar para referência.",
+        "prazo_estimado": "N/A"
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "O email em questão é uma newsletter da Prosas, não há proposta explícita de reunião ou encontro, apenas informações sobre os principais editais da semana. Portanto, não se trata de uma solicitação de reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81b6-b6a7-f93313e1b0e3",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Bem-vindo à página da disciplina Coordenação - Doutoramento em Administração Pública",
+        "remetente": "noreply@iscsp.ulisboa.pt",
+        "data_recebimento": "2025-09-15T16:45:29+01:00",
+        "conteudo_preview": "\r\nOlá Alexandre, está inscrito/a na disciplina Coordenação - Doutoramento\r\nem Administração Pública\r\n",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "DOUTORADO",
+        "urgencia": "ALTA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.9,
+        "justificativa": "O email menciona a disciplina do Doutorado em Administração Pública, indicando uma demanda acadêmica urgente.",
+        "resumo_executivo": "Revisar o conteúdo da disciplina Coordenação - Doutoramento em Administração Pública.",
+        "acao_sugerida": "Entrar em contato com o orientador para alinhar as próximas etapas da disciplina.",
+        "prazo_estimado": "Não mencionado no email."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "O email não apresenta nenhuma proposta explícita de reunião, apenas informa sobre a inscrição na disciplina. Não há menção a horários específicos, nem indicação de que o remetente tenha autoridade para marcar reuniões. Portanto, não se trata de um convite para uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-815e-8ca6-d3dd77cacd88",
+      "is_meeting": false,
+      "processed": true
+    }
+  ]
+}

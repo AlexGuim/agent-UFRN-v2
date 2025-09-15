@@ -1,0 +1,972 @@
+{
+  "timestamp": "2025-09-07T15:17:46.286095",
+  "total_emails": 16,
+  "colaboradores_ufrn": 2,
+  "reunioes_detectadas": 13,
+  "resumo_executivo_sessao": "Neste turno foram processados 16 emails não lidos. \n\n🗓️ REUNIÕES/AGENDAMENTOS DETECTADOS (13): Noreply marcou reunião para quinta às 17:38. Mensageiro solicitou agendamento. Graco Viana marcou reunião para amanhã às 10:30. Mensageiro solicitou agendamento. Contato solicitou agendamento. Mensageiro solicitou agendamento. Mensageiro solicitou agendamento. Mensageiro solicitou agendamento. Mensageiro solicitou agendamento. Mensageiro solicitou agendamento. Updates solicitou agendamento. Mkt solicitou agendamento. Mensageiro solicitou agendamento. CONFIRMAÇÃO IMEDIATA NECESSÁRIA. \n\n👥 COLABORADORES UFRN (2): 1 com demandas urgentes. Graco Viana enviou solicitação urgente. 1 com comunicações regulares que requerem atenção. \n\n⚡ OUTRAS DEMANDAS URGENTES (1): Alex Guimaraes It enviou demanda urgente. \n\n1 comunicados informativos foram arquivados automaticamente. \n\nRECOMENDAÇÕES DE PRIORIZAÇÃO: 1. IMEDIATO: Confirmar 13 reunião/agendamento. 2. ALTA: Responder 1 demanda urgente de colaboradores UFRN. 3. MÉDIA: Processar 1 comunicação regular de colaboradores UFRN. Os demais 1 emails são de baixa prioridade ou já foram organizados adequadamente.",
+  "emails": [
+    {
+      "assunto": "Coordenação - Doutoramento em Administração Pública: Re: II Fórum - Futuro da Tributação",
+      "remetente": "noreply@iscsp.ulisboa.pt",
+      "data_recebimento": "2025-09-04T18:07:07+01:00",
+      "conteudo_preview": "\r\nCoordenação - Doutoramento em Administração Pública -> Fóruns ->\r\nAnúncios -> II Fórum - Futuro da Tributação\r\nhttps://elearning.iscsp.ulisboa.pt/mod/forum/discuss.php?d=4421#p4783\r\nRe: II Fórum - Futuro da Tributação\r\npor Sandra Firmino - quinta-feira, 4 de setembro de 2025 às 17:38\r\n---------------------------------------------------------------------\r\nEstimados estudantes,\r\n\r\nO \"II FÓRUM DA TRIBUTAÇÃO: PARA ONDE CAMINHAM OS SISTEMAS TRIBUTÁRIOS?\"\r\norganizado pelo FIBE – Fórum Brasil Europa irá realizar-se nos dias 2 E\r\n3 DE OUTUBRO DE 2025, no Centro Cultural de Macau (CCCM), na Junqueira, em\r\nLisboa.\r\nO evento incluirá um amplo debate com Teresa Ter Minassian, da\r\nUniversidade de Harvard, uma destacada funcionária do Fundo Monetário\r\nInternacional (FMI), que exerceu as funções de Chefe da Divisão da\r\nEuropa do Sul, tendo sido responsável pela negociação de resgates e\r\napoios financeiros durante as crises ocorridas em países como a Itália, a\r\nEspanha e Portugal.\r\nA programação contará com sessões magnas pela manhã e grupos de\r\ntrabalho simultâneos à tarde, organizados em dois grandes eixos\r\ntemáticos.\r\nPROGRAMA PRELIMINAR:\r\nhttps://forumbrasileuropa.org/wp-content/uploads/2025/07/250711-2ForumFut-Trib-v9-vPublica.pdf\r\n\r\n📝 INSCRIÇÕES GRATUITAS:\r\nhttps://app.beamian.com/ii-forum-futuro-da-tributacao/new-visitor\r\n\r\n🔗 MAIS INFORMAÇÕES:\r\nhttps://forumbrasileuropa.org/ii-forum-futuro-tributacao\r\n\r\n---------------------------------------------------------------------\r\nEsta é um",
+      "tem_anexos": false,
+      "quantidade_anexos": 0,
+      "classificacao": {
+        "email_numero": 1,
+        "categoria": "REUNIAO",
+        "urgencia": "ALTA",
+        "resumo": "Email de Noreply sobre: Coordenação - Doutoramento em Administração Pública: Re: II Fórum - Futuro da Tr",
+        "resumo_executivo": "Email de Noreply AGENDANDO REUNIÃO para quinta às 17:38",
+        "acao_sugerida": "Confirmar reunião e agendar na agenda pessoal",
+        "prazo_estimado": "Imediato",
+        "necessita_resposta": "SIM",
+        "complexidade_resposta": "ALTA",
+        "justificativa_resposta": "Reunião detectada - confirmação necessária",
+        "palavras_chave": [
+          "reuniao",
+          "reuniao",
+          "agendamento"
+        ],
+        "confianca": 0.95,
+        "sender_analysis": {
+          "is_institutional": false,
+          "is_automatic": true,
+          "sender_type": "SISTEMA_EXTERNO",
+          "importance_level": "BAIXA"
+        },
+        "meeting_analysis": {
+          "has_meeting_keywords": true,
+          "has_time": true,
+          "has_date": true,
+          "extracted_time": "17:38",
+          "extracted_date": "quinta",
+          "confidence": 1.0,
+          "keywords_found": [
+            "às",
+            "as"
+          ]
+        },
+        "urgency_analysis": {
+          "urgency_indicators": [],
+          "action_indicators": [],
+          "informative_indicators": [],
+          "has_urgency": false,
+          "needs_action": false,
+          "is_informative": false
+        }
+      },
+      "lote_numero": 1,
+      "dashboard_added": true,
+      "notion_page_id": "267c6cf3-31c3-8181-ba6d-cb591f3bc953"
+    },
+    {
+      "assunto": "ALERTA DE SEGURANÇA: Vulnerabilidade no WhatsApp",
+      "remetente": "mensageiro@sistemas.ufrn.br",
+      "data_recebimento": "2025-09-04T16:07:50-03:00",
+      "conteudo_preview": "Informamos a toda a comunidade universitária a descoberta de uma vulnerabilidade crítica no WhatsApp que permite a execução de código remotamente, podendo levar à instalação de malwares no dispositivo e roubo de dados. A vulnerabilidade, que é especialmente letal em dispositivos IOS (iPhone), está descrita na CVE-2025-55177 e é listada no site https://www.whatsapp.com/security/advisories/2025/ (em inglês). O CeTRIS recomenda fortemente que todos os usuários verifiquem se há atualizações pendentes e, sendo o caso, as apliquem. Atenciosamente, CeTRIS - Centro de Atendimento e Resposta a Incidentes de Segurança da Informação - UFRN https://cetris.ufrn.br Superintendência de TI - UFRN https://sti.ufrn.br ----------------------- e-Comunicação UFRN: este sistema permite a comunicação entre a UFRN e sua comunidade universitária, divulgando as notícias e comunicados da instituição. Para saber como a UFRN trata os dados, acesse a Política de Privacidade. Caso não queira receber mais estas notificações clique aqui.",
+      "tem_anexos": false,
+      "quantidade_anexos": 0,
+      "classificacao": {
+        "email_numero": 2,
+        "categoria": "REUNIAO",
+        "urgencia": "ALTA",
+        "resumo": "Email de Mensageiro sobre: ALERTA DE SEGURANÇA: Vulnerabilidade no WhatsApp",
+        "resumo_executivo": "Email de Mensageiro SOLICITANDO REUNIÃO/AGENDAMENTO",
+        "acao_sugerida": "Confirmar reunião e agendar na agenda pessoal",
+        "prazo_estimado": "Imediato",
+        "necessita_resposta": "SIM",
+        "complexidade_resposta": "ALTA",
+        "justificativa_resposta": "Reunião detectada - confirmação necessária",
+        "palavras_chave": [
+          "reuniao",
+          "reuniao",
+          "agendamento"
+        ],
+        "confianca": 0.95,
+        "sender_analysis": {
+          "is_institutional": true,
+          "is_automatic": true,
+          "sender_type": "SISTEMA_UFRN",
+          "importance_level": "MEDIA"
+        },
+        "meeting_analysis": {
+          "has_meeting_keywords": true,
+          "has_time": false,
+          "has_date": true,
+          "extracted_time": null,
+          "extracted_date": "\\d{1,2}-\\d{1,2}",
+          "confidence": 0.6000000000000001,
+          "keywords_found": [
+            "as"
+          ]
+        },
+        "urgency_analysis": {
+          "urgency_indicators": [],
+          "action_indicators": [],
+          "informative_indicators": [
+            "informamos",
+            "comunicado",
+            "notícias"
+          ],
+          "has_urgency": false,
+          "needs_action": false,
+          "is_informative": true
+        }
+      },
+      "lote_numero": 1,
+      "dashboard_added": true,
+      "notion_page_id": "267c6cf3-31c3-8179-8f78-e30c03747a42"
+    },
+    {
+      "assunto": "Re: Pasta compartilhada com você: \"2º Checkpoint - CV25.2\"",
+      "remetente": "graco.viana@ufrn.br",
+      "data_recebimento": "2025-09-04T16:23:56-03:00",
+      "conteudo_preview": "Alexandre, boa tarde.\r\n\r\nConfirmo recebimento do arquivo, acredito, pelos itens marcados, que\r\ntenhamos alguns pontos a esclarecer.\r\n\r\nPodemos conversar amanhã, às 10:30 horas.\r\n\r\nGraco\r\n\r\nEm qui., 4 de set. de 2025 às 11:33, ALEXANDRE DAVID (via Google Drive) <\r\ndrive-shares-dm-noreply@google.com> escreveu:\r\n\r\n> ALEXANDRE DAVID compartilhou uma pasta\r\n> [image: Foto do perfil no cabeçalho]\r\n> ALEXANDRE DAVID (alexandre.david@ufrn.br) convidou você para *contribuir*\r\n> na seguinte pasta compartilhada:\r\n> 2º Checkpoint - CV25.2\r\n>\r\n> <https://drive.google.com/drive/folders/13ZJh4FgCN_Qnjovh3OmPvS0OnCwHw-pI?usp=sharing_eil&ts=68b9a34b>\r\n>\r\n> Abrir\r\n> <https://drive.google.com/drive/folders/13ZJh4FgCN_Qnjovh3OmPvS0OnCwHw-pI?usp=sharing_eip&ts=68b9a34b>\r\n> Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA\r\n> Você recebeu este e-mail porque alexandre.david@ufrn.br compartilhou com\r\n> você uma pasta ou um arquivo localizado no Google Drive. [image: Google]\r\n> <https://workspace.google.com/>\r\n>\r\n",
+      "tem_anexos": false,
+      "quantidade_anexos": 0,
+      "classificacao": {
+        "email_numero": 3,
+        "categoria": "REUNIAO",
+        "urgencia": "ALTA",
+        "resumo": "Email de Graco Viana sobre: Re: Pasta compartilhada com você: \"2º Checkpoint - CV25.2\"",
+        "resumo_executivo": "Comunicação de Graco Viana (colaborador UFRN) AGENDANDO REUNIÃO para amanhã às 10:30",
+        "acao_sugerida": "Confirmar reunião e agendar na agenda pessoal",
+        "prazo_estimado": "Imediato",
+        "necessita_resposta": "SIM",
+        "complexidade_resposta": "ALTA",
+        "justificativa_resposta": "Reunião detectada - confirmação necessária",
+        "palavras_chave": [
+          "reuniao",
+          "ufrn",
+          "colaborador",
+          "institucional",
+          "reuniao",
+          "agendamento"
+        ],
+        "confianca": 0.95,
+        "sender_analysis": {
+          "is_institutional": true,
+          "is_automatic": false,
+          "sender_type": "PESSOA_FISICA_UFRN",
+          "importance_level": "ALTA"
+        },
+        "meeting_analysis": {
+          "has_meeting_keywords": true,
+          "has_time": true,
+          "has_date": true,
+          "extracted_time": "10:30",
+          "extracted_date": "amanhã",
+          "confidence": 1.0,
+          "keywords_found": [
+            "conversar",
+            "às",
+            "as",
+            "podemos"
+          ]
+        },
+        "urgency_analysis": {
+          "urgency_indicators": [],
+          "action_indicators": [],
+          "informative_indicators": [],
+          "has_urgency": false,
+          "needs_action": false,
+          "is_informative": false
+        }
+      },
+      "lote_numero": 1,
+      "dashboard_added": true,
+      "notion_page_id": "267c6cf3-31c3-819f-b673-ee8fff7085ab"
+    },
+    {
+      "assunto": "MEMO - Documento Circular",
+      "remetente": "mensageiro@sistemas.ufrn.br",
+      "data_recebimento": "2025-09-04T16:15:21-03:00",
+      "conteudo_preview": "Documento CircularCaro Usuário, Um novo documento circular foi enviado para você. Por favor, acesse a sua caixa de entrada no Memo para realizar sua leitura. Número/ano: 183/2025 Protocolo: 23077.142186/2025-41 Assunto: Suspensão das atividades - INFRA. Superintendência de Tecnologia da Informação | UFRN | +55 084 3342-2210",
+      "tem_anexos": false,
+      "quantidade_anexos": 0,
+      "classificacao": {
+        "email_numero": 1,
+        "categoria": "REUNIAO",
+        "urgencia": "ALTA",
+        "resumo": "Email de Mensageiro sobre: MEMO - Documento Circular",
+        "resumo_executivo": "Email de Mensageiro SOLICITANDO REUNIÃO/AGENDAMENTO",
+        "acao_sugerida": "Confirmar reunião e agendar na agenda pessoal",
+        "prazo_estimado": "Imediato",
+        "necessita_resposta": "SIM",
+        "complexidade_resposta": "ALTA",
+        "justificativa_resposta": "Reunião detectada - confirmação necessária",
+        "palavras_chave": [
+          "reuniao",
+          "reuniao",
+          "agendamento",
+          "urgente",
+          "prioritario",
+          "acao",
+          "solicitacao"
+        ],
+        "confianca": 0.95,
+        "sender_analysis": {
+          "is_institutional": true,
+          "is_automatic": true,
+          "sender_type": "SISTEMA_UFRN",
+          "importance_level": "MEDIA"
+        },
+        "meeting_analysis": {
+          "has_meeting_keywords": true,
+          "has_time": false,
+          "has_date": true,
+          "extracted_time": null,
+          "extracted_date": "\\d{1,2}/\\d{1,2}",
+          "confidence": 0.6000000000000001,
+          "keywords_found": [
+            "as"
+          ]
+        },
+        "urgency_analysis": {
+          "urgency_indicators": [
+            "favor"
+          ],
+          "action_indicators": [
+            "favor"
+          ],
+          "informative_indicators": [],
+          "has_urgency": true,
+          "needs_action": true,
+          "is_informative": false
+        }
+      },
+      "lote_numero": 2,
+      "dashboard_added": true,
+      "notion_page_id": "267c6cf3-31c3-81f0-bcda-f2170bedd77b"
+    },
+    {
+      "assunto": "Prosas News: inscrições abertas para o PAT Cultural 2025 e muito mais! 😱",
+      "remetente": "contato@prosas.com.br",
+      "data_recebimento": "2025-09-04T20:16:14+00:00",
+      "conteudo_preview": " \r\n\r\n\r\n\r\n\r\n \r\n \r\nOlá! Tudo bem por aí?  Essa é mais uma Prosas News, uma newsletter onde você confere os principais editais da semana, além de conteúdos interessantes alinhados ao mercado e ao seu dia a dia! 😊\r\n\r\n  \r\n [ https://t.rdsv2.net/ls/click?upn=u001.ZnTitrtZysoyxy-2FxpIVXa58GTL2R8f4oPMMuMBuo-2BWAKoZHUwBQW568aV81cfMuoY7xmPBu-2BJR-2BdQQwVq2owisUYpWVUeW8GykjHtF24dNPo6CfSsYTot69hCIgIB81jTb-2BsPZdIxcq8E8SCa7BSTEKfaMk1IDHgJIjodnT10Lumi8UQ1beWpTEVZRcCv5kbQQ-2Fc6rZ36wRslmHuiiTXZKFL8m8TDix2LvF8UKh9GIJw6MZRLEIDv5-2B5nuMDtCYTL7VR601xUCOCW8wRZYr32t-2BfnZKMfGhFkaAiAvoUcebTGkoDSq8UQKPJMhVuZ5sVNcq-2Fn2zQ64CLL3MOdtFF2hYBzF3ANpG4O5GSvjRNlv5mtuYxFQmjcfHMOq-2BVT-2Fly2E8Fo0tMhxQzsLNQnHxGZYCIuk7mtU3vr9z6ejsgMqElojLEhJEFtZU8ZluTFzLkqgt-2BtJC6vEAVQTDScheFpw-3D-3DezVi_3HnSy7Thd-2B4TzjPSA5oX7rmyFt8GfJHmsSt96QQ-2BAHNnryGA3hrpkTOsh8H-2BMCRfeKZc5ANYrzU7zIFT4m4G400Qs7CNPglUIWbKoMD9a6X7eB1ArXM04PPo41TVmACVal9nGqBAbJMTr8vrTQjowYYZVFytemavtWO-2FFjgYoWAFIN-2Fj9Gnv7W-2FtuRsRuATNLa9z8OmdjxaV43Qce0KwQ-2FNa2gFdAAXT1Pp4DFBF1OM1uifDIQIiFFvwxgf3g-2F0qsiTm8Nw83HF1JjCUikgoFeuYmq59SrH4REPb8SUN9GjOCoBBfq4-2BP6SS0R8X1DJHW1DvMc0D8h-2BIMX5s5LYfBes16rR8frQnc4kwt6UO3jQRFS8YbaSDL6HCcUYv6toaOOTwWeJLUNPYvKxUJ7nUQXYqBEkrAVR2BuivDqz7qgAMU6W-2BhrUrV7xe5fNrKjJZQq-2F9JV1Wo3rqm1H7unefUdR-2FVds-2B4M09gJiPhqsAi2NrNnzo0phP-2FEj2StvEQuXOLUfR2HfpOzZn9ebL7c242t-2BGq8mxq5OgQuvZcgm63xip0FaHguni-2F-2B9PtWuniqi7CMW4IHDeWu9-2FTZR4RL1N-2Bl4kjcMUYTSSxJN8yzMuf8MuDAY5miYd9LorYwa7MiGQyhGuypMRNfdbwwMHQWVZkdodBMSUNUlL4P424NraKiI-3D ]\r\n\r\n Insc",
+      "tem_anexos": false,
+      "quantidade_anexos": 0,
+      "classificacao": {
+        "email_numero": 2,
+        "categoria": "REUNIAO",
+        "urgencia": "ALTA",
+        "resumo": "Email de Contato sobre: Prosas News: inscrições abertas para o PAT Cultural 2025 e muito mais! 😱",
+        "resumo_executivo": "Email de Contato SOLICITANDO REUNIÃO/AGENDAMENTO",
+        "acao_sugerida": "Confirmar reunião e agendar na agenda pessoal",
+        "prazo_estimado": "Imediato",
+        "necessita_resposta": "SIM",
+        "complexidade_resposta": "ALTA",
+        "justificativa_resposta": "Reunião detectada - confirmação necessária",
+        "palavras_chave": [
+          "reuniao",
+          "reuniao",
+          "agendamento"
+        ],
+        "confianca": 0.95,
+        "sender_analysis": {
+          "is_institutional": false,
+          "is_automatic": false,
+          "sender_type": "PESSOA_EXTERNA",
+          "importance_level": "MEDIA"
+        },
+        "meeting_analysis": {
+          "has_meeting_keywords": true,
+          "has_time": false,
+          "has_date": true,
+          "extracted_time": null,
+          "extracted_date": "\\d{1,2}-\\d{1,2}",
+          "confidence": 0.6000000000000001,
+          "keywords_found": [
+            "as"
+          ]
+        },
+        "urgency_analysis": {
+          "urgency_indicators": [],
+          "action_indicators": [],
+          "informative_indicators": [
+            "newsletter"
+          ],
+          "has_urgency": false,
+          "needs_action": false,
+          "is_informative": true
+        }
+      },
+      "lote_numero": 2,
+      "dashboard_added": true,
+      "notion_page_id": "267c6cf3-31c3-81a0-adad-e0e2551c17e4"
+    },
+    {
+      "assunto": "Notícias da UFRN - Nº 159",
+      "remetente": "mensageiro@sistemas.ufrn.br",
+      "data_recebimento": "2025-09-04T18:06:38-03:00",
+      "conteudo_preview": "\r\n\r\nQuinta-feira, 4 de Setembro de 2025 - Edição 159 - Ano XXVEstudantes viajam a Moçambique com o Trilhas Potiguares Brasil/África Agecom/UFRNFoto: Cícero Oliveira - Agecom/UFRN \r\n​Nesta quinta-feira, 4, um grupo de alunos, professores e servidores da Universidade Federal do Rio Grande do Norte (UFRN) embarcam para Moçambique, na África, com o programa Trilhas Potiguares Brasil/África. A iniciativa, coordenada pela Pró-Reitoria de Extensão (Proex), levará ações do projeto às cidades de Inhambane e Maxixe. Leia mais.\r\n\r\nObsur debate suicídio na população negra \r\nCCHLA/UFRN \r\nO Observatório de Suicídio e Raça (Obsur), vinculado ao curso de Psicologia e ao Centro de Ciências Humanas, Letras e Artes (CCHLA/UFRN), desenvolve pesquisas epidemiológicas inéditas sobre a relação entre suicídio e raça no Brasil. A coordenação é da professora Ana Karina, que ressalta a importância do tema: “desenvolvemos estudos epidemiológicos sobre o suicídio no Brasil e raça, dados esses desconhecidos e pouco discutidos no Brasil, mas que demandam urgente reflexão”. Leia mais.\r\n \r\n\r\n EVENTOS                             \r\n\r\nProjeto Habitat Marte recebe dois astronautas internacionais\r\n\r\nAgecom/UFRN\r\nNo dia 10 de setembro, a partir das 15h, o auditório do Centro de Tecnologia (CT) da UFRN sediará o Astronaut Forum, evento que contará com a participação dos astronautas Denis Matveev e Eiman Jahangir, além da presença de fundações e empresas relacionadas à exploração espacial. O evento é gratuito. Leia ",
+      "tem_anexos": false,
+      "quantidade_anexos": 0,
+      "classificacao": {
+        "email_numero": 3,
+        "categoria": "REUNIAO",
+        "urgencia": "ALTA",
+        "resumo": "Email de Mensageiro sobre: Notícias da UFRN - Nº 159",
+        "resumo_executivo": "Email de Mensageiro SOLICITANDO REUNIÃO/AGENDAMENTO",
+        "acao_sugerida": "Confirmar reunião e agendar na agenda pessoal",
+        "prazo_estimado": "Imediato",
+        "necessita_resposta": "SIM",
+        "complexidade_resposta": "ALTA",
+        "justificativa_resposta": "Reunião detectada - confirmação necessária",
+        "palavras_chave": [
+          "reuniao",
+          "reuniao",
+          "agendamento",
+          "urgente",
+          "prioritario"
+        ],
+        "confianca": 0.95,
+        "sender_analysis": {
+          "is_institutional": true,
+          "is_automatic": true,
+          "sender_type": "SISTEMA_UFRN",
+          "importance_level": "MEDIA"
+        },
+        "meeting_analysis": {
+          "has_meeting_keywords": true,
+          "has_time": false,
+          "has_date": true,
+          "extracted_time": null,
+          "extracted_date": "quinta",
+          "confidence": 0.6000000000000001,
+          "keywords_found": [
+            "às",
+            "as"
+          ]
+        },
+        "urgency_analysis": {
+          "urgency_indicators": [
+            "urgente"
+          ],
+          "action_indicators": [],
+          "informative_indicators": [
+            "notícias"
+          ],
+          "has_urgency": true,
+          "needs_action": false,
+          "is_informative": true
+        }
+      },
+      "lote_numero": 2,
+      "dashboard_added": true,
+      "notion_page_id": "267c6cf3-31c3-81c3-8405-c62c9d99ea83"
+    },
+    {
+      "assunto": "Urgente - Alteração do status do email",
+      "remetente": "alex.guimaraes.it@gmail.com",
+      "data_recebimento": "2025-09-05T10:05:19+01:00",
+      "conteudo_preview": "Alexandre, você precisa alterar o status do email institucional. Faça o\r\nquanto antes.\r\n",
+      "tem_anexos": false,
+      "quantidade_anexos": 0,
+      "classificacao": {
+        "email_numero": 1,
+        "categoria": "PESSOAL",
+        "urgencia": "ALTA",
+        "resumo": "Email de Alex Guimaraes It sobre: Urgente - Alteração do status do email",
+        "resumo_executivo": "Email de Alex Guimaraes It com DEMANDA URGENTE sobre Urgente - Alteração do status do email (indicadores: urgente)",
+        "acao_sugerida": "Avaliar contexto e decidir se resposta é necessária",
+        "prazo_estimado": "Mesmo dia",
+        "necessita_resposta": "TALVEZ",
+        "complexidade_resposta": "SIMPLES",
+        "justificativa_resposta": "Contexto ambíguo - avaliar necessidade",
+        "palavras_chave": [
+          "pessoal",
+          "urgente",
+          "prioritario"
+        ],
+        "confianca": 0.95,
+        "sender_analysis": {
+          "is_institutional": false,
+          "is_automatic": false,
+          "sender_type": "PESSOA_EXTERNA",
+          "importance_level": "MEDIA"
+        },
+        "meeting_analysis": {
+          "has_meeting_keywords": false,
+          "has_time": false,
+          "has_date": false,
+          "extracted_time": null,
+          "extracted_date": null,
+          "confidence": 0.0,
+          "keywords_found": []
+        },
+        "urgency_analysis": {
+          "urgency_indicators": [
+            "urgente"
+          ],
+          "action_indicators": [],
+          "informative_indicators": [],
+          "has_urgency": true,
+          "needs_action": false,
+          "is_informative": false
+        }
+      },
+      "lote_numero": 3,
+      "dashboard_added": true,
+      "notion_page_id": "267c6cf3-31c3-81f5-affb-d4b3c2bb7f95"
+    },
+    {
+      "assunto": "Saudações",
+      "remetente": "alexandre.david@ufrn.br",
+      "data_recebimento": "2025-09-05T10:06:03+01:00",
+      "conteudo_preview": "Olá, Alexandre, apenas para dizer que estou de volta das férias. Caso\r\nnecessite de algo me avise. Grande abraço.\r\n",
+      "tem_anexos": false,
+      "quantidade_anexos": 0,
+      "classificacao": {
+        "email_numero": 2,
+        "categoria": "ACADEMICO",
+        "urgencia": "MEDIA",
+        "resumo": "Email de Alexandre David sobre: Saudações",
+        "resumo_executivo": "Comunicação de Alexandre David (colaborador UFRN) sobre Saudações - avaliar contexto e necessidade",
+        "acao_sugerida": "Analisar demanda e responder em 1-2 dias úteis",
+        "prazo_estimado": "1-2 dias",
+        "necessita_resposta": "SIM",
+        "complexidade_resposta": "MÉDIA",
+        "justificativa_resposta": "Comunicação de pessoa física da UFRN",
+        "palavras_chave": [
+          "academico",
+          "ufrn",
+          "colaborador",
+          "institucional"
+        ],
+        "confianca": 0.95,
+        "sender_analysis": {
+          "is_institutional": true,
+          "is_automatic": false,
+          "sender_type": "PESSOA_FISICA_UFRN",
+          "importance_level": "ALTA"
+        },
+        "meeting_analysis": {
+          "has_meeting_keywords": true,
+          "has_time": false,
+          "has_date": false,
+          "extracted_time": null,
+          "extracted_date": null,
+          "confidence": 0.4,
+          "keywords_found": [
+            "as"
+          ]
+        },
+        "urgency_analysis": {
+          "urgency_indicators": [],
+          "action_indicators": [],
+          "informative_indicators": [],
+          "has_urgency": false,
+          "needs_action": false,
+          "is_informative": false
+        }
+      },
+      "lote_numero": 3,
+      "dashboard_added": true,
+      "notion_page_id": "267c6cf3-31c3-8104-8102-c259a2382ca9"
+    },
+    {
+      "assunto": "MEMO - Documento Circular",
+      "remetente": "mensageiro@sistemas.ufrn.br",
+      "data_recebimento": "2025-09-05T09:38:49-03:00",
+      "conteudo_preview": "Documento CircularCaro Usuário, Um novo documento circular foi enviado para você. Por favor, acesse a sua caixa de entrada no Memo para realizar sua leitura. Número/ano: 225/2025 Protocolo: 23077.142539/2025-11 Assunto: Cadastro de Fiscais no Portal Nacional de Contratações Públicas (Contratos.gov.br). Superintendência de Informática | UFRN | +55 084 3215.3148",
+      "tem_anexos": false,
+      "quantidade_anexos": 0,
+      "classificacao": {
+        "email_numero": 3,
+        "categoria": "REUNIAO",
+        "urgencia": "ALTA",
+        "resumo": "Email de Mensageiro sobre: MEMO - Documento Circular",
+        "resumo_executivo": "Email de Mensageiro SOLICITANDO REUNIÃO/AGENDAMENTO",
+        "acao_sugerida": "Confirmar reunião e agendar na agenda pessoal",
+        "prazo_estimado": "Imediato",
+        "necessita_resposta": "SIM",
+        "complexidade_resposta": "ALTA",
+        "justificativa_resposta": "Reunião detectada - confirmação necessária",
+        "palavras_chave": [
+          "reuniao",
+          "reuniao",
+          "agendamento",
+          "urgente",
+          "prioritario",
+          "acao",
+          "solicitacao"
+        ],
+        "confianca": 0.95,
+        "sender_analysis": {
+          "is_institutional": true,
+          "is_automatic": true,
+          "sender_type": "SISTEMA_UFRN",
+          "importance_level": "MEDIA"
+        },
+        "meeting_analysis": {
+          "has_meeting_keywords": true,
+          "has_time": false,
+          "has_date": true,
+          "extracted_time": null,
+          "extracted_date": "\\d{1,2}/\\d{1,2}",
+          "confidence": 0.6000000000000001,
+          "keywords_found": [
+            "as"
+          ]
+        },
+        "urgency_analysis": {
+          "urgency_indicators": [
+            "favor"
+          ],
+          "action_indicators": [
+            "favor"
+          ],
+          "informative_indicators": [],
+          "has_urgency": true,
+          "needs_action": true,
+          "is_informative": false
+        }
+      },
+      "lote_numero": 3,
+      "dashboard_added": true,
+      "notion_page_id": "267c6cf3-31c3-8131-803b-fc78a4de16f9"
+    },
+    {
+      "assunto": "Convite para a II Jornada Nacional sobre escrita na escola e para a\r\n I Jornada Internacional Escrita na Escola",
+      "remetente": "mensageiro@sistemas.ufrn.br",
+      "data_recebimento": "2025-09-05T09:56:36-03:00",
+      "conteudo_preview": "O Departamento de Letras convida a todos para a II Jornada Nacional sobre escrita na escola e para a I Jornada Internacional Escrita na Escola. Um espaço de troca, reflexão e partilha sobre a escrita e seus processos em diferentes contextos de ensino. DATA: 18 e 19 de setembro Conferências (manhã): Auditório da Reitoria Mesas-redondas e comunicações (tarde): dia 18: setor 2 -, sala C5; dia 19: setor II, sala G1 Inscrições abertas (02/09-17/09) Público interno: via SIGAA Público externo: no dia do evento Confira o folder em anexo. ----------------------- e-Comunicação UFRN: este sistema permite a comunicação entre a UFRN e sua comunidade universitária, divulgando as notícias e comunicados da instituição. Para saber como a UFRN trata os dados, acesse a Política de Privacidade. Caso não queira receber mais estas notificações clique aqui.",
+      "tem_anexos": true,
+      "quantidade_anexos": 1,
+      "classificacao": {
+        "email_numero": 1,
+        "categoria": "REUNIAO",
+        "urgencia": "ALTA",
+        "resumo": "Email de Mensageiro sobre: Convite para a II Jornada Nacional sobre escrita na escola e para a\r\n I Jornada ",
+        "resumo_executivo": "Email de Mensageiro SOLICITANDO REUNIÃO/AGENDAMENTO",
+        "acao_sugerida": "Confirmar reunião e agendar na agenda pessoal",
+        "prazo_estimado": "Imediato",
+        "necessita_resposta": "SIM",
+        "complexidade_resposta": "ALTA",
+        "justificativa_resposta": "Reunião detectada - confirmação necessária",
+        "palavras_chave": [
+          "reuniao",
+          "reuniao",
+          "agendamento"
+        ],
+        "confianca": 0.95,
+        "sender_analysis": {
+          "is_institutional": true,
+          "is_automatic": true,
+          "sender_type": "SISTEMA_UFRN",
+          "importance_level": "MEDIA"
+        },
+        "meeting_analysis": {
+          "has_meeting_keywords": true,
+          "has_time": false,
+          "has_date": true,
+          "extracted_time": null,
+          "extracted_date": "\\d{1,2}/\\d{1,2}",
+          "confidence": 0.6000000000000001,
+          "keywords_found": [
+            "as"
+          ]
+        },
+        "urgency_analysis": {
+          "urgency_indicators": [],
+          "action_indicators": [],
+          "informative_indicators": [
+            "comunicado",
+            "notícias"
+          ],
+          "has_urgency": false,
+          "needs_action": false,
+          "is_informative": true
+        }
+      },
+      "lote_numero": 4,
+      "dashboard_added": true,
+      "notion_page_id": "267c6cf3-31c3-81d7-af99-ebf09e8dbfdf"
+    },
+    {
+      "assunto": "Novos Galaxy Tab S11 com 50 € de desconto direto e surpresas épicas 😉",
+      "remetente": "no-reply@m1.email.samsung.com",
+      "data_recebimento": "2025-09-05T16:37:32+01:00",
+      "conteudo_preview": "Mais fino, mais leve e com as funcionalidades Galaxy AI ideais para trabalhar 🚀 ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ \r\n\r\nMais fino, mais leve e com as funcionalidades Galaxy AI ideais para trabalhar 🚀 \t    http://t.m1.email.samsung.com/r/?id=t5357d052,f738e23c,6fe8eb1e&e=cDE9JTQwaWxEekhlUlg4U0NBWTFHJTJCSm9SJTJCcUs1WWpMeWFCTjN2VWJnY2hwSmVOaFklM0Q&s=XbOphyK5fXc97EsreFiq8i5-iwC1mEWhq5pT60_KQdk Veja a versão online aqui \t\r\n\t\r\n\r\n http://t.m1.email.samsung.com/r/?id=t5357d052,f738e23c,6fe8eb1f&e=cDE9U0VQLVRhYlMxMS1DUk0tbGExLWVvLXByb3A&s=vam-t4yyaxhuuiwO58TCkyp3wXYrA2MkEOy1RpB4TFk  http://t.m1.email.samsung.com/r/?id=t5357d052,f738e23c,6fe8eb20&e=cDE9U0VQLVRhYlMxMS1DUk0tbGExLWVvLXByb3A&s=_Qm-6K94cHCRu56ebzZU-PSmQ_Z61EIg-9dTBuScbRQ \t\r\n\t\r\n\r\n\t\r\n\t\r\n\r\n http://t.m1.email.samsung.com/r/?id=t5357d052,f738e23c,6fe8eb21&e=cDE9U0VQLVRhYlMxMS1DUk0tbGExLWVvLXByb3AmcDI9UzUxLVQyNU4tNUQ4Wi03VDRY&s=DSPmGHyx0FzXIqegLehpuiDD4WJrqbiBnkuhUbJDSLo  http://t.m1.email.samsung.com/r/?id=t5357d052,f738e23c,6fe8eb22&e=cDE9U0VQLVRhYlMxMS1DUk0tbGExLWVvLXByb3AmcDI9UzUxLVQyNU4tNUQ4Wi03VDRY&s=U6u1hrg5RTRnGpU5MwyFztzr1WUboy5GQaEvUepdg5c \t\r\n\t\r\n\r\nS51-T25N-5D8Z-7T4X\t\r\n\t\r\n\r\n http://t.m1.email.samsung.com/r/?id=t5357d052,f738e23c,6fe8eb23&e=cDE9U0VQLV",
+      "tem_anexos": false,
+      "quantidade_anexos": 0,
+      "classificacao": {
+        "email_numero": 2,
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "resumo": "Email de No-Reply sobre: Novos Galaxy Tab S11 com 50 € de desconto direto e surpresas épicas 😉",
+        "resumo_executivo": "Email de No-Reply sobre Novos Galaxy Tab S11 com 50 € de desconto direto e surpresas - avaliar contexto e necessidade",
+        "acao_sugerida": "Arquivar - nenhuma ação necessária",
+        "prazo_estimado": "N/A",
+        "necessita_resposta": "NÃO",
+        "complexidade_resposta": "SIMPLES",
+        "justificativa_resposta": "Comunicado automático ou informativo",
+        "palavras_chave": [
+          "informativo"
+        ],
+        "confianca": 0.95,
+        "sender_analysis": {
+          "is_institutional": false,
+          "is_automatic": true,
+          "sender_type": "SISTEMA_EXTERNO",
+          "importance_level": "BAIXA"
+        },
+        "meeting_analysis": {
+          "has_meeting_keywords": true,
+          "has_time": false,
+          "has_date": false,
+          "extracted_time": null,
+          "extracted_date": null,
+          "confidence": 0.4,
+          "keywords_found": [
+            "as"
+          ]
+        },
+        "urgency_analysis": {
+          "urgency_indicators": [],
+          "action_indicators": [],
+          "informative_indicators": [],
+          "has_urgency": false,
+          "needs_action": false,
+          "is_informative": false
+        }
+      },
+      "lote_numero": 4,
+      "dashboard_added": true,
+      "notion_page_id": "267c6cf3-31c3-818f-8675-ed4e55c0d71b"
+    },
+    {
+      "assunto": "Avaliação de Desempenho.",
+      "remetente": "mensageiro@sistemas.ufrn.br",
+      "data_recebimento": "2025-09-05T14:58:35-03:00",
+      "conteudo_preview": "Prezados(as) servidores(as) técnico-administrativos e docentes ocupantes de função de gestão,   A Pró-reitoria de Gestão de Pessoas (PROGESP), por meio de sua Diretoria de Desenvolvimento de Pessoas (DDP) e de sua Divisão de Acompanhamento e Avaliação (DAA), vem por meio deste divulgar os instrumentos da Avaliação de Desempenho 2025 (Anexo 1). Essa avaliação é regida pela Resolução 110/2019 CONSAD-UFRN.   AVALIAÇÃO DE DESEMPENHO NA UFRN: FINALIDADES E INSTRUMENTOS AVALIATIVOS   Finalidades:  Melhorias do desempenho; Subsídio a outros processos institucionais (ex: progressão por mérito profissional); Fortalecimento da cooperação e das relações interpessoais e interprofissionais a partir da oferta e recebimento de feedbacks;    Instrumentos: Os formulários/instrumentos de Avaliação de Desempenho são compostos por: indicadores de desempenho, mediadores de desempenho, itens de pontuação extra e avaliação institucional. A seguir, explicamos o que são cada um deles: ❖    Indicadores de desempenho: Conhecimento - Conhecimentos necessários ao desempenho de suas atividades; Habilidades - Habilidades necessárias à realização das suas atividades; Entregas Planejadas - Entregas planejadas para a unidade, considerando qualidade e prazos estabelecidos; Comportamentos/Atitudes - Comportamentos e atitudes esperados nas relações interpessoais, bem como na responsabilidade no exercício do cargo público; Itens de Pontuação Extra: São itens que permitem, mediante comprovação, que o(a) servidor(a",
+      "tem_anexos": true,
+      "quantidade_anexos": 1,
+      "classificacao": {
+        "email_numero": 3,
+        "categoria": "REUNIAO",
+        "urgencia": "ALTA",
+        "resumo": "Email de Mensageiro sobre: Avaliação de Desempenho.",
+        "resumo_executivo": "Email de Mensageiro SOLICITANDO REUNIÃO/AGENDAMENTO",
+        "acao_sugerida": "Confirmar reunião e agendar na agenda pessoal",
+        "prazo_estimado": "Imediato",
+        "necessita_resposta": "SIM",
+        "complexidade_resposta": "ALTA",
+        "justificativa_resposta": "Reunião detectada - confirmação necessária",
+        "palavras_chave": [
+          "reuniao",
+          "reuniao",
+          "agendamento",
+          "urgente",
+          "prioritario",
+          "acao",
+          "solicitacao"
+        ],
+        "confianca": 0.95,
+        "sender_analysis": {
+          "is_institutional": true,
+          "is_automatic": true,
+          "sender_type": "SISTEMA_UFRN",
+          "importance_level": "MEDIA"
+        },
+        "meeting_analysis": {
+          "has_meeting_keywords": true,
+          "has_time": false,
+          "has_date": true,
+          "extracted_time": null,
+          "extracted_date": "\\d{1,2}/\\d{1,2}",
+          "confidence": 0.6000000000000001,
+          "keywords_found": [
+            "as"
+          ]
+        },
+        "urgency_analysis": {
+          "urgency_indicators": [
+            "prazo",
+            "necessário"
+          ],
+          "action_indicators": [
+            "necessário"
+          ],
+          "informative_indicators": [],
+          "has_urgency": true,
+          "needs_action": true,
+          "is_informative": false
+        }
+      },
+      "lote_numero": 4,
+      "dashboard_added": true,
+      "notion_page_id": "267c6cf3-31c3-8107-bbbf-efe9efa63b08"
+    },
+    {
+      "assunto": "Avaliação de Desempenho.",
+      "remetente": "mensageiro@sistemas.ufrn.br",
+      "data_recebimento": "2025-09-05T14:57:57-03:00",
+      "conteudo_preview": "Prezados(as) servidores(as) técnico-administrativos e docentes ocupantes de função de gestão,   A Pró-reitoria de Gestão de Pessoas (PROGESP), por meio de sua Diretoria de Desenvolvimento de Pessoas (DDP) e de sua Divisão de Acompanhamento e Avaliação (DAA), vem por meio deste divulgar os instrumentos da Avaliação de Desempenho 2025 (Anexo 1). Essa avaliação é regida pela Resolução 110/2019 CONSAD-UFRN.   AVALIAÇÃO DE DESEMPENHO NA UFRN: FINALIDADES E INSTRUMENTOS AVALIATIVOS   Finalidades:  Melhorias do desempenho; Subsídio a outros processos institucionais (ex: progressão por mérito profissional); Fortalecimento da cooperação e das relações interpessoais e interprofissionais a partir da oferta e recebimento de feedbacks;    Instrumentos: Os formulários/instrumentos de Avaliação de Desempenho são compostos por: indicadores de desempenho, mediadores de desempenho, itens de pontuação extra e avaliação institucional. A seguir, explicamos o que são cada um deles: ❖    Indicadores de desempenho: Conhecimento - Conhecimentos necessários ao desempenho de suas atividades; Habilidades - Habilidades necessárias à realização das suas atividades; Entregas Planejadas - Entregas planejadas para a unidade, considerando qualidade e prazos estabelecidos; Comportamentos/Atitudes - Comportamentos e atitudes esperados nas relações interpessoais, bem como na responsabilidade no exercício do cargo público; Itens de Pontuação Extra: São itens que permitem, mediante comprovação, que o(a) servidor(a",
+      "tem_anexos": true,
+      "quantidade_anexos": 1,
+      "classificacao": {
+        "email_numero": 1,
+        "categoria": "REUNIAO",
+        "urgencia": "ALTA",
+        "resumo": "Email de Mensageiro sobre: Avaliação de Desempenho.",
+        "resumo_executivo": "Email de Mensageiro SOLICITANDO REUNIÃO/AGENDAMENTO",
+        "acao_sugerida": "Confirmar reunião e agendar na agenda pessoal",
+        "prazo_estimado": "Imediato",
+        "necessita_resposta": "SIM",
+        "complexidade_resposta": "ALTA",
+        "justificativa_resposta": "Reunião detectada - confirmação necessária",
+        "palavras_chave": [
+          "reuniao",
+          "reuniao",
+          "agendamento",
+          "urgente",
+          "prioritario",
+          "acao",
+          "solicitacao"
+        ],
+        "confianca": 0.95,
+        "sender_analysis": {
+          "is_institutional": true,
+          "is_automatic": true,
+          "sender_type": "SISTEMA_UFRN",
+          "importance_level": "MEDIA"
+        },
+        "meeting_analysis": {
+          "has_meeting_keywords": true,
+          "has_time": false,
+          "has_date": true,
+          "extracted_time": null,
+          "extracted_date": "\\d{1,2}/\\d{1,2}",
+          "confidence": 0.6000000000000001,
+          "keywords_found": [
+            "as"
+          ]
+        },
+        "urgency_analysis": {
+          "urgency_indicators": [
+            "prazo",
+            "necessário"
+          ],
+          "action_indicators": [
+            "necessário"
+          ],
+          "informative_indicators": [],
+          "has_urgency": true,
+          "needs_action": true,
+          "is_informative": false
+        }
+      },
+      "lote_numero": 5,
+      "dashboard_added": true,
+      "notion_page_id": "267c6cf3-31c3-8188-be7c-caf6699339b2"
+    },
+    {
+      "assunto": "Are you the ALEXANDRE DAVID who wrote \"RS-01-11 David M oller: From\r\n Hierarichcal Timed Automata...\"?",
+      "remetente": "updates@academia-mail.com",
+      "data_recebimento": "2025-09-05T18:03:54+00:00",
+      "conteudo_preview": "Alexandre, is this publication yours? Help us keep your profile up to date.\r\n\r\nRS-01-11 David M oller: From Hierarichcal Timed Automata to UPPAAL\r\nBy Alexandre David, M. Oliver M Oller\r\n\r\nFollow the link below to add this publication to your profile:\r\n\r\nhttps://www.academia.edu/keypass/enJjeTBhdG1lVWNmRUpEeWV3a3RwQUM2MU5rTzVXSkRrT3lzWFpTbzk0WT0tLXpXbklxeFg3WGptMmFoNlhGa3RUMXc9PQ==--f27ed012c8c053e2002c9d6653d26899cba19e92/t/DN1qG-SPUBn28-HuE2m/mentions/claim_papers/claim?paper_id=281778219\r\n\r\nAdding this paper to your profile will upload it to Academia.edu.\r\n\r\nIf this is not your publication, please follow the link below here to let us know:\r\n\r\nhttps://www.academia.edu/keypass/enJjeTBhdG1lVWNmRUpEeWV3a3RwQUM2MU5rTzVXSkRrT3lzWFpTbzk0WT0tLXpXbklxeFg3WGptMmFoNlhGa3RUMXc9PQ==--f27ed012c8c053e2002c9d6653d26899cba19e92/t/DN1qG-SPUBn28-HuE2m/mentions_verification?anticlaim_paper_id=281778219\r\n\r\n\r\n\r\n-----\r\n\r\nFollow the link below to disable these notifications:\r\n\r\nhttps://academia.edu/keypass/enJjeTBhdG1lVWNmRUpEeWV3a3RwQUM2MU5rTzVXSkRrT3lzWFpTbzk0WT0tLXpXbklxeFg3WGptMmFoNlhGa3RUMXc9PQ==--f27ed012c8c053e2002c9d6653d26899cba19e92/t/DN1qG-SPUBn28-HuE2m/confirm_unsubscribe/confirm_papers\r\n\r\nAcademia.edu, 580 California St., Suite 400, San Francisco, CA, 94104\r\n",
+      "tem_anexos": false,
+      "quantidade_anexos": 0,
+      "classificacao": {
+        "email_numero": 2,
+        "categoria": "REUNIAO",
+        "urgencia": "ALTA",
+        "resumo": "Email de Updates sobre: Are you the ALEXANDRE DAVID who wrote \"RS-01-11 David M oller: From\r\n Hierarichc",
+        "resumo_executivo": "Email de Updates SOLICITANDO REUNIÃO/AGENDAMENTO",
+        "acao_sugerida": "Confirmar reunião e agendar na agenda pessoal",
+        "prazo_estimado": "Imediato",
+        "necessita_resposta": "SIM",
+        "complexidade_resposta": "ALTA",
+        "justificativa_resposta": "Reunião detectada - confirmação necessária",
+        "palavras_chave": [
+          "reuniao",
+          "reuniao",
+          "agendamento"
+        ],
+        "confianca": 0.95,
+        "sender_analysis": {
+          "is_institutional": false,
+          "is_automatic": false,
+          "sender_type": "PESSOA_EXTERNA",
+          "importance_level": "MEDIA"
+        },
+        "meeting_analysis": {
+          "has_meeting_keywords": true,
+          "has_time": false,
+          "has_date": true,
+          "extracted_time": null,
+          "extracted_date": "\\d{1,2}-\\d{1,2}",
+          "confidence": 0.6000000000000001,
+          "keywords_found": [
+            "as"
+          ]
+        },
+        "urgency_analysis": {
+          "urgency_indicators": [],
+          "action_indicators": [],
+          "informative_indicators": [],
+          "has_urgency": false,
+          "needs_action": false,
+          "is_informative": false
+        }
+      },
+      "lote_numero": 5,
+      "dashboard_added": true,
+      "notion_page_id": "267c6cf3-31c3-810b-a0dc-f56acde55ddb"
+    },
+    {
+      "assunto": "Brasil usa a marreta do antidumping",
+      "remetente": "mkt@einship.com",
+      "data_recebimento": "2025-09-05T18:16:16+00:00",
+      "conteudo_preview": "**Patrocinado por:**\r\n\r\n\r\nAhoy, Marujos!\r\n\r\n\r\n**Eu descobri:**que a China está avançando tanto em energia solar que, se o ritmo continuar, até 2030 ela deve gerar mais eletricidade só com painéis solares do que os EUA geram hoje com todas as fontes de energia juntas.\r\n\r\n\r\n🚢 Na Rota\r\n---------\r\n\r\nO Ministério do Desenvolvimento, Indústria, Comércio e Serviços (MDIC) resolveu mostrar que não está para brincadeira e puxou o freio de mão em algumas importações.\r\n\r\n \r\n\r\nA justificativa oficial? “Proteger a indústria nacional contra o comércio desleal”. Tradução livre: segurar a barra da concorrência estrangeira e de quebra dar um susto nos importadores.\r\n\r\n \r\n\r\n**O radar do governo apontou:**\r\n\r\n \r\n\r\n\r\n- Resinas de polietileno: medida antidumping provisória por até 6 meses contra EUA e Canadá (sim, até os “países de primeiro mundo” entram na lista negra). \r\n \r\n\r\n\r\n- Folhas metálicas de aço carbono: direito antidumping definitivo contra a China. \r\n \r\n\r\n\r\n- Fibras de poliéster: direito antidumping definitivo contra China, Índia, Tailândia e Vietnã — válido por até 5 anos (tipo uma temporada inteira da sua série favorita, só que bem menos divertida). \r\n \r\n\r\n**O ComexBase mostra a realidade do mercado:**\r\n\r\n \r\n\r\n\r\n- Mais de 200 empresas brasileiras importaram essas NCMs da China, somando US$ 622,5 milhões (FOB). \r\n \r\n\r\n\r\n- Tirando a China da jogada, 240 empresas buscaram fornecedores em outros países, movimentando US$ 814 milhões (FOB). \r\n \r\n\r\n**Moral da história:**\r\n\r\n \r\n\r\nÉ aí que a",
+      "tem_anexos": false,
+      "quantidade_anexos": 0,
+      "classificacao": {
+        "email_numero": 3,
+        "categoria": "REUNIAO",
+        "urgencia": "ALTA",
+        "resumo": "Email de Mkt sobre: Brasil usa a marreta do antidumping",
+        "resumo_executivo": "Email de Mkt SOLICITANDO REUNIÃO/AGENDAMENTO",
+        "acao_sugerida": "Confirmar reunião e agendar na agenda pessoal",
+        "prazo_estimado": "Imediato",
+        "necessita_resposta": "SIM",
+        "complexidade_resposta": "ALTA",
+        "justificativa_resposta": "Reunião detectada - confirmação necessária",
+        "palavras_chave": [
+          "reuniao",
+          "reuniao",
+          "agendamento",
+          "urgente",
+          "prioritario",
+          "acao",
+          "solicitacao"
+        ],
+        "confianca": 0.95,
+        "sender_analysis": {
+          "is_institutional": false,
+          "is_automatic": false,
+          "sender_type": "PESSOA_EXTERNA",
+          "importance_level": "MEDIA"
+        },
+        "meeting_analysis": {
+          "has_meeting_keywords": true,
+          "has_time": false,
+          "has_date": true,
+          "extracted_time": null,
+          "extracted_date": "hoje",
+          "confidence": 0.6000000000000001,
+          "keywords_found": [
+            "as"
+          ]
+        },
+        "urgency_analysis": {
+          "urgency_indicators": [
+            "até",
+            "favor"
+          ],
+          "action_indicators": [
+            "favor"
+          ],
+          "informative_indicators": [],
+          "has_urgency": true,
+          "needs_action": true,
+          "is_informative": false
+        }
+      },
+      "lote_numero": 5,
+      "dashboard_added": true,
+      "notion_page_id": "267c6cf3-31c3-811d-9f91-ea29eff3bacd"
+    },
+    {
+      "assunto": "Notícias da UFRN - Nº 160",
+      "remetente": "mensageiro@sistemas.ufrn.br",
+      "data_recebimento": "2025-09-05T18:10:40-03:00",
+      "conteudo_preview": "\r\n\r\nSexta-feira, 5 de Setembro de 2025 - Edição 160 - Ano XXVEnfermagem da FACISA promove conscientização sobre vacinação Agecom/UFRNFoto: FACISA/UFRN \r\nEm um cenário em que a desinformação sobre vacinas representa um risco significativo para a saúde pública, a Faculdade de Ciências da Saúde do Trairi (FACISA/UFRN) busca mudar essa realidade. Para isso, desenvolveu o projeto ImunizAÇÃO para Prevenção. O projeto de extensão é coordenado pela professora Hellyda Bezerra, do curso de Enfermagem da FACISA/UFRN, com a participação dos discentes Iale Guilherme, Arthur Patrick, Nicole Cristinny, Clarisce Gomes, Ana Beatriz e Clara Lopes. Leia mais.\r\n\r\nParnamirim solicita apoio da UFRN\r\nMarina Gadelha - Ascom-Reitoria \r\nO reitor da Universidade Federal do Rio Grande do Norte (UFRN), José Daniel Diniz Melo, recebeu, nesta sexta-feira, 5, o secretário de Planejamento e Finanças de Parnamirim, Kelps Lima, que solicitou apoio institucional para a concretização do Parque Tecnológico Parnamirim Aeroporto Digital. O projeto, idealizado pela prefeitura do município, tem como objetivo reunir startups, centros de pesquisa, empresas de tecnologia e instituições de ensino, com ênfase em soluções ligadas à área aeronáutica. Leia mais.\r\n\r\nUFRN garante continuidade do Reajaí\r\nMarina Gadelha - Ascom-Reitoria \r\nA continuidade do Projeto Reajaí, a Rede de Educação e Alfabetização de Pessoas Jovens, Adultas e Idosas, foi discutida em reunião nesta sexta-feira, 5, com o reitor da Universidade Federal do ",
+      "tem_anexos": false,
+      "quantidade_anexos": 0,
+      "classificacao": {
+        "email_numero": 1,
+        "categoria": "REUNIAO",
+        "urgencia": "ALTA",
+        "resumo": "Email de Mensageiro sobre: Notícias da UFRN - Nº 160",
+        "resumo_executivo": "Email de Mensageiro SOLICITANDO REUNIÃO/AGENDAMENTO",
+        "acao_sugerida": "Confirmar reunião e agendar na agenda pessoal",
+        "prazo_estimado": "Imediato",
+        "necessita_resposta": "SIM",
+        "complexidade_resposta": "ALTA",
+        "justificativa_resposta": "Reunião detectada - confirmação necessária",
+        "palavras_chave": [
+          "reuniao",
+          "reuniao",
+          "agendamento",
+          "acao",
+          "solicitacao"
+        ],
+        "confianca": 0.95,
+        "sender_analysis": {
+          "is_institutional": true,
+          "is_automatic": true,
+          "sender_type": "SISTEMA_UFRN",
+          "importance_level": "MEDIA"
+        },
+        "meeting_analysis": {
+          "has_meeting_keywords": true,
+          "has_time": false,
+          "has_date": true,
+          "extracted_time": null,
+          "extracted_date": "sexta",
+          "confidence": 0.6000000000000001,
+          "keywords_found": [
+            "reunião",
+            "as"
+          ]
+        },
+        "urgency_analysis": {
+          "urgency_indicators": [],
+          "action_indicators": [
+            "solicito"
+          ],
+          "informative_indicators": [
+            "notícias"
+          ],
+          "has_urgency": false,
+          "needs_action": true,
+          "is_informative": true
+        }
+      },
+      "lote_numero": 6,
+      "dashboard_added": true,
+      "notion_page_id": "267c6cf3-31c3-81b3-9572-cf2c3fdaf94f"
+    }
+  ],
+  "estatisticas": {
+    "por_categoria": {
+      "REUNIAO": 13,
+      "PESSOAL": 1,
+      "ACADEMICO": 1,
+      "INFORMATIVO": 1
+    },
+    "por_resposta": {
+      "SIM": 14,
+      "TALVEZ": 1,
+      "NÃO": 1
+    },
+    "por_tipo_remetente": {
+      "SISTEMA_EXTERNO": 2,
+      "SISTEMA_UFRN": 8,
+      "PESSOA_FISICA_UFRN": 2,
+      "PESSOA_EXTERNA": 4
+    },
+    "reunioes": {
+      "total": 13,
+      "com_horario": 2
+    },
+    "dashboard_stats": {
+      "adicionados": 16,
+      "falharam": 0
+    }
+  }
+}

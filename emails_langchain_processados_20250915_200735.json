@@ -1,0 +1,101 @@
+{
+  "timestamp": "2025-09-15T20:07:35.806689",
+  "total_emails": 3,
+  "framework": "LangChain",
+  "agent_type": "Orchestrated Tools",
+  "emails": [
+    {
+      "email": {
+        "assunto": "Prosas News: Edital Impacto Produtivo e muito mais!",
+        "remetente": "contato@prosas.com.br",
+        "data_recebimento": "2025-09-15T11:33:26+00:00",
+        "conteudo_preview": " \r\n\r\n\r\n\r\n\r\n \r\n \r\nOlá! Tudo bem por aí?  Essa é mais uma Prosas News, uma newsletter onde você confere os principais editais da semana, além de conteúdos interessantes alinhados ao mercado e ao seu dia a dia! 😊\r\n\r\n  \r\n [ https://t.rdsv2.net/ls/click?upn=u001.ZnTitrtZysoyxy-2FxpIVXawkXqpBWxdVQVntdGP5jMZPbN-2BA4naR0IUcLI4SubQ35xmgQp-2BkYZTqwgSbJeNPqfaDjnobEdlRMBXryEZshokQJ8ptCCq4kmoNaRIGMfDjnzS7An2sr8LK2NiLuyBer84eKXkfPr5Ress3NRFqw3jfRHExENE8fe6BKCIn81PihMuZw4U3bMoz5rIuEiEYXElOr9Z5hgcNLjLDij17Zrbmlx7IQ0xil4z3EsXm62PGX-2BV6mmmirHtTbjiPLjw7sng-3D-3DO3ub_3HnSy7Thd-2B4TzjPSA5oX7rmyFt8GfJHmsSt96QQ-2BAHNnryGA3hrpkTOsh8H-2BMCRfeKZc5ANYrzU7zIFT4m4G400Qs7CNPglUIWbKoMD9a6X7eB1ArXM04PPo41TVmACVkzkULz4A0Y-2Flu-2F-2BhfydIpjG28JwhsPknJfrkmZIjgR0fLL8Za-2B-2FbYRAES9VNizQivXUZInhH9CKARPZVEdPN8x5iULheKGhtz9qE6iBNA-2BhL5W9nVpERNvlH1z8Wk-2Fyr7VGxf6xLecC810Ir6sefmDkCIYuC4ZtM-2B7WrKvluoVWqrWfVvx-2FLQ1F-2B-2BVJvfj8k8eBPjmlRmKB0jue6lUyiPD3FiFMoRZhIvG1T6ZtPKSbAj3d5FRdUy2kZ-2B5y4WHLcPhdxpwG4yuU-2B7aoy0S7xvSKdG7riGhSWDs0oGwB-2BJF7dmagX-2B3-2FXa8GEPLt75yfIBFgm-2Fh3Zw3b4dad9sClRODuVZXJw8bxn8xzB9tLlLHj276jCWHCZwdPpGuGzguU-2B98b-2FY-2BAElVy9s2F6JGUhd2YfoUqfinWOJEhg-2FTQIxJcRPcGc5mfsvOYKZUA1F92WrhqzdgRMle2dq-2BKn1jxMmEZLcXreuEaq0TheSY4pJ-2FUCs5hgewp3N88ajoL2Mfhg2DaggLAt5NghixCji6yUYA-3D-3D ]\r\n\r\n Saiba mais  [ https://t.rdsv2.net/ls/click?upn=u001.ZnTitrtZysoyxy-2FxpIVXawkXqpBWxdVQVntdGP5jMZPV5hvfiGc626OpukssqIsf54Mf_3HnSy7Thd-2B4TzjPSA5oX7rmyFt8GfJHmsSt96QQ-2BAHNnryGA3hrpkTOsh8H-2BMCRfeKZc5ANYrzU7zIFT4m4G400Qs",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 1.0,
+        "justificativa": "O email é uma newsletter informativa sem a necessidade de ação imediata.",
+        "resumo_executivo": "Newsletter com principais editais da semana e conteúdos interessantes.",
+        "acao_sugerida": "Arquivar para referência.",
+        "prazo_estimado": "N/A"
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 1.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "O email da Prosas News não apresenta nenhuma intenção explícita de marcar uma reunião, não há proposta de horário específico, o remetente é uma empresa e o conteúdo é uma newsletter informativa. Portanto, não se trata de uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-8121-958e-d666034926b3",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Bem-vindo à página da disciplina Coordenação - Doutoramento em Administração Pública",
+        "remetente": "noreply@iscsp.ulisboa.pt",
+        "data_recebimento": "2025-09-15T16:45:29+01:00",
+        "conteudo_preview": "\r\nOlá Alexandre, está inscrito/a na disciplina Coordenação - Doutoramento\r\nem Administração Pública\r\n",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "DOUTORADO",
+        "urgencia": "MEDIA",
+        "necessita_resposta": "SIM",
+        "confianca": 0.9,
+        "justificativa": "O email menciona a disciplina Coordenação - Doutoramento em Administração Pública, indicando a necessidade de atenção por parte do destinatário.",
+        "resumo_executivo": "O destinatário está inscrito na disciplina Coordenação - Doutoramento em Administração Pública.",
+        "acao_sugerida": "Verificar os prazos e atividades da disciplina e se preparar para as demandas acadêmicas.",
+        "prazo_estimado": "Não mencionado no email."
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.0,
+        "extracted_time": "null",
+        "extracted_date": "null",
+        "meeting_type": "null",
+        "justification": "Não há proposta explícita de reunião ou encontro no email. A mensagem parece ser apenas informativa sobre a disciplina em que o destinatário está inscrito. Portanto, não se trata de uma solicitação de reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81ca-af5b-f839d0d74f6f",
+      "is_meeting": false,
+      "processed": true
+    },
+    {
+      "email": {
+        "assunto": "Convite: II Virada Cultural do Potengi  Cultura pela Justiça Climática",
+        "remetente": "mensageiro@sistemas.ufrn.br",
+        "data_recebimento": "2025-09-15T13:29:31-03:00",
+        "conteudo_preview": "Prezada comunidade da UFRN,   É com alegria que convidamos todas e todos para a II Virada Cultural do Potengi, que acontecerá de 16 a 20 de setembro de 2025, com o tema “Cultura pela Justiça Climática”. A Virada Cultural é um espaço de celebração, diálogo e mobilização socioambiental, que reúne estudantes, docentes, técnicos e a sociedade civil em torno dos desafios das mudanças climáticas. Nesta edição, o evento integra o roteiro do Balanço Ético Global da COP30, ampliando o debate climático e fortalecendo a educação climática como ferramenta de transformação social.  Por que participar?   Refletir sobre os impactos ambientais que afetam o Rio Grande do Norte e o mundo; Vivenciar atividades culturais, educativas e de mobilização social; Construir coletivamente caminhos para a justiça socioambiental.    Programação completa: Acesse: https://www.instagram.com/p/DOgqQDijidg/?igsh=Y3Q1M2Q5dmQ1bDJ2    Inscrições: via SIGAA  Voluntariado Caso tenha interesse em ser voluntário(a) da Virada Cultural do Potengi, entre em contato pelo Instagram da Comunidade Ambiental: https://www.instagram.com/comunidade.ambiental?igsh=bDlma3ltNWJ6ZnZy&utm_source=qr    Mais informações:   Instagram: https://www.instagram.com/comunidade.ambiental?igsh=bDlma3ltNWJ6ZnZy&utm_source=qr WhatsApp: https://chat.whatsapp.com/L56xVglfJUzEeqOexMGY6p?mode=ems_copy_c   • Contamos com a participação de toda a comunidade universitária para fortalecer esta construção coletiva pela justiça climática!   Atenciosamente",
+        "tem_anexos": false,
+        "quantidade_anexos": 0
+      },
+      "classification": {
+        "categoria": "INFORMATIVO",
+        "urgencia": "BAIXA",
+        "necessita_resposta": "NAO",
+        "confianca": 1.0,
+        "justificativa": "O email se encaixa na categoria informativo, não apresenta urgência e não requer resposta direta.",
+        "resumo_executivo": "Convite para a II Virada Cultural do Potengi com o tema \"Cultura pela Justiça Climática\".",
+        "acao_sugerida": "Arquivar para referência.",
+        "prazo_estimado": "N/A"
+      },
+      "meeting_analysis": {
+        "is_meeting": false,
+        "confidence": 0.8,
+        "extracted_time": "null",
+        "extracted_date": "16 a 20 de setembro de 2025",
+        "meeting_type": "indefinido",
+        "justification": "O email é um convite para a II Virada Cultural do Potengi com o tema \"Cultura pela Justiça Climática\", não há uma proposta explícita de reunião ou encontro, apenas um convite para participar do evento. Não há horário específico proposto para um encontro e o contexto do remetente é de um sistema automático (mensageiro@sistemas.ufrn.br). Portanto, não se trata de uma reunião."
+      },
+      "notion_result": "Sucesso: 26fc6cf3-31c3-81fa-a243-ee904ee9a989",
+      "is_meeting": false,
+      "processed": true
+    }
+  ]
+}

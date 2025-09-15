@@ -1,16 +1,22 @@
-# Dependências principais do Agente UFRN
+# Dependências LangChain para Agent UFRN v2
+langchain==0.1.0
+langchain-openai==0.0.5
+langchain-community==0.0.13
 
-# Manipulação de emails
-imap-tools==1.7.0
-
-# Cliente OpenAI
-openai>=1.0.0
-
-# Gerenciamento de variáveis de ambiente
+# Core dependencies (mantidas)
 python-dotenv==1.0.0
+imap-tools==0.54.0
+notion-client==2.0.0
 
-# Cliente Notion (para integração futura)
-notion-client==2.2.1
+# Novas dependências para agentes
+faiss-cpu==1.7.4
+tiktoken==0.5.2
+pydantic==2.5.0
 
-# Utilitários adicionais
-requests==2.31.0
+# Observability e debugging
+langsmith==0.0.69
+langchain-experimental==0.0.49
+
+# Utilities
+numpy==1.24.3
+pandas==2.0.3

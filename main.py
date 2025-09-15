@@ -1,11 +1,22 @@
+#!/usr/bin/env python3
+
 import os
 import logging
 import json
 from datetime import datetime
+from typing import List, Dict, Any, Optional
 from dotenv import load_dotenv
+
+# LangChain imports
+from langchain.prompts import PromptTemplate
+from langchain.schema import BaseOutputParser
+from langchain.tools import BaseTool
+from langchain_core.output_parsers import StrOutputParser
+from langchain_openai import ChatOpenAI
+from pydantic import BaseModel, Field
+
+# Existing imports
 from imap_tools import MailBox, AND
-from openai import OpenAI
-from dataclasses import dataclass
 from notion_client import Client
 
 # Carregar variáveis de ambiente
@@ -16,713 +27,678 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('agent_ufrn.log'),
+        logging.FileHandler('agent_ufrn_langchain.log'),
         logging.StreamHandler()
     ]
 )
 logger = logging.getLogger(__name__)
 
 
-@dataclass
-class ModelConfig:
-    """Configuração dos hyperparâmetros do modelo"""
-    # Modelo a ser usado
-    model: str = "gpt-4.1-mini"
+# ============================================================================
+# PYDANTIC MODELS - Estruturas de dados tipadas
+# ============================================================================
 
-    # Parâmetros de geração para processamento em lote
-    temperature: float = 0.2  # Baixa para consistência na classificação
-    max_tokens: int = 3000  # Otimizado para emails UFRN
-    top_p: float = 0.9  # Nucleus sampling
-    frequency_penalty: float = 0.0  # Sem penalidade de frequência
-    presence_penalty: float = 0.0  # Sem penalidade de presença
-
-    # Configurações específicas
-    batch_temperature: float = 0.1  # Mais determinístico
-    test_temperature: float = 0.0  # Zero para testes de conexão
-
-    def get_batch_params(self):
-        """Retorna parâmetros otimizados para processamento em lote"""
-        return {
-            "model": self.model,
-            "temperature": self.batch_temperature,
-            "max_tokens": self.max_tokens,
-            "top_p": self.top_p,
-            "frequency_penalty": self.frequency_penalty,
-            "presence_penalty": self.presence_penalty
-        }
-
-    def get_test_params(self):
-        """Retorna parâmetros para teste de conexão"""
-        return {
-            "model": self.model,
-            "temperature": self.test_temperature,
-            "max_tokens": 10,
-            "top_p": 1.0
-        }
-
-    def print_config(self):
-        """Imprime configuração atual"""
-        print(f"\n🔧 CONFIGURAÇÃO DO MODELO (PROCESSAMENTO EM LOTE):")
-        print(f"  Modelo: {self.model}")
-        print(f"  Temperature (lote): {self.batch_temperature}")
-        print(f"  Max tokens: {self.max_tokens}")
-        print(f"  Top-p: {self.top_p}")
-        print(f"  Frequency penalty: {self.frequency_penalty}")
-        print(f"  Presence penalty: {self.presence_penalty}")
+class EmailData(BaseModel):
+    """Modelo para dados do email"""
+    assunto: str
+    remetente: str
+    data_recebimento: Optional[str] = None
+    conteudo_preview: str
+    tem_anexos: bool = False
+    quantidade_anexos: int = 0
 
 
-class AgentUFRN:
-    def __init__(self, model_config: ModelConfig = None):
-        """Inicializar o agente com configuração de modelo"""
+class EmailClassification(BaseModel):
+    """Modelo para classificação do email"""
+    categoria: str = Field(description="Categoria do email (REUNIAO, ACADEMICO, etc.)")
+    urgencia: str = Field(description="Nível de urgência (ALTA, MEDIA, BAIXA)")
+    necessita_resposta: str = Field(description="Se precisa resposta (SIM, NAO, TALVEZ)")
+    confianca: float = Field(description="Confiança na classificação (0-1)")
+    justificativa: str = Field(description="Justificativa da classificação")
+    resumo_executivo: str = Field(description="Resumo executivo do email")
+    acao_sugerida: str = Field(description="Ação sugerida")
+    prazo_estimado: str = Field(description="Prazo estimado para resposta")
+
+
+class MeetingAnalysis(BaseModel):
+    """Modelo para análise de reunião"""
+    is_meeting: bool = Field(description="Se é uma reunião")
+    confidence: float = Field(description="Confiança na detecção (0-1)")
+    extracted_time: Optional[str] = Field(description="Horário extraído")
+    extracted_date: Optional[str] = Field(description="Data extraída")
+    meeting_type: Optional[str] = Field(description="Tipo de reunião")
+    justification: str = Field(description="Justificativa da análise")
+
+
+# ============================================================================
+# OUTPUT PARSERS - Parsers para estruturar saídas do LLM
+# ============================================================================
+
+class EmailClassificationParser(BaseOutputParser[EmailClassification]):
+    """Parser para classificação de email"""
+
+    def parse(self, text: str) -> EmailClassification:
         try:
-            # Configuração do modelo
-            self.model_config = model_config or ModelConfig()
-
-            # Credenciais OpenAI
-            self.openai_client = OpenAI(
-                api_key=os.getenv('OPENAI_API_KEY')
+            lines = text.strip().split('\n')
+            data = {}
+            for line in lines:
+                if ':' in line:
+                    key, value = line.split(':', 1)
+                    key = key.strip().lower().replace(' ', '_')
+                    value = value.strip()
+                    data[key] = value
+            return EmailClassification(
+                categoria=data.get('categoria', 'INFORMATIVO'),
+                urgencia=data.get('urgencia', 'BAIXA'),
+                necessita_resposta=data.get('necessita_resposta', 'TALVEZ'),
+                confianca=float(data.get('confianca', '0.8')),
+                justificativa=data.get('justificativa', 'Análise automática'),
+                resumo_executivo=data.get('resumo_executivo', 'Email processado'),
+                acao_sugerida=data.get('acao_sugerida', 'Avaliar contexto'),
+                prazo_estimado=data.get('prazo_estimado', 'N/A')
+            )
+        except Exception as e:
+            logger.warning(f"Erro no parse da classificação: {e}")
+            return EmailClassification(
+                categoria='INFORMATIVO', urgencia='BAIXA', necessita_resposta='TALVEZ',
+                confianca=0.5, justificativa='Erro no processamento',
+                resumo_executivo='Email com erro de processamento',
+                acao_sugerida='Revisar manualmente', prazo_estimado='N/A'
             )
 
-            # Credenciais Gmail
+
+class MeetingAnalysisParser(BaseOutputParser[MeetingAnalysis]):
+    """Parser para análise de reunião"""
+
+    def parse(self, text: str) -> MeetingAnalysis:
+        try:
+            lines = text.strip().split('\n')
+            data = {}
+            for line in lines:
+                if ':' in line:
+                    key, value = line.split(':', 1)
+                    key = key.strip().lower().replace(' ', '_')
+                    value = value.strip()
+                    data[key] = value
+            return MeetingAnalysis(
+                is_meeting=data.get('is_meeting', 'false').lower() == 'true',
+                confidence=float(data.get('confidence', '0.5')),
+                extracted_time=data.get('extracted_time'),
+                extracted_date=data.get('extracted_date'),
+                meeting_type=data.get('meeting_type'),
+                justification=data.get('justification', 'Análise automática')
+            )
+        except Exception as e:
+            logger.warning(f"Erro no parse da reunião: {e}")
+            return MeetingAnalysis(is_meeting=False, confidence=0.5, justification='Erro no processamento')
+
+
+# ============================================================================
+# LANGCHAIN TOOLS - Ferramentas que o agente pode usar
+# ============================================================================
+
+class EmailClassifierTool(BaseTool):
+    """Ferramenta para classificar emails e gerar resumos dinâmicos."""
+    name: str = "email_classifier"
+    description: str = "Classifica emails por categoria, urgência e necessidade de resposta, e gera resumos dinâmicos."
+    llm: Any
+    chain: Any = None
+
+    def __init__(self, **kwargs: Any):
+        super().__init__(**kwargs)
+        self.chain = self._create_classification_chain()
+
+    def _create_classification_chain(self):
+        prompt = PromptTemplate(
+            input_variables=["remetente", "assunto", "conteudo"],
+            template="""
+Você é um especialista em análise e classificação de emails institucionais da UFRN. Sua tarefa é analisar o email, classificá-lo e, em seguida, criar um resumo executivo e uma ação sugerida adaptados ao contexto da categoria.
+
+DADOS DO EMAIL:
+Remetente: {remetente}
+Assunto: {assunto}
+Conteúdo: {conteudo}
+
+PASSO 1: CLASSIFICAÇÃO
+Primeiro, analise e classifique o email de acordo com as seguintes regras:
+
+CATEGORIAS DISPONÍVEIS:
+- DOUTORADO: Comunicações sobre sua pesquisa, orientador, artigos, disciplinas e prazos do doutorado.
+- REUNIAO: Agendamentos, convites ou remarcações de reuniões.
+- ACADEMICO: Questões acadêmicas gerais, que NÃO são do doutorado.
+- ADMINISTRATIVO: Processos, documentos, solicitações de RH, etc.
+- FINANCEIRO: Bolsas, pagamentos, auxílios.
+- URGENTE: Demandas críticas com prazo que não se encaixam nas outras categorias.
+- INFORMATIVO: Comunicados, newsletters, avisos.
+- PESSOAL: Comunicações não relacionadas ao trabalho.
+
+URGÊNCIA (analisar o conteúdo para decidir):
+- ALTA: Prazos curtos, solicitações diretas de superiores ou do orientador, correções urgentes em artigos, problemas de acesso.
+- MEDIA: Demandas administrativas com prazo razoável, comunicados importantes, sugestões de leitura do orientador.
+- BAIXA: Informativos, newsletters, comunicados gerais sem ação direta.
+
+RESPOSTA:
+- SIM: Se o email faz uma pergunta direta, solicita uma ação ou é de uma pessoa importante (orientador).
+- NAO: Informativos automáticos, newsletters.
+- TALVEZ: Contexto ambíguo.
+
+PASSO 2: CRIAÇÃO DE RESUMO E AÇÃO DINÂMICOS
+Após decidir a Categoria, use as seguintes diretrizes para criar o Resumo_executivo e a Acao_sugerida:
+
+- PARA A CATEGORIA DOUTORADO:
+  - Foco do Resumo: Qual é a demanda principal (revisão, prazo, feedback, artigo)? Quem a solicitou (orientador, co-autor, revista)?
+  - Estilo da Ação Sugerida: Usar verbos acionáveis e específicos. Ex: "Revisar o artigo enviado pelo orientador", "Responder ao co-autor sobre o prazo de submissão", "Verificar o novo cronograma da disciplina XYZ".
+
+- PARA A CATEGORIA REUNIAO:
+  - Foco do Resumo: Quem está convidando, qual o tópico, e qual a data/hora proposta.
+  - Estilo da Ação Sugerida: Ex: "Confirmar presença na reunião com X", "Propor novo horário para a reunião sobre Y", "Adicionar evento ao calendário".
+
+- PARA A CATEGORIA ADMINISTRATIVO / FINANCEIRO:
+  - Foco do Resumo: Qual é o processo ou documento mencionado e qual a principal informação ou pendência.
+  - Estilo da Ação Sugerida: Ex: "Verificar o status do processo SEI", "Enviar documento solicitado pelo RH", "Confirmar recebimento da bolsa".
+
+- PARA AS DEMAIS CATEGORIAS:
+  - Foco do Resumo: Uma frase concisa sobre o tópico principal do email.
+  - Estilo da Ação Sugerida: "Arquivar para referência", "Ler quando houver tempo" ou "Nenhuma ação necessária".
+
+FORMATO DE RESPOSTA (exatamente assim):
+Categoria: [CATEGORIA]
+Urgencia: [ALTA/MEDIA/BAIXA]
+Necessita_resposta: [SIM/NAO/TALVEZ]
+Confianca: [0.0-1.0]
+Justificativa: [Explicação da decisão, mencionando o porquê da urgência]
+Resumo_executivo: [Resumo gerado conforme as diretrizes do PASSO 2]
+Acao_sugerida: [Ação gerada conforme as diretrizes do PASSO 2]
+Prazo_estimado: [Prazo para ação, se mencionado no email]
+"""
+        )
+        return prompt | self.llm | EmailClassificationParser()
+
+    def _run(self, email_data: str) -> str:
+        try:
+            email = json.loads(email_data)
+            result = self.chain.invoke({
+                "remetente": email['remetente'],
+                "assunto": email['assunto'],
+                "conteudo": email['conteudo_preview']
+            })
+            return result.model_dump_json()
+        except Exception as e:
+            logger.error(f"Erro na classificação: {e}")
+            return json.dumps({"erro": str(e)})
+
+
+class MeetingDetectorTool(BaseTool):
+    """Ferramenta especializada em detectar reuniões"""
+    name: str = "meeting_detector"
+    description: str = "Detecta se um email é realmente sobre marcar uma reunião com alta precisão"
+    llm: Any
+    chain: Any = None
+
+    def __init__(self, **kwargs: Any):
+        super().__init__(**kwargs)
+        self.chain = self._create_meeting_chain()
+
+    def _create_meeting_chain(self):
+        prompt = PromptTemplate(
+            input_variables=["remetente", "assunto", "conteudo"],
+            template="""
+Você é um especialista em detectar reuniões em emails. Seja MUITO CRITERIOSO.
+EMAIL:
+De: {remetente}
+Assunto: {assunto}
+Conteúdo: {conteudo}
+ANÁLISE PASSO A PASSO:
+1. INTENÇÃO DE ENCONTRO:
+   - Há proposta explícita de reunião/encontro?
+   - Palavras-chave: "reunião", "conversar", "encontrar", "meeting"
+   - NÃO considere: menções casuais, relatórios, documentos
+2. PROPOSTA DE HORÁRIO:
+   - Há horário específico proposto?
+   - Formato: "às 10:30", "10h30", "10 horas"
+   - Data: "amanhã", "segunda", "dia X"
+3. CONTEXTO DO REMETENTE:
+   - É pessoa física (não sistema automático)?
+   - Tem autoridade para marcar reuniões?
+4. TIPO DE CONTEÚDO:
+   - É SOLICITAÇÃO/CONVITE ou apenas INFORMAÇÃO?
+   - Newsletters, comunicados = NÃO são reuniões
+   - Documentos circulares = NÃO são reuniões
+CRITÉRIOS RÍGIDOS:
+✅ SIM = Intenção + Horário + Pessoa física + Solicitação
+❌ NÃO = Falta qualquer critério acima
+FORMATO DE RESPOSTA:
+Is_meeting: [true/false]
+Confidence: [0.0-1.0]
+Extracted_time: [horário encontrado ou null]
+Extracted_date: [data encontrada ou null]
+Meeting_type: [presencial/virtual/indefinido ou null]
+Justification: [Explicação detalhada da decisão]
+"""
+        )
+        return prompt | self.llm | MeetingAnalysisParser()
+
+    def _run(self, email_data: str) -> str:
+        try:
+            email = json.loads(email_data)
+            result = self.chain.invoke({
+                "remetente": email['remetente'],
+                "assunto": email['assunto'],
+                "conteudo": email['conteudo_preview']
+            })
+            return result.model_dump_json()
+        except Exception as e:
+            logger.error(f"Erro na detecção de reunião: {e}")
+            return json.dumps({"erro": str(e)})
+
+
+# SUBSTITUA ESTA CLASSE INTEIRA NO SEU main.py
+
+class NotionDashboardTool(BaseTool):
+    """Ferramenta para adicionar ao dashboard Notion"""
+    name: str = "notion_dashboard"
+    description: str = "Adiciona emails classificados ao dashboard executivo no Notion"
+    notion_client: Any
+    database_id: str
+
+    def _run(self, data: str) -> str:
+        try:
+            parsed_data = json.loads(data)
+            email_data = parsed_data['email']
+            classification = parsed_data['classification']
+            meeting_analysis = parsed_data.get('meeting_analysis')
+
+            # Determinar prioridade e tipo
+            if classification.get('categoria') == 'DOUTORADO':
+                prioridade = classification['urgencia']  # <<< CORREÇÃO: Usa a urgência vinda do LLM
+                tipo = "DOUTORADO"
+            elif meeting_analysis and meeting_analysis.get('is_meeting'):
+                prioridade = "CRÍTICA"
+                tipo = "REUNIÃO"
+            elif '@ufrn.br' in email_data['remetente'] and classification['urgencia'] == 'ALTA':
+                prioridade = "CRÍTICA"
+                tipo = "COLABORADOR_UFRN"
+            elif classification['urgencia'] == 'ALTA':
+                prioridade = "ALTA"
+                tipo = "EMAIL_AÇÃO"
+            else:
+                prioridade = classification['urgencia']
+                tipo = "INFORMATIVO"
+
+            # Monta o título com prefixos úteis
+            prefixo = ""
+            if tipo == "REUNIÃO":
+                prefixo = "[REUNIÃO] "
+            elif tipo == "DOUTORADO":
+                prefixo = "[DOUTORADO] "
+
+            titulo_final = f"{prefixo}Email: {email_data['assunto'][:70]}"
+
+            properties = {
+                "TÍTULO": {"title": [{"text": {"content": titulo_final}}]},
+                "TIPO": {"select": {"name": tipo}},
+                "PRIORIDADE": {"select": {"name": prioridade}},
+                "STATUS": {"select": {"name": "NOVO"}},
+                "DESCRIÇÃO": {"rich_text": [{"text": {
+                    "content": f"De: {email_data['remetente']}\n\nResumo: {classification['resumo_executivo']}\n\nAção: {classification['acao_sugerida']}\n\nJustificativa: {classification['justificativa']}"}}]},
+                "RESUMO_EXECUTIVO": {"rich_text": [{"text": {"content": classification['resumo_executivo']}}]},
+                "NECESSITA_RESPOSTA": {"select": {"name": classification['necessita_resposta']}},
+                "AGENTE_ORIGEM": {"rich_text": [{"text": {"content": "UFRN_LangChain_Agent"}}]},
+                "DATA_CRIAÇÃO": {"date": {"start": datetime.now().isoformat()}}
+            }
+            response = self.notion_client.pages.create(parent={"database_id": self.database_id}, properties=properties)
+            return f"Sucesso: {response.get('id', 'N/A')}"
+        except Exception as e:
+            # Esta linha é crucial. O erro exato será gravado no log.
+            logger.error(f"Erro no Notion: {e}", exc_info=True)
+            return f"Erro: {str(e)}"
+
+
+# ============================================================================
+# AGENT UFRN - Classe principal com LangChain
+# ============================================================================
+
+class UFRNEmailAgent:
+    """Agente inteligente para processamento de emails da UFRN usando LangChain"""
+
+    def __init__(self):
+        try:
+            self.llm = ChatOpenAI(
+                temperature=0.1,
+                model_name="gpt-3.5-turbo",
+                openai_api_key=os.getenv('OPENAI_API_KEY')
+            )
             self.gmail_user = os.getenv('GMAIL_USER')
             self.gmail_password = os.getenv('GMAIL_PASSWORD')
-
-            # Credenciais Notion
             self.notion_client = Client(auth=os.getenv('NOTION_TOKEN'))
             self.notion_database_id = os.getenv('NOTION_DATABASE_ID')
 
-            logger.info("Agente UFRN inicializado com sucesso")
-            self.model_config.print_config()
+            self.tools = [
+                EmailClassifierTool(llm=self.llm),
+                MeetingDetectorTool(llm=self.llm),
+                NotionDashboardTool(notion_client=self.notion_client, database_id=self.notion_database_id)
+            ]
 
+            self.summary_chain = self._create_summary_chain()
+            self.briefing_chain = self._create_briefing_chain()
+            self.session_emails = []
+            logger.info("🤖 Agent UFRN LangChain inicializado com sucesso")
         except Exception as e:
-            logger.error(f"Erro ao inicializar agente: {e}")
+            logger.error(f"Erro na inicialização do agente: {e}")
             raise
 
-    def classify_emails_batch(self, emails_data):
-        """Classificar múltiplos emails em uma única chamada ao LLM"""
-        try:
-            # Preparar dados dos emails para o prompt
-            emails_for_prompt = []
-            for i, email in enumerate(emails_data, 1):
-                email_text = f"""
-EMAIL {i}:
-Assunto: {email['assunto']}
-Remetente: {email['remetente']}
-Conteúdo: {email['conteudo_preview'][:800]}
-Tem anexos: {'Sim' if email['tem_anexos'] else 'Não'}
----"""
-                emails_for_prompt.append(email_text)
-
-            emails_text = "\n".join(emails_for_prompt)
-
-            prompt = f"""
-Analise os seguintes {len(emails_data)} emails e classifique cada um deles.
-
-CATEGORIAS DISPONÍVEIS:
-1. ADMINISTRATIVO - questões burocráticas, documentos, prazos administrativos
-2. ACADEMICO - questões de pesquisa, orientação, eventos acadêmicos, defesas
-3. FINANCEIRO - bolsas, pagamentos, questões financeiras, prestação de contas
-4. URGENTE - requer ação imediata (independente da categoria)
-5. INFORMATIVO - apenas para conhecimento, newsletters, comunicados gerais
-6. PESSOAL - emails pessoais não relacionados ao trabalho
-
-EMAILS PARA CLASSIFICAR:
-{emails_text}
-
-Responda APENAS em formato JSON com um array contendo a classificação de cada email na ordem apresentada:
-
-{{
-  "classificacoes": [
-    {{
-      "email_numero": 1,
-      "categoria": "CATEGORIA_PRINCIPAL",
-      "urgencia": "ALTA/MEDIA/BAIXA",
-      "resumo": "Breve resumo do conteúdo",
-      "acao_sugerida": "Ação específica recomendada",
-      "prazo_estimado": "Prazo para resposta/ação",
-      "palavras_chave": ["palavra1", "palavra2", "palavra3"],
-      "confianca": 0.95
-    }},
-    {{
-      "email_numero": 2,
-      "categoria": "CATEGORIA_PRINCIPAL",
-      "urgencia": "ALTA/MEDIA/BAIXA",
-      "resumo": "Breve resumo do conteúdo",
-      "acao_sugerida": "Ação específica recomendada",
-      "prazo_estimado": "Prazo para resposta/ação",
-      "palavras_chave": ["palavra1", "palavra2", "palavra3"],
-      "confianca": 0.90
-    }}
-  ],
-  "processamento": {{
-    "total_emails": {len(emails_data)},
-    "timestamp": "{datetime.now().isoformat()}"
-  }}
-}}
-
-IMPORTANTE: Mantenha a ordem dos emails e numere corretamente cada classificação.
+    def _create_summary_chain(self):
+        prompt = PromptTemplate(
+            input_variables=["emails_data", "total_emails", "reunioes", "colaboradores_ufrn"],
+            template="""
+Você é um assistente executivo especializado em criar briefings profissionais.
+DADOS DA SESSÃO:
+Total de emails: {total_emails}
+Reuniões detectadas: {reunioes}
+Colaboradores UFRN: {colaboradores_ufrn}
+EMAILS PROCESSADOS:
+{emails_data}
+INSTRUÇÕES:
+Crie um resumo executivo profissional seguindo esta estrutura:
+1. SITUAÇÃO GERAL (1-2 frases sobre volume e contexto)
+2. PRIORIDADES CRÍTICAS (reuniões e demandas urgentes)
+3. COLABORADORES UFRN (comunicações internas importantes)
+4. AÇÕES NECESSÁRIAS (lista priorizada)
+5. RECOMENDAÇÕES (próximos passos estratégicos)
+ESTILO:
+- Tom executivo e acionável
+- Foco em decisões e prioridades
+- Máximo 300 palavras
+- Sem bullets, texto corrido
+- Destaque pessoas por nome quando relevante
+RESUMO EXECUTIVO:
 """
+        )
+        return prompt | self.llm | StrOutputParser()
 
-            # Usar parâmetros configurados para processamento em lote
-            params = self.model_config.get_batch_params()
+    def _create_briefing_chain(self):
+        """Cria uma chain para o briefing por categoria."""
+        prompt = PromptTemplate(
+            input_variables=["emails_data"],
+            template="""
+Você é um assistente executivo mestre em criar briefings diários. Sua tarefa é analisar uma lista de emails processados e criar um "Briefing por Categoria" conciso.
 
-            logger.info(f"Enviando {len(emails_data)} emails para classificação em lote...")
+LISTA DE EMAILS PROCESSADOS (com sua classificação e resumo individual):
+{emails_data}
 
-            response = self.openai_client.chat.completions.create(
-                messages=[{"role": "user", "content": prompt}],
-                **params
-            )
+INSTRUÇÕES PARA O BRIEFING:
+1.  Para CADA uma das categorias abaixo, liste o nome da categoria.
+2.  Ao lado do nome, coloque entre parênteses o número total de emails recebidos para essa categoria.
+3.  Em seguida, escreva um resumo de UMA ÚNICA FRASE sobre o que eram esses emails, capturando a essência das mensagens.
+4.  Se uma categoria não tiver nenhum email na lista, escreva "(0 emails): Nenhum email nesta categoria."
+5.  Seja extremamente conciso e direto ao ponto.
 
-            classification_text = response.choices[0].message.content.strip()
+CATEGORIAS A SEREM OBRIGATORIAMENTE LISTADAS:
+- DOUTORADO
+- REUNIAO
+- ACADEMICO
+- ADMINISTRATIVO
+- FINANCEIRO
+- URGENTE
+- INFORMATIVO
+- PESSOAL
 
-            # Log dos parâmetros usados (apenas em debug)
-            logger.debug(f"Parâmetros usados: {params}")
+EXEMPLO DE SAÍDA:
+DOUTORADO (2 emails): Houve uma solicitação de revisão de artigo pelo orientador e uma confirmação de submissão.
+FINANCEIRO (1 email): Recebido um lembrete de vencimento de fatura.
+ADMINISTRATIVO (0 emails): Nenhum email nesta categoria.
 
-            # Tentar parsear JSON
-            try:
-                batch_result = json.loads(classification_text)
+BRIEFING POR CATEGORIA:
+"""
+        )
+        return prompt | self.llm | StrOutputParser()
 
-                if "classificacoes" not in batch_result:
-                    raise ValueError("Resposta não contém campo 'classificacoes'")
-
-                classificacoes = batch_result["classificacoes"]
-
-                if len(classificacoes) != len(emails_data):
-                    logger.warning(
-                        f"Número de classificações ({len(classificacoes)}) diferente do número de emails ({len(emails_data)})")
-
-                # Adicionar informações sobre o modelo usado
-                for classificacao in classificacoes:
-                    classificacao['modelo_usado'] = params['model']
-                    classificacao['temperatura_usada'] = params['temperature']
-                    classificacao['processamento_em_lote'] = True
-
-                logger.info(f"✅ {len(classificacoes)} emails classificados em lote com sucesso")
-                return classificacoes
-
-            except (json.JSONDecodeError, ValueError, KeyError) as e:
-                logger.error(f"Erro ao parsear resposta JSON: {e}")
-                logger.error(f"Resposta recebida: {classification_text[:500]}...")
-
-                # Retornar classificações de erro para todos os emails
-                error_classifications = []
-                for i in range(len(emails_data)):
-                    error_classifications.append({
-                        "email_numero": i + 1,
-                        "categoria": "ERRO_CLASSIFICACAO",
-                        "urgencia": "MEDIA",
-                        "resumo": "Erro ao processar classificação em lote",
-                        "acao_sugerida": "Revisar manualmente",
-                        "prazo_estimado": "N/A",
-                        "palavras_chave": ["erro", "lote"],
-                        "confianca": 0.0,
-                        "modelo_usado": params['model'],
-                        "temperatura_usada": params['temperature'],
-                        "processamento_em_lote": True
-                    })
-                return error_classifications
-
-        except Exception as e:
-            logger.error(f"Erro ao classificar emails em lote: {e}")
-
-            # Retornar classificações de erro para todos os emails
-            error_classifications = []
-            for i in range(len(emails_data)):
-                error_classifications.append({
-                    "email_numero": i + 1,
-                    "categoria": "ERRO_SISTEMA",
-                    "urgencia": "MEDIA",
-                    "resumo": f"Erro do sistema: {str(e)}",
-                    "acao_sugerida": "Verificar configurações",
-                    "prazo_estimado": "N/A",
-                    "palavras_chave": ["erro", "sistema"],
-                    "confianca": 0.0,
-                    "modelo_usado": self.model_config.model,
-                    "temperatura_usada": self.model_config.batch_temperature,
-                    "processamento_em_lote": True
-                })
-            return error_classifications
-
-    def add_to_executive_dashboard(self, email_data, classification):
-        """Adicionar item ao Dashboard Executivo no Notion"""
-        try:
-            # Só adiciona se for uma ação que precisa de atenção
-            if classification.get('categoria') in ['ADMINISTRATIVO', 'ACADEMICO', 'FINANCEIRO', 'URGENTE']:
-
-                # Determinar prioridade baseada na categoria e urgência
-                prioridade = "CRÍTICA" if classification.get('categoria') == 'URGENTE' else "ALTA"
-
-                # Determinar tipo de entrada
-                tipo = "EMAIL_AÇÃO"
-
-                # Criar entrada no Notion
-                properties = {
-                    "Título": {
-                        "title": [
-                            {
-                                "text": {
-                                    "content": f"Email: {email_data['assunto'][:100]}"
-                                }
-                            }
-                        ]
-                    },
-                    "Tipo": {
-                        "select": {
-                            "name": tipo
-                        }
-                    },
-                    "Prioridade": {
-                        "select": {
-                            "name": prioridade
-                        }
-                    },
-                    "Status": {
-                        "select": {
-                            "name": "NOVO"
-                        }
-                    },
-                    "Descrição": {
-                        "rich_text": [
-                            {
-                                "text": {
-                                    "content": f"De: {email_data['remetente']}\n\nResumo: {classification.get('resumo', 'N/A')}\n\nAção: {classification.get('acao_sugerida', 'Revisar email')}"
-                                }
-                            }
-                        ]
-                    },
-                    "Agente_Origem": {
-                        "rich_text": [
-                            {
-                                "text": {
-                                    "content": "UFRN_v2"
-                                }
-                            }
-                        ]
-                    },
-                    "Data_Criação": {
-                        "date": {
-                            "start": datetime.now().isoformat()
-                        }
-                    }
-                }
-
-                # Adicionar prazo se disponível
-                if classification.get('prazo_estimado') and classification.get('prazo_estimado') != 'N/A':
-                    # Calcular data baseada no prazo (simplificado)
-                    prazo_dias = 7  # Default
-                    if 'urgente' in classification.get('prazo_estimado', '').lower():
-                        prazo_dias = 1
-                    elif 'semana' in classification.get('prazo_estimado', '').lower():
-                        prazo_dias = 7
-
-                    prazo_date = datetime.now().replace(hour=23, minute=59, second=59)
-                    from datetime import timedelta
-                    prazo_date += timedelta(days=prazo_dias)
-
-                    properties["Prazo"] = {
-                        "date": {
-                            "start": prazo_date.isoformat()
-                        }
-                    }
-
-                # Criar página no Notion
-                response = self.notion_client.pages.create(
-                    parent={"database_id": self.notion_database_id},
-                    properties=properties
-                )
-
-                logger.info(f"✅ Item adicionado ao Dashboard Executivo: {email_data['assunto'][:50]}...")
-                return response
-
-        except Exception as e:
-            logger.error(f"❌ Erro ao adicionar ao Dashboard Executivo: {e}")
-            return None
-
-    def process_emails(self, limit=10, batch_size=2):
-        """Processar emails não lidos em lotes otimizados"""
+    def fetch_emails(self, limit: int = 50) -> List[EmailData]:
         try:
             with MailBox('imap.gmail.com').login(self.gmail_user, self.gmail_password) as mailbox:
-                # Buscar emails não lidos (limitado)
                 unread_emails = list(mailbox.fetch(AND(seen=False), limit=limit))
-
                 if not unread_emails:
-                    logger.info("Nenhum email não lido encontrado")
+                    logger.info("📭 Nenhum email não lido")
                     return []
-
-                logger.info(f"Encontrados {len(unread_emails)} emails não lidos")
-
-                all_processed_emails = []
-
-                # Processar emails em lotes
-                for batch_start in range(0, len(unread_emails), batch_size):
-                    batch_end = min(batch_start + batch_size, len(unread_emails))
-                    batch_emails = unread_emails[batch_start:batch_end]
-
-                    logger.info(
-                        f"Processando lote {batch_start // batch_size + 1}: emails {batch_start + 1}-{batch_end}")
-
-                    # Extrair dados dos emails do lote
-                    batch_data = []
-                    for msg in batch_emails:
-                        try:
-                            email_data = {
-                                "timestamp": datetime.now().isoformat(),
-                                "assunto": msg.subject,
-                                "remetente": msg.from_,
-                                "data_recebimento": msg.date.isoformat() if msg.date else None,
-                                "conteudo_preview": msg.text[:500] if msg.text else "Sem conteúdo texto",
-                                "tem_anexos": len(msg.attachments) > 0,
-                                "quantidade_anexos": len(msg.attachments)
-                            }
-                            batch_data.append(email_data)
-
-                        except Exception as e:
-                            logger.error(f"Erro ao extrair dados do email: {e}")
-                            # Adicionar email com dados básicos
-                            batch_data.append({
-                                "timestamp": datetime.now().isoformat(),
-                                "assunto": getattr(msg, 'subject', 'Erro ao obter assunto'),
-                                "remetente": getattr(msg, 'from_', 'Erro ao obter remetente'),
-                                "data_recebimento": None,
-                                "conteudo_preview": "Erro ao extrair conteúdo",
-                                "tem_anexos": False,
-                                "quantidade_anexos": 0,
-                                "erro_extracao": str(e)
-                            })
-
-                    # Classificar lote de emails
+                logger.info(f"📧 Encontrados {len(unread_emails)} emails não lidos")
+                emails = []
+                for msg in unread_emails:
                     try:
-                        classifications = self.classify_emails_batch(batch_data)
-
-                        # Combinar dados com classificações
-                        for i, email_data in enumerate(batch_data):
-                            if i < len(classifications):
-                                classification = classifications[i]
-                            else:
-                                # Classificação padrão se não houver correspondência
-                                classification = {
-                                    "email_numero": i + 1,
-                                    "categoria": "ERRO_CORRESPONDENCIA",
-                                    "urgencia": "MEDIA",
-                                    "resumo": "Erro na correspondência de classificação",
-                                    "acao_sugerida": "Revisar manualmente",
-                                    "prazo_estimado": "N/A",
-                                    "palavras_chave": ["erro"],
-                                    "confianca": 0.0,
-                                    "modelo_usado": self.model_config.model,
-                                    "temperatura_usada": self.model_config.batch_temperature,
-                                    "processamento_em_lote": True
-                                }
-
-                            email_processed = {
-                                **email_data,
-                                "classificacao": classification,
-                                "lote_numero": batch_start // batch_size + 1,
-                                "posicao_no_lote": i + 1
-                            }
-
-                            # Adicionar ao Dashboard Executivo se necessário
-                            if self.notion_database_id:
-                                self.add_to_executive_dashboard(email_data, classification)
-
-                            all_processed_emails.append(email_processed)
-
-                            logger.info(
-                                f"✅ Email {batch_start + i + 1} processado: {classification['categoria']} - {classification['urgencia']}")
-
+                        email_data = EmailData(
+                            assunto=msg.subject, remetente=msg.from_,
+                            data_recebimento=msg.date.isoformat() if msg.date else None,
+                            conteudo_preview=msg.text[:1500] if msg.text else "Sem conteúdo",
+                            tem_anexos=len(msg.attachments) > 0,
+                            quantidade_anexos=len(msg.attachments)
+                        )
+                        emails.append(email_data)
                     except Exception as e:
-                        logger.error(f"Erro ao processar lote: {e}")
-                        # Adicionar emails do lote com erro
-                        for i, email_data in enumerate(batch_data):
-                            email_processed = {
-                                **email_data,
-                                "erro_lote": str(e),
-                                "classificacao": {
-                                    "email_numero": i + 1,
-                                    "categoria": "ERRO_LOTE",
-                                    "urgencia": "MEDIA",
-                                    "resumo": "Erro ao processar lote",
-                                    "acao_sugerida": "Verificar logs",
-                                    "prazo_estimado": "N/A",
-                                    "palavras_chave": ["erro", "lote"],
-                                    "confianca": 0.0,
-                                    "modelo_usado": self.model_config.model,
-                                    "temperatura_usada": self.model_config.batch_temperature,
-                                    "processamento_em_lote": True
-                                },
-                                "lote_numero": batch_start // batch_size + 1,
-                                "posicao_no_lote": i + 1
-                            }
-                            all_processed_emails.append(email_processed)
-
-                # Salvar resultados em JSON
-                self.save_results_json(all_processed_emails)
-
-                logger.info(f"Total de emails processados: {len(all_processed_emails)}")
-                logger.info(f"Processamento realizado em {(len(unread_emails) + batch_size - 1) // batch_size} lotes")
-
-                return all_processed_emails
-
+                        logger.warning(f"Erro ao processar email: {e}")
+                return emails
         except Exception as e:
-            logger.error(f"Erro ao acessar emails: {e}")
+            logger.error(f"Erro ao buscar emails: {e}")
             return []
 
-    def save_results_json(self, processed_emails):
-        """Salvar resultados em arquivo JSON com informações de lote"""
+    def process_single_email(self, email: EmailData) -> Dict[str, Any]:
+        """Processar um único email usando as ferramentas de forma orquestrada."""
         try:
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            filename = f"emails_processados_lote_{timestamp}.json"
+            email_json = email.model_dump_json()
+            logger.info(f"Iniciando processamento orquestrado do email: {email.assunto[:50]}")
 
-            results = {
-                "timestamp_processamento": datetime.now().isoformat(),
-                "configuracao_modelo": {
-                    "modelo": self.model_config.model,
-                    "temperatura_lote": self.model_config.batch_temperature,
-                    "max_tokens": self.model_config.max_tokens,
-                    "top_p": self.model_config.top_p,
-                    "frequency_penalty": self.model_config.frequency_penalty,
-                    "presence_penalty": self.model_config.presence_penalty,
-                    "processamento_em_lote": True
-                },
-                "total_emails": len(processed_emails),
-                "emails": processed_emails,
-                "estatisticas": self.generate_statistics(processed_emails),
-                "informacoes_lote": self.generate_batch_info(processed_emails)
+            classifier_tool = self.tools[0]
+            classification_result_str = classifier_tool.run(email_json)
+            classification_data = json.loads(classification_result_str)
+            logger.info(f"Classificação obtida: {classification_data.get('categoria')}")
+
+            meeting_tool = self.tools[1]
+            meeting_result_str = meeting_tool.run(email_json)
+            meeting_data = json.loads(meeting_result_str)
+            logger.info(f"Análise de reunião: {meeting_data.get('is_meeting')}")
+
+            notion_tool = self.tools[2]
+            payload_for_notion = {
+                "email": email.model_dump(),
+                "classification": classification_data,
+                "meeting_analysis": meeting_data
+            }
+            notion_result = notion_tool.run(json.dumps(payload_for_notion, ensure_ascii=False))
+            logger.info(f"Resultado do Notion: {notion_result}")
+
+            is_meeting = meeting_data.get('is_meeting', False)
+
+            return {
+                "email": email.model_dump(),
+                "classification": classification_data,
+                "meeting_analysis": meeting_data,
+                "notion_result": notion_result,
+                "is_meeting": is_meeting,
+                "processed": "Sucesso" in notion_result
+            }
+        except Exception as e:
+            logger.error(f"Erro no processamento orquestrado do email: {e}", exc_info=True)
+            return {"email": email.model_dump(), "agent_result": f"Erro: {str(e)}", "processed": False,
+                    "is_meeting": False}
+
+    def process_emails(self, limit: int = 50, batch_size: int = 3) -> List[Dict[str, Any]]:
+        try:
+            emails = self.fetch_emails(limit)
+            if not emails:
+                return []
+            all_processed = []
+            stats = {"total": len(emails), "reunioes": 0, "colaboradores_ufrn": 0, "dashboard_success": 0}
+
+            for i in range(0, len(emails), batch_size):
+                batch = emails[i:i + batch_size]
+                logger.info(f"🔄 Processando lote {i // batch_size + 1}: {len(batch)} emails")
+                for j, email in enumerate(batch):
+                    email_num = i + j + 1
+                    logger.info(f"📧 Processando email {email_num}: {email.assunto[:50]}...")
+                    result = self.process_single_email(email)
+                    if '@ufrn.br' in email.remetente:
+                        stats["colaboradores_ufrn"] += 1
+                    if result.get("is_meeting"):
+                        stats["reunioes"] += 1
+                    if result["processed"]:
+                        stats["dashboard_success"] += 1
+                    all_processed.append(result)
+                    self.session_emails.append(result)
+                    logger.info(f"✅ Email {email_num} processado")
+
+            logger.info("📊 Gerando relatórios da sessão com LangChain...")
+            reports = self.generate_session_reports(all_processed, stats)
+            self.create_executive_page(reports, stats)
+
+            logger.info(f"📊 Processamento LangChain concluído:")
+            logger.info(f"   📧 Total: {stats['total']} emails")
+            logger.info(f"   🗓️ Reuniões: {stats['reunioes']}")
+            logger.info(f"   👥 Colaboradores UFRN: {stats['colaboradores_ufrn']}")
+            logger.info(f"   📋 Dashboard: {stats['dashboard_success']}/{stats['total']} sucessos")
+
+            print("\n" + "=" * 120)
+            print(f"📋 RESUMO EXECUTIVO LANGCHAIN - {datetime.now().strftime('%d/%m/%Y %H:%M')}")
+            print("=" * 120)
+            print(reports['summary'])
+            print("\n" + "=" * 120)
+            print(f"📋 BRIEFING POR CATEGORIA")
+            print("=" * 120)
+            print(reports['briefing'])
+            print("=" * 120)
+
+            return all_processed
+        except Exception as e:
+            logger.error(f"Erro no processamento: {e}")
+            return []
+
+    def generate_session_reports(self, processed_emails: List[Dict], stats: Dict) -> Dict[str, str]:
+        """Gerar o resumo executivo e o briefing por categoria usando LangChain."""
+        try:
+            emails_summary_list = []
+            for res in processed_emails:
+                email = res['email']
+                classification = res['classification']
+                line = (
+                    f"Categoria: {classification['categoria']} | "
+                    f"De: {email['remetente']} | "
+                    f"Assunto: {email['assunto']} | "
+                    f"Resumo: {classification['resumo_executivo']}"
+                )
+                emails_summary_list.append(line)
+
+            emails_text = "\n---\n".join(emails_summary_list)
+
+            executive_summary = self.summary_chain.invoke({
+                "emails_data": emails_text,
+                "total_emails": stats["total"],
+                "reunioes": stats["reunioes"],
+                "colaboradores_ufrn": stats["colaboradores_ufrn"]
+            })
+
+            categorical_briefing = self.briefing_chain.invoke({
+                "emails_data": emails_text
+            })
+
+            return {
+                "summary": executive_summary,
+                "briefing": categorical_briefing
+            }
+        except Exception as e:
+            logger.error(f"Erro ao gerar relatórios da sessão: {e}")
+            return {
+                "summary": f"Erro ao gerar resumo executivo. {stats['total']} emails processados.",
+                "briefing": "Erro ao gerar briefing por categoria."
             }
 
+    def create_executive_page(self, reports: Dict[str, str], stats: Dict):
+        """Criar página executiva no Notion com ambos os relatórios."""
+        try:
+            current_hour = datetime.now().hour
+            if 6 <= current_hour < 12:
+                turno = "Manhã"
+            elif 12 <= current_hour < 18:
+                turno = "Tarde"
+            else:
+                turno = "Noite"
+            page_title = f"Resumo LangChain - {datetime.now().strftime('%d/%m/%Y')} - {turno}"
+
+            page_content = (
+                f"{reports['summary']}\n\n---\n\n"
+                f"BRIEFING POR CATEGORIA:\n{reports['briefing']}"
+            )
+
+            stats_content = (
+                f"Resumo executivo gerado por LangChain Agent.\n\nEstatísticas:\n"
+                f"- Total: {stats['total']}\n"
+                f"- Colaboradores UFRN: {stats['colaboradores_ufrn']}\n"
+                f"- Reuniões: {stats['reunioes']}\n"
+                f"- Dashboard: {stats['dashboard_success']}/{stats['total']}"
+            )
+
+            page_data = {
+                "parent": {"database_id": self.notion_database_id},
+                "properties": {
+                    "TÍTULO": {"title": [{"text": {"content": page_title}}]},
+                    "TIPO": {"select": {"name": "RESUMO_EXECUTIVO"}},
+                    "PRIORIDADE": {"select": {"name": "ALTA"}},
+                    "STATUS": {"select": {"name": "ATIVO"}},
+                    "RESUMO_EXECUTIVO": {"rich_text": [{"text": {"content": page_content}}]},
+                    "DESCRIÇÃO": {"rich_text": [{"text": {"content": stats_content}}]},
+                    "AGENTE_ORIGEM": {"rich_text": [{"text": {"content": "UFRN_LangChain_Agent"}}]},
+                    "DATA_CRIAÇÃO": {"date": {"start": datetime.now().isoformat()}}
+                }
+            }
+            response = self.notion_client.pages.create(**page_data)
+            if response and response.get('id'):
+                logger.info(f"📋 Página executiva LangChain criada: {response['id']}")
+                print(f"📄 Resumo executivo LangChain salvo no Notion: {response['id']}")
+        except Exception as e:
+            logger.error(f"Erro ao criar página executiva: {e}")
+
+    def save_results(self, processed_emails: List[Dict]) -> str:
+        try:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            filename = f"emails_langchain_processados_{timestamp}.json"
+            results = {
+                "timestamp": datetime.now().isoformat(),
+                "total_emails": len(processed_emails),
+                "framework": "LangChain",
+                "agent_type": "Orchestrated Tools",
+                "emails": processed_emails
+            }
             with open(filename, 'w', encoding='utf-8') as f:
                 json.dump(results, f, indent=2, ensure_ascii=False)
-
-            logger.info(f"Resultados salvos em: {filename}")
+            logger.info(f"📄 Resultados LangChain salvos: {filename}")
             return filename
-
         except Exception as e:
-            logger.error(f"Erro ao salvar JSON: {e}")
+            logger.error(f"Erro ao salvar: {e}")
             return None
 
-    def generate_batch_info(self, processed_emails):
-        """Gerar informações sobre o processamento em lotes"""
-        if not processed_emails:
-            return {}
 
-        batch_info = {
-            "total_lotes": 0,
-            "emails_por_lote": {},
-            "chamadas_llm": 0
-        }
-
-        lotes_encontrados = set()
-
-        for email in processed_emails:
-            lote_num = email.get('lote_numero', 0)
-            if lote_num > 0:
-                lotes_encontrados.add(lote_num)
-
-                if lote_num not in batch_info['emails_por_lote']:
-                    batch_info['emails_por_lote'][lote_num] = 0
-                batch_info['emails_por_lote'][lote_num] += 1
-
-        batch_info['total_lotes'] = len(lotes_encontrados)
-        batch_info['chamadas_llm'] = len(lotes_encontrados)  # Uma chamada por lote
-
-        return batch_info
-
-    def generate_statistics(self, processed_emails):
-        """Gerar estatísticas dos emails processados"""
-        if not processed_emails:
-            return {}
-
-        stats = {
-            "por_categoria": {},
-            "por_urgencia": {},
-            "com_anexos": 0,
-            "com_erro": 0,
-            "confianca_media": 0.0,
-            "confianca_por_categoria": {}
-        }
-
-        confidences = []
-
-        for email in processed_emails:
-            classificacao = email.get('classificacao', {})
-
-            # Estatísticas por categoria
-            categoria = classificacao.get('categoria', 'DESCONHECIDO')
-            stats['por_categoria'][categoria] = stats['por_categoria'].get(categoria, 0) + 1
-
-            # Estatísticas por urgência
-            urgencia = classificacao.get('urgencia', 'DESCONHECIDO')
-            stats['por_urgencia'][urgencia] = stats['por_urgencia'].get(urgencia, 0) + 1
-
-            # Anexos
-            if email.get('tem_anexos', False):
-                stats['com_anexos'] += 1
-
-            # Erros
-            if ('erro' in email or 'erro_lote' in email or
-                    categoria.startswith('ERRO')):
-                stats['com_erro'] += 1
-
-            # Confiança
-            confianca = classificacao.get('confianca', 0.0)
-            if isinstance(confianca, (int, float)) and confianca > 0:
-                confidences.append(confianca)
-
-                # Confiança por categoria
-                if categoria not in stats['confianca_por_categoria']:
-                    stats['confianca_por_categoria'][categoria] = []
-                stats['confianca_por_categoria'][categoria].append(confianca)
-
-        # Calcular confiança média
-        if confidences:
-            stats['confianca_media'] = sum(confidences) / len(confidences)
-
-            # Confiança média por categoria
-            for categoria, conf_list in stats['confianca_por_categoria'].items():
-                stats['confianca_por_categoria'][categoria] = sum(conf_list) / len(conf_list)
-
-        return stats
-
-    def test_connections(self):
-        """Testar todas as conexões necessárias"""
-        results = {}
-
-        # Testar OpenAI
-        try:
-            params = self.model_config.get_test_params()
-            response = self.openai_client.chat.completions.create(
-                messages=[{"role": "user", "content": "Teste de conexão - responda apenas 'OK'"}],
-                **params
-            )
-            results['openai'] = f"✅ Conectado ({params['model']})"
-            logger.info("Conexão OpenAI: OK")
-        except Exception as e:
-            results['openai'] = f"❌ Erro: {str(e)[:100]}"
-            logger.error(f"Conexão OpenAI: ERRO - {e}")
-
-        # Testar Gmail
-        try:
-            with MailBox('imap.gmail.com').login(self.gmail_user, self.gmail_password) as mailbox:
-                mailbox.folder.set('INBOX')
-                results['gmail'] = f"✅ Conectado"
-                logger.info("Conexão Gmail: OK")
-        except Exception as e:
-            results['gmail'] = f"❌ Erro: {str(e)[:100]}"
-            logger.error(f"Conexão Gmail: ERRO - {e}")
-
-        return results
-
-    def print_summary(self, processed_emails):
-        """Imprimir resumo dos resultados com informações de lote"""
-        if not processed_emails:
-            print("\n📭 Nenhum email foi processado.")
-            return
-
-        print(f"\n📊 RESUMO DO PROCESSAMENTO EM LOTE")
-        print(f"{'=' * 50}")
-        print(f"Total de emails processados: {len(processed_emails)}")
-
-        # Informações de lote
-        batch_info = self.generate_batch_info(processed_emails)
-        if batch_info['total_lotes'] > 0:
-            print(f"🔄 Processamento em lotes:")
-            print(f"  • Total de lotes: {batch_info['total_lotes']}")
-            print(f"  • Chamadas ao LLM: {batch_info['chamadas_llm']}")
-            print(f"  • Economia estimada: {len(processed_emails) - batch_info['chamadas_llm']} chamadas")
-
-        # Estatísticas
-        stats = self.generate_statistics(processed_emails)
-
-        print(f"\n📈 Por categoria:")
-        for categoria, count in stats['por_categoria'].items():
-            confianca_cat = stats['confianca_por_categoria'].get(categoria, 0)
-            if confianca_cat > 0:
-                print(f"  • {categoria}: {count} (confiança média: {confianca_cat:.2f})")
-            else:
-                print(f"  • {categoria}: {count}")
-
-        print(f"\n⚡ Por urgência:")
-        for urgencia, count in stats['por_urgencia'].items():
-            print(f"  • {urgencia}: {count}")
-
-        print(f"\n📎 Com anexos: {stats['com_anexos']}")
-        print(f"❌ Com erro: {stats['com_erro']}")
-
-        if stats['confianca_media'] > 0:
-            print(f"🎯 Confiança média: {stats['confianca_media']:.2f}")
-
-        # Mostrar emails urgentes
-        urgent_emails = [e for e in processed_emails
-                         if e.get('classificacao', {}).get('urgencia') == 'ALTA']
-
-        if urgent_emails:
-            print(f"\n🚨 EMAILS URGENTES ({len(urgent_emails)}):")
-            for email in urgent_emails:
-                classificacao = email['classificacao']
-                print(f"  • {email['assunto'][:60]}...")
-                print(f"    De: {email['remetente']}")
-                print(f"    Ação: {classificacao['acao_sugerida']}")
-                if 'confianca' in classificacao and classificacao['confianca'] > 0:
-                    print(f"    Confiança: {classificacao['confianca']:.2f}")
-                print()
-
-
-def create_batch_config():
-    """Criar configuração otimizada para processamento em lote"""
-    config = ModelConfig()
-
-    # Configuração otimizada para lotes
-    config.batch_temperature = 0.15  # Baixa para consistência
-    config.max_tokens = 2000  # Maior para múltiplos emails
-    config.top_p = 0.9  # Balanceado
-
-    return config
-
+# ============================================================================
+# FUNÇÃO PRINCIPAL
+# ============================================================================
 
 def main():
-    """Função principal"""
     try:
-        print("🤖 AGENTE UFRN - Análise Inteligente de Emails (PROCESSAMENTO EM LOTE)")
-        print("=" * 70)
-
-        # Criar configuração otimizada para lotes
-        model_config = create_batch_config()
-
-        # Inicializar agente com configuração
-        agent = AgentUFRN(model_config)
-
-        # Testar conexões
-        print("\n🔍 Testando conexões...")
-        test_results = agent.test_connections()
-
-        for service, status in test_results.items():
-            print(f"  {service.upper()}: {status}")
-
-        # Verificar se pode prosseguir
-        if not all("✅" in status for status in test_results.values()):
-            print("\n❌ Não é possível prosseguir devido a problemas de conexão.")
-            print("Verifique suas credenciais no arquivo .env")
-            return
-
-        # Processar emails em lotes
-        print("\n📧 Processando emails não lidos em lotes...")
-        print("💡 Vantagem: Múltiplos emails processados por chamada ao LLM")
-
-        processed_emails = agent.process_emails(limit=10, batch_size=2)  # 2 emails por lote
-
-        # Mostrar resumo
-        agent.print_summary(processed_emails)
-
-        print(f"\n✅ Processamento em lote concluído!")
-        print(f"📄 Resultados detalhados salvos em arquivo JSON")
-        print(f"💰 Economia de custos: Menos chamadas à API OpenAI")
-
+        print("🤖 AGENT UFRN - LangChain Edition")
+        print("=" * 50)
+        print("🧠 Framework: LangChain (Modernized)")
+        print("🔧 Agent Type: Orchestrated Tools")
+        print("🛠️ Tools: EmailClassifier, MeetingDetector, NotionDashboard")
+        print("=" * 50)
+        agent = UFRNEmailAgent()
+        processed_emails = agent.process_emails(limit=50, batch_size=3)
+        if processed_emails:
+            filename = agent.save_results(processed_emails)
+            print(f"\n📈 RESUMO FINAL:")
+            print(f"   📧 Emails processados: {len(processed_emails)}")
+            print(f"   🧠 Framework: LangChain")
+            print(f"   🤖 Agent: Orchestrated Tools")
+            print(f"   💾 Arquivo: {filename}")
+        print(f"\n✅ Processamento LangChain concluído!")
     except Exception as e:
-        logger.error(f"Erro na execução principal: {e}")
-        print(f"\n❌ Erro: {e}")
-        print("Verifique o arquivo 'agent_ufrn.log' para mais detalhes.")
+        logger.error(f"Erro na execução: {e}")
+        print(f"❌ Erro: {e}")
 
 
 if __name__ == "__main__":
     main()
-
